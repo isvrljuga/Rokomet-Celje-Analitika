@@ -16990,3 +16990,27 @@ const originalNewWorkbook=newWorkbook,originalOldWorkbook=oldWorkbook;
 newWorkbook=function(){return db().games.some(g=>g.imported)?aggregateWorkbook('new'):originalNewWorkbook()};
 oldWorkbook=function(){return db().games.some(g=>g.imported)?aggregateWorkbook('old'):originalOldWorkbook()};
 render();
+
+// Detailed overview for both live records and imported new-source aggregates.
+function drawnSevenCount(person,games){
+ return games.reduce((total,g)=>total+(g.imported
+  ? Number(g.imported.new.summaries[person]?.sevenDrawn||0)
+  : g.events.filter(e=>e.person===person&&e.type==='foul'&&e.seven&&['PNA','PNN'].includes(e.code)).length),0);
+}
+const overviewPlayerStats=playerStats;
+playerStats=function(person,games=db().games){const stats=overviewPlayerStats(person,games);stats.count.sevenDrawn=drawnSevenCount(person,games);return stats};
+function overviewElementRows(){
+ const names=[...new Set([...db().roster.players,...db().roster.keepers,...db().games.flatMap(g=>g.imported?[...Object.keys(g.imported.new.summaries),...g.imported.new.rows.map(r=>r.person)]:g.events.filter(e=>e.person&&e.forPersonType!=='bench').map(e=>e.person))])];
+ return names.map(person=>{const c=playerStats(person).count;return {person,POA:c.POA||0,PON:c.PON||0,PNA:c.PNA||0,PNN:c.PNN||0,defenseFouls:(c.POA||0)+(c.PON||0),attackFouls:(c.PNA||0)+(c.PNN||0),NA:c.NA||0,NN:c.NN||0,errors:(c.NA||0)+(c.NN||0),DA:c.DA||0,DN:c.DN||0,gains:(c.DA||0)+(c.DN||0),sevenDrawn:c.sevenDrawn||0}});
+}
+const overviewColumns=[['POA','Obr. akt.','Prekrški v obrambi – aktivni'],['PON','Obr. neakt.','Prekrški v obrambi – neaktivni'],['PNA','Nap. akt.','Pridobljeni prekrški v napadu – aktivni'],['PNN','Nap. neakt.','Pridobljeni prekrški v napadu – neaktivni'],['defenseFouls','Obrambni skupaj','Obrambni prekrški skupaj'],['attackFouls','Napad skupaj','Prekrški v napadu skupaj'],['NA','Napake akt.','Aktivne napake'],['NN','Napake neakt.','Neaktivne napake'],['errors','Napake skupaj','Vse napake'],['DA','Dobljene akt.','Aktivno dobljene žoge'],['DN','Dobljene neakt.','Neaktivno dobljene žoge'],['gains','Dobljene skupaj','Vse dobljene žoge'],['sevenDrawn','Dobljeni 7 m','Pridobljene sedemmetrovke']];
+const overviewRender=renderOverview;
+renderOverview=function(){
+ overviewRender();const rows=overviewElementRows(),totals=Object.fromEntries(overviewColumns.map(([key])=>[key,rows.reduce((sum,row)=>sum+row[key],0)]));
+ $('#view-overview').insertAdjacentHTML('beforeend',`<div class="cards">${[['defenseFouls','Obrambni prekrški skupaj'],['attackFouls','Prekrški v napadu skupaj'],['errors','Napake skupaj'],['gains','Dobljene žoge'],['sevenDrawn','Dobljeni 7 m']].map(([key,label])=>`<div class="card stat"><div class="label">${label}</div><strong>${totals[key]}</strong><em>${teamLabel().toLowerCase()} · vse prikazane tekme</em></div>`).join('')}</div><div class="panel" id="overviewOtherElements"><div class="panel-head"><h2>Prekrški, napake in dobljene žoge</h2><span class="tag">${db().games.length} tekem</span></div><div class="tablescroll"><table class="table"><thead><tr><th>Igralka / vratarka</th>${overviewColumns.map(([,label,title])=>`<th title="${esc(title)}">${label}</th>`).join('')}</tr></thead><tbody>${rows.map(row=>`<tr><td>${esc(row.person)}</td>${overviewColumns.map(([key])=>`<td>${row[key]}</td>`).join('')}</tr>`).join('')}</tbody><tfoot><tr class="total"><td>Skupaj</td>${overviewColumns.map(([key])=>`<td>${totals[key]}</td>`).join('')}</tr></tfoot></table></div><div class="hint">Prekrški: obramba aktivno/neaktivno (POA/PON) in napad aktivno/neaktivno (PNA/PNN). Napake in dobljene žoge so razčlenjene na aktivne in neaktivne. Dobljeni 7 m se pri zapisih v živo štejejo iz označenih prekrškov v napadu; pri uvoženih tekmah iz vrednosti »7M dobljen« novega Excelovega vira. Asistenca za izsiljen 7 m se ne šteje še enkrat kot dobljeni 7 m. Preklop indeksa spremeni indeks, števci uvoženih tekem pa ostanejo iz novega vira.</div></div>`);
+};
+function overviewElementsSheet(){return {name:'Prekrški in ostalo',rows:[['Prekrški, napake, dobljene žoge in dobljeni 7 m'],['Uvožene tekme: novi Excelov vir; zapisi v živo: zabeležene akcije.'],['Igralka / vratarka',...overviewColumns.map(([,label,title])=>title)],...overviewElementRows().map(row=>[row.person,...overviewColumns.map(([key])=>row[key])]),['Skupaj',...overviewColumns.map(([key])=>overviewElementRows().reduce((n,row)=>n+row[key],0))]]}}
+const overviewNewWorkbook=newWorkbook,overviewOldWorkbook=oldWorkbook;
+newWorkbook=function(){return [...overviewNewWorkbook(),overviewElementsSheet()]};
+oldWorkbook=function(){return [...overviewOldWorkbook(),overviewElementsSheet()]};
+render();
