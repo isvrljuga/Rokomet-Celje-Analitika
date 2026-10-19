@@ -14,6 +14,7 @@ Odzivna spletna aplikacija za namizni in mobilni brskalnik. Uporablja lokalni `l
 - Zapis strelov obeh ekip, štirih tipov asistenc, štirih tipov prekrškov, dveh tipov napak in dveh tipov dobljenih žog.
 - Evidenca 7 m in izključitev, vratarke na golu ob strelih nasprotnic ter individualni čas z odbitkom za samo napad/obrambo.
 - **Vnos v živo** (telefon in tablica): ob odprtju tekme celozaslonski vnos z dotiki – igralka → akcija → podrobnost, brez spustnih menijev. Ura tekme na gumb (start/pavza, ±1 min, polčas) samodejno določi minuto in četrtino; igralni čas se beleži z vstopom in izstopom. Gumb »Zapisnik« odpre klasični pogled (rezultat, zaključek tekme), »Vnos v živo« pa vrne nazaj.
+- **Menjave in izključitve** v vnosu v živo: ob novi tekmi izbereš začetno postavo, na zaslonu »Menjave« tapneš, kdo gre ven in kdo noter (igralni čas se zapiše sam). Izključitev 2 min / 4 min / rdeči pošlje igralko na klop z odštevanjem po uri tekme; po izteku se vrne ista ali druga igralka. Več izključitev hkrati je podprtih.
 - Zgodovina z večkratnim razveljavljanjem in brisanjem posamezne akcije.
 - Skupni pregled, izvoz v dve začasni Excelovi delovni zvezki in JSON varnostna kopija.
 

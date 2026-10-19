@@ -11,7 +11,7 @@ const TYPES = {
 };
 const SEEDS = {
   members:{players:['Lara Kolobarič','Zala Petek','Sarah Pilih Derča','Ella Podergajs','Lenja Ripnak','Alja Vrček','Ajla Mehulić','Vita Sečki','Zoja Verbovšek','Tinkara Korošec','Ela Adamič','Lina Kolobarič','Zala Kuri','Pia Kljun','Lana Švrljuga','Kaja Krebs','Larissa Zukič','Lana Kačičnik','Tiana Novak','Tia Kavalar'],keepers:['Nika Kuri','Zoja Brglez']},
-  juniors:{players:['Zala Petek','Sarah Pilih Derča','Lenja Ripnak','Ajla Mehulić','Vita Sečki','Zoja Verbovšek','Tinkara Korošec','Lina Kolobarič','Zala Kuri','Pia Kljun','Lana Švrljuga','Teja Jereb','Zoja Jurak','Brina Mernik','Larissa Zukić'],keepers:['Nika Kuri','Zoja Brglez']}
+  juniors:{players:['Zala Petek','Sarah Pilih Derča','Lenja Ripnak','Ajla Mehulić','Vita Sečki','Zoja Verbovšek','Tinkara Korošec','Lina Kolobarič','Zala Kuri','Pia Kljun','Lana Švrljuga','Teja Jereb','Zoja Jurak','Brina Mernik','Larissa Zukić','Tiana Novak','Tia Kavalar'],keepers:['Nika Kuri','Zoja Brglez']}
 };
 const blank=()=>({teams:{members:{roster:structuredClone(SEEDS.members),games:[]},juniors:{roster:structuredClone(SEEDS.juniors),games:[]}}});
 let state; try{state=JSON.parse(localStorage.getItem(KEY))||blank()}catch{state=blank()}
