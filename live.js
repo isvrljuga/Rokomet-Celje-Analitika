@@ -168,6 +168,31 @@ function liveStartTimer(){
   },1000);
 }
 
+function liveStartDialog(){
+  const now=new Date(),today=new Date(now.getTime()-now.getTimezoneOffset()*60000).toISOString().slice(0,10);
+  const overlay=document.createElement('div');overlay.className='modal-backdrop';
+  overlay.innerHTML=`<div class="modal"><div class="panel-head"><div><p class="eyebrow">Vnos v živo · ${teamLabel()}</p><h2>Proti komu igramo?</h2></div><button class="btn small" data-close>Zapri</button></div><div class="form-grid"><div class="field"><label for="lsOpp">Nasprotnik</label><input id="lsOpp" placeholder="Ime ekipe" autocomplete="off"></div><div class="field"><label for="lsDate">Datum tekme</label><input id="lsDate" type="date" value="${today}"></div></div><button class="btn lime lv-startbig" id="lsGo">Začni vnos</button></div>`;
+  document.body.appendChild(overlay);
+  const close=()=>overlay.remove();
+  overlay.querySelector('[data-close]').onclick=close;overlay.onclick=e=>{if(e.target===overlay)close()};
+  const go=()=>{const opp=overlay.querySelector('#lsOpp').value.trim();if(!opp){toast('Vnesi ime nasprotnika.');overlay.querySelector('#lsOpp').focus();return}
+    const g={id:id(),date:overlay.querySelector('#lsDate').value||today,opponent:opp,finalHome:'',finalAway:'',firstHalfHome:'',firstHalfAway:'',complete:false,events:[]};
+    db().games.push(g);save();close();setLivePref(true);liveClear();gameId=g.id;view='game';render()};
+  overlay.querySelector('#lsGo').onclick=go;
+  overlay.querySelector('#lsOpp').addEventListener('keydown',e=>{if(e.key==='Enter')go()});
+  overlay.querySelector('#lsOpp').focus();
+}
+function openLiveGame(g){setLivePref(true);liveClear();gameId=g.id;view='game';render()}
+
+const liveRenderMatches=renderMatches;
+renderMatches=function(){
+  liveRenderMatches();
+  const open=db().games.filter(g=>!g.imported&&!g.complete).sort((a,b)=>b.date.localeCompare(a.date));
+  $('#view-matches').insertAdjacentHTML('afterbegin',`<div class="lv-start"><div><p class="eyebrow">${teamLabel()} · vnos v živo</p><h2>Beleži tekmo z dotiki</h2><p>Igralka → akcija → podrobnost. Ura tekme sama zapiše minuto.</p></div><div class="lv-startbtns"><button class="btn lime lv-startbig" id="liveStartBtn">＋ Začni vnos v živo</button>${open.slice(0,2).map(g=>`<button class="btn lv-resume" data-live-open="${g.id}">Nadaljuj · Celje – ${esc(g.opponent)}<small>${esc(g.date)} · ${g.events.length} akcij</small></button>`).join('')}</div></div>`);
+  $('#liveStartBtn').onclick=liveStartDialog;
+  $$('[data-live-open]').forEach(b=>b.onclick=()=>{const g=db().games.find(x=>x.id===b.dataset.liveOpen);if(g)openLiveGame(g)});
+};
+
 const classicRenderGame=renderGame;
 renderGame=function(){
   const g=game();
