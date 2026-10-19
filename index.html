@@ -67,6 +67,17 @@
     .lv-startbig{min-height:58px;font-size:18px;font-weight:800;border-radius:14px;width:100%}
     .lv-resume{min-height:52px;width:100%;flex-direction:column;align-items:flex-start;gap:0;background:#ffffff14;border-color:#ffffff33;color:#fff;text-align:left}.lv-resume:hover{border-color:#ffffff66}.lv-resume small{color:#c2d5cd;font-weight:600}
     .modal .lv-startbig{margin-top:16px}
+    .lv-tile.ex{background:#faeeec;border-color:#e6c2bb}.lv-exb{position:absolute;top:6px;right:7px;font-size:11px;font-style:normal;font-weight:800;background:#7a2a21;color:#fff;border-radius:6px;padding:1px 5px;font-variant-numeric:tabular-nums}
+    .lv-btn{position:relative}.lv-btn.on{background:var(--green);border-color:var(--green);color:#fff}.lv-btn.alert{background:#fdf3e1;border-color:#e0a23a}
+    .lv-cnt{position:absolute;top:-7px;right:-7px;min-width:21px;height:21px;border-radius:11px;background:#7a2a21;color:#fff;font-size:11px;font-style:normal;display:grid;place-items:center;padding:0 5px}
+    .lv-subs{flex:1;min-height:0;overflow:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:12px;align-content:start}
+    .lv-sec{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;display:flex;flex-direction:column;gap:10px;min-width:0}.lv-sec.wide{grid-column:1/-1}
+    .lv-subbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;background:#eef1ec;border-radius:14px;padding:10px}.lv-subbar b{margin-right:auto}
+    .lv-chip{min-height:48px;padding:0 14px;border-radius:12px;border:1.5px solid #d8e0da;background:#fff;font-weight:800;color:var(--ink)}.lv-chip.bad{background:#f8e6e3;border-color:#e6c2bb;color:#7a2a21}.lv-chip.go{background:var(--lime);border-color:#b3d460;color:var(--green)}.lv-chip.sel{background:var(--green);border-color:var(--green);color:#fff}.lv-chip:disabled{opacity:.4}
+    .lv-exlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px}
+    .lv-excard{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;border:1.5px solid #e6c2bb;background:#faeeec;border-radius:14px;padding:10px 12px}.lv-excard.done{background:#fdf3e1;border-color:#e0a23a}.lv-excard.sel{outline:3px solid var(--green)}
+    .lv-exname{flex:1;min-width:0;display:flex;flex-direction:column}.lv-exname small{color:#56645e;font-weight:600}
+    .lv-exleft{font-size:24px;font-weight:850;font-variant-numeric:tabular-nums;color:#7a2a21}.lv-excard.done .lv-exleft{font-size:15px;color:#8a5a0c}
     @media(max-width:899px){
       .lv-score{font-size:32px}.lv-clockbar{flex-basis:100%;justify-content:space-between;gap:6px}.lv-clock{flex:1;min-width:0}.lv-play{min-width:52px}.lv-txt{display:none}.lv-seg button{padding:0 9px}.lv-tb{min-width:44px}
       .lv-crumbs{display:flex;gap:6px;padding:8px 12px;background:#fff;border-bottom:1px solid var(--line)}
@@ -80,6 +91,7 @@
       .lv-acts{grid-template-columns:repeat(2,minmax(0,1fr))}.lv-act{min-height:70px;background:#fff}.lv-opt{background:#fff}
       .lv-c3 .lv-selchip{display:none}.lv-loglabel,.lv-ev.more{display:none}.lv-btn{padding:0}
       .lv-g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .lv.scr-subs .lv-crumbs,.lv.scr-lineup .lv-crumbs{display:none}.lv-subs{grid-template-columns:minmax(0,1fr)}.lv-sec{padding:12px}
     }
   </style>
 </head>
