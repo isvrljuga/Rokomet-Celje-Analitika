@@ -19,12 +19,41 @@ function cloudUi(){
   document.body.classList.toggle('ro',cloudOn&&!cloudUser);
   document.body.classList.toggle('notadmin',cloudOn&&!cloudAdmin());
   const btn=$('#cloudBtn');if(!btn)return;
-  btn.textContent=cloudUser?`Odjava · ${cloudUser.displayName?.split(' ')[0]||'račun'}`:'Prijava za vnos';
+  btn.textContent=cloudUser?`Odjava · ${cloudUser.displayName?.split(' ')[0]||cloudUser.email?.split('@')[0]||'račun'}`:'Prijava za vnos';
   cloudStatus(cloudReady?(cloudUser?'Skupna baza · vnos':'Skupna baza · samo ogled'):'Povezujem s skupno bazo …');
 }
-async function cloudSignIn(){
+async function cloudGoogle(){
   const auth=firebase.auth(),provider=new firebase.auth.GoogleAuthProvider();
   try{await auth.signInWithPopup(provider)}catch(e){if(e?.code==='auth/popup-closed-by-user')return;await auth.signInWithRedirect(provider)}
+}
+const CLOUD_AUTH_ERR={'auth/invalid-email':'E-poštni naslov ni veljaven.','auth/missing-password':'Vpiši geslo.','auth/weak-password':'Geslo mora imeti vsaj 6 znakov.','auth/email-already-in-use':'Ta e-pošta že ima račun – prijavi se.','auth/invalid-credential':'Napačna e-pošta ali geslo.','auth/wrong-password':'Napačna e-pošta ali geslo.','auth/user-not-found':'Napačna e-pošta ali geslo.','auth/too-many-requests':'Preveč poskusov, poskusi čez nekaj minut.','auth/operation-not-allowed':'Prijava z e-pošto v Firebase še ni vklopljena.'};
+// Okno za prijavo: Google ali katerikoli e-poštni naslov z geslom (nov račun se ustvari z imenom).
+function cloudSignIn(){
+  const overlay=document.createElement('div');overlay.className='modal-backdrop';let mode='login';
+  const draw=()=>{overlay.innerHTML=`<div class="modal"><div class="panel-head"><div><p class="eyebrow">Skupna baza</p><h2>${mode==='login'?'Prijava za vnos':'Nov račun'}</h2></div><button class="btn small" data-close>Zapri</button></div>
+    <div class="form-grid">${mode==='new'?'<div class="field full"><label for="caName">Ime in priimek</label><input id="caName" autocomplete="name"></div>':''}
+    <div class="field full"><label for="caMail">E-pošta</label><input id="caMail" type="email" autocomplete="email" inputmode="email"></div>
+    <div class="field full"><label for="caPass">Geslo${mode==='new'?' (vsaj 6 znakov)':''}</label><input id="caPass" type="password" autocomplete="${mode==='new'?'new-password':'current-password'}"></div></div>
+    <p class="muted" id="caErr" role="alert" style="color:var(--red);min-height:20px;margin:10px 0 0"></p>
+    <div class="toolbar" style="margin-top:6px"><button class="btn primary" id="caGo" style="flex:1;min-height:48px">${mode==='login'?'Prijava':'Ustvari račun'}</button></div>
+    <div class="toolbar" style="margin-top:10px;justify-content:space-between"><button class="btn small" id="caMode">${mode==='login'?'Nimaš računa? Ustvari ga':'Že imaš račun? Prijava'}</button>${mode==='login'?'<button class="btn small" id="caReset">Pozabljeno geslo</button>':''}</div>
+    <hr class="divider"><button class="btn" id="caGoogle" style="width:100%;min-height:48px">Prijava z Google računom</button></div>`;
+    const err=m=>{overlay.querySelector('#caErr').textContent=m},val=s=>overlay.querySelector(s)?.value.trim()||'';
+    overlay.querySelector('[data-close]').onclick=()=>overlay.remove();
+    overlay.querySelector('#caMode').onclick=()=>{mode=mode==='login'?'new':'login';draw()};
+    overlay.querySelector('#caGoogle').onclick=()=>{overlay.remove();cloudGoogle()};
+    overlay.querySelector('#caReset')?.addEventListener('click',async()=>{const m=val('#caMail');if(!m){err('Vpiši e-pošto, nato tapni Pozabljeno geslo.');return}try{await firebase.auth().sendPasswordResetEmail(m);err('');toast('Poslali smo ti e-pošto za novo geslo.')}catch(e){err(CLOUD_AUTH_ERR[e?.code]||'Pošiljanje ni uspelo.')}});
+    const go=async()=>{const m=val('#caMail'),p=overlay.querySelector('#caPass').value,n=val('#caName');
+      if(mode==='new'&&!n){err('Vpiši ime – pokaže se pri tekmah, ki jih vneseš.');return}
+      try{const auth=firebase.auth();
+        if(mode==='login')await auth.signInWithEmailAndPassword(m,p);
+        else{const cred=await auth.createUserWithEmailAndPassword(m,p);await cred.user.updateProfile({displayName:n});cloudUser=auth.currentUser||cred.user;cloudUi();render()}
+        overlay.remove();toast(mode==='login'?'Prijava uspešna.':'Račun je ustvarjen.')}
+      catch(e){console.error(e);err(CLOUD_AUTH_ERR[e?.code]||'Prijava ni uspela.')}};
+    overlay.querySelector('#caGo').onclick=go;overlay.querySelector('#caPass').addEventListener('keydown',e=>{if(e.key==='Enter')go()});
+    (overlay.querySelector('#caName')||overlay.querySelector('#caMail')).focus();
+  };
+  draw();document.body.appendChild(overlay);
 }
 
 // Pošlje spremenjene tekme in sezname igralk. Imported tekme iz Excela ostanejo lokalne.
@@ -35,8 +64,8 @@ function cloudPush(){
   for(const [gid,{t,g}] of local){
     const j=cloudGameJson(g);if(cloudSent[gid]===j||!cloudCanEdit(g))continue;
     cloudSent[gid]=j;g.updatedAt=Date.now();
-    const r=cloudRemote[gid],owner=r?.owner||cloudUser.uid,ownerName=r?.owner?r.ownerName||'':cloudUser.displayName||'';
-    cloudDb.collection('games').doc(gid).set({team:t,json:j,updatedAt:g.updatedAt,owner,ownerName,by:cloudUser.uid,byName:cloudUser.displayName||''}).catch(e=>{delete cloudSent[gid];cloudErr(e)});
+    const r=cloudRemote[gid],owner=r?.owner||cloudUser.uid,ownerName=r?.owner?r.ownerName||'':cloudUser.displayName||cloudUser.email||'';
+    cloudDb.collection('games').doc(gid).set({team:t,json:j,updatedAt:g.updatedAt,owner,ownerName,by:cloudUser.uid,byName:cloudUser.displayName||cloudUser.email||''}).catch(e=>{delete cloudSent[gid];cloudErr(e)});
   }
   // Brisanje: posamezna tekma, ki je skrbnik ni več imel, se izbriše; več hkrati (npr. uvoz kopije) se ne briše.
   const missing=Object.keys(cloudRemote).filter(gid=>!local.has(gid));
@@ -109,7 +138,7 @@ const cloudRenderExports=renderExports;
 renderExports=function(){
   cloudRenderExports();
   $('#view-exports').insertAdjacentHTML('afterbegin',`<div class="panel"><div class="panel-head"><h2>Skupna baza</h2><span class="tag">${cloudOn?(cloudUser?(cloudAdmin()?'skrbnik':'vnos'):'samo ogled'):'ni nastavljena'}</span></div>${cloudOn
-    ?`<p>Tekme se shranjujejo v skupno bazo. Vsak s povezavo jih lahko gleda, prijavljeni jih vnašajo, briše jih samo skrbnik.</p>${cloudUser?`<p class="muted">Prijavljen: ${esc(cloudUser.displayName||cloudUser.email||'')} · tvoj ID: <code>${esc(cloudUser.uid)}</code></p>`:'<button class="btn primary" data-cloud-login>Prijava z Google računom</button>'}`
+    ?`<p>Tekme se shranjujejo v skupno bazo. Vsak s povezavo jih lahko gleda, prijavljeni (Google ali e-pošta) jih vnašajo, briše jih samo skrbnik.</p>${cloudUser?`<p class="muted">Prijavljen: ${esc(cloudUser.displayName||cloudUser.email||'')} · tvoj ID: <code>${esc(cloudUser.uid)}</code></p>`:'<button class="btn primary" data-cloud-login>Prijava</button>'}`
     :'<p class="muted">Skupna baza še ni nastavljena, zato so tekme shranjene samo v tej napravi. Navodila so v datoteki <code>firebase-config.js</code>.</p>'}</div>`);
   $$('[data-cloud-login]').forEach(b=>b.onclick=cloudSignIn);
 };
