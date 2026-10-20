@@ -9,6 +9,12 @@ const LIVE_FOUL=[['POA','V obrambi','aktiven'],['PON','V obrambi','neaktiven'],[
 const LIVE_EXCL=[['2','2 minuti'],['4','4 minute'],['red','Rdeči karton']];
 const LIVE_MODES=[['full','Napad in obramba'],['attack','Samo napad'],['defense','Samo obramba']];
 const LIVE_OPP='__opp';
+// Vratarka ima dodatno akcijo za strele nasprotnic nanjo (prejet gol / obramba); »Strel« je njen lasten strel.
+function liveKindsFor(p){
+  if(p===LIVE_OPP)return LIVE_OPP_KINDS;
+  if(db().roster.keepers.includes(p))return [['against','Strel nasprotnic'],['shot','Strel (svoj)'],...LIVE_KINDS.filter(k=>k[0]!=='shot')];
+  return LIVE_KINDS;
+}
 let liveSel={person:null,kind:null,shot:null,seven:false,two:false},liveOpts=[],liveTimer=null,liveFlashT=null,liveGameId=null;
 let liveSub={out:null,ret:null,pick:[]},liveExpired=new Set();
 const LIVE_COURT_MAX=7;
@@ -71,6 +77,9 @@ function liveSetHalf(g,h){
 function liveGroups(g){
   const S=liveSel,L=liveState(g),opp=S.person===LIVE_OPP,P=S.person,mk=(label,sub,cls,run)=>({label,sub,cls,run});
   if(!P||!S.kind)return {title:'Podrobnosti',groups:[]};
+  if(S.kind==='against')return {title:`Strel nasprotnic · v golu ${shortName(P)}`,groups:[
+    {title:'Tip strela',cls:'g3',items:LIVE_SHOT.map(([k,l])=>mk(l,'',S.shot===k?'sel':'',()=>{liveSel.shot=k;renderLive(g)}))},
+    {title:S.shot?'Izid · dotik shrani':'Izid · najprej tip strela',cls:'g3 big',items:[['goal','Prejet gol','bad'],['save','Obramba','good'],['miss','Zgrešen','mid']].map(([k,l,t])=>mk(l,'',`res-${t}${S.shot?'':' dis'}`,()=>{if(!S.shot)return;L.keeper=P;liveAdd(g,{type:'shot',side:'opponent',shot:S.shot,result:k,person:'',keeper:P})}))}]};
   if(S.kind==='shot')return {title:opp?'Strel nasprotnic':'Strel',groups:[
     {title:'Tip strela',cls:'g3',items:LIVE_SHOT.map(([k,l])=>mk(l,'',S.shot===k?'sel':'',()=>{liveSel.shot=k;renderLive(g)}))},
     {title:S.shot?'Izid · dotik shrani':'Izid · najprej tip strela',cls:'g3 big',items:LIVE_RESULT.map(([k,l,t])=>mk(l,opp?`V golu: ${shortName(L.keeper)}`:'',`res-${t}${S.shot?'':' dis'}`,()=>{if(S.shot)liveAdd(g,{type:'shot',side:opp?'opponent':'celje',shot:S.shot,result:k,person:opp?'':P,keeper:opp?L.keeper:''})}))}]};
@@ -104,7 +113,7 @@ function renderLive(g){
   const roster=db().roster;
   const exOf=n=>liveExcl(L).find(x=>x.person===n);
   const tile=n=>{const i=n.indexOf(' '),x=exOf(n);return `<button class="lv-tile ${S.person===n?'sel':''} ${L.court[n]?'on':''} ${x?'ex':''}" data-lv-person="${esc(n)}" aria-label="${esc(n)}${L.court[n]?', na igrišču':''}${x?', izključena':''}"><span>${esc(i<0?'':n.slice(0,i))}</span><b>${esc(i<0?n:n.slice(i+1))}</b>${x?`<i class="lv-exb" data-excl-left="${x.id}">${liveLeft(L,x)>0?liveMMSS(liveLeft(L,x)):'vrnitev'}</i>`:''}${goals[n]?`<i class="lv-badge">${goals[n]} G</i>`:''}</button>`};
-  const kinds=(opp?LIVE_OPP_KINDS:LIVE_KINDS).map(([k,l])=>`<button class="lv-act ${!S.person?'off':S.kind===k?'sel':''}" data-lv-kind="${k}" ${S.person?'':'disabled'}>${l}</button>`).join('');
+  const kinds=liveKindsFor(S.person).map(([k,l])=>`<button class="lv-act ${!S.person?'off':S.kind===k?'sel':''}" data-lv-kind="${k}" ${S.person?'':'disabled'}>${l}</button>`).join('');
   const {title,groups}=liveGroups(g);liveOpts=[];
   const groupHtml=groups.map(gr=>`<div class="lv-group"><p class="lv-lbl">${esc(gr.title)}</p><div class="lv-${gr.cls}">${gr.items.map(o=>{liveOpts.push(o.run);return `<button class="lv-opt ${o.cls}" data-lv-opt="${liveOpts.length-1}"><b>${esc(o.label)}</b>${o.sub?`<span>${esc(o.sub)}</span>`:''}</button>`}).join('')}</div></div>`).join('');
   const hint=!S.person?'Tapni igralko, nato akcijo in še podrobnost. Akcija se shrani ob zadnjem dotiku, z minuto ure tekme.':!S.kind?(opp?'Izberi strel nasprotnic ali izključitev nasprotnika.':`Izberi akcijo za ${esc(shortName(S.person))}.`):'';
@@ -128,7 +137,7 @@ function renderLive(g){
   </header>
   <nav class="lv-crumbs" aria-label="Koraki vnosa">
     <button class="${S.person?'done':'cur'}" data-lv="clear">1 · ${esc(S.person?selName:'Igralka')}</button>
-    <button class="${S.kind?'done':S.person?'cur':''}" data-lv="unkind">2 · ${esc(S.kind?liveLab(opp?LIVE_OPP_KINDS:LIVE_KINDS,S.kind):'Akcija')}</button>
+    <button class="${S.kind?'done':S.person?'cur':''}" data-lv="unkind">2 · ${esc(S.kind?liveLab(liveKindsFor(S.person),S.kind):'Akcija')}</button>
     <button class="${S.kind?'cur':''}" disabled>3 · Podrobnost</button>
   </nav>
   ${scr!=='entry'?liveSubsHtml(g,L,scr==='lineup'):`<div class="lv-body">
