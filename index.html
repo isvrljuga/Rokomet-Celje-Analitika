@@ -81,6 +81,8 @@
     body.ro .lv-start:not(:first-child),body.ro #excelImportPanel,body.ro #newGameBtn,body.ro #emptyNew,body.ro #openLive,body.ro #undoLast,body.ro [data-delete],body.ro #completeGame,body.ro #deleteGame,body.ro #addPlayerForm,body.ro #addKeeperForm,body.ro [data-remove-player],body.ro [data-remove-keeper],body.ro #view-game .grid2>.panel:first-child{display:none!important}
     body.ro #view-game .grid2{grid-template-columns:1fr}body.ro .content .field input{pointer-events:none;background:#f3f5f2}
     body.notadmin #deleteGame,body.notadmin #deleteImported{display:none!important}
+    .team-switch{overflow-x:auto;max-width:100%;scrollbar-width:none}.team-switch::-webkit-scrollbar{display:none}.team-switch button{white-space:nowrap}.topbar{gap:8px}
+    @media(max-width:600px){.topbar{height:auto!important;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}.top-actions{margin-left:auto}.team-switch{order:2;width:100%}.team-switch button{flex:1;padding:8px 4px;font-size:13px}}
     @media(max-width:899px){
       .lv-score{font-size:32px}.lv-clockbar{flex-basis:100%;justify-content:space-between;gap:6px}.lv-clock{flex:1;min-width:0}.lv-play{min-width:52px}.lv-txt{display:none}.lv-seg button{padding:0 9px}.lv-tb{min-width:44px}
       .lv-crumbs{display:flex;gap:6px;padding:8px 12px;background:#fff;border-bottom:1px solid var(--line)}
@@ -113,7 +115,7 @@
   <main class="main">
     <header class="topbar">
       <div class="team-switch" role="tablist" aria-label="Ekipa">
-        <button data-team="members" class="active">Članice</button><button data-team="juniors">Mladinke</button>
+        <button data-team="members" class="active">Članice</button><button data-team="juniors">Mladinke</button><button data-team="cadets">Kadetinje</button><button data-team="other">Ostalo</button>
       </div>
       <div class="top-actions"><span class="connection"><span class="dot"></span> Shranjeno v napravi</span><button class="btn small" id="installBtn" hidden>Namesti aplikacijo</button></div>
     </header>
