@@ -1,0 +1,20 @@
+rules_version = '2';
+// Gledanje: vsi. Vnos in urejanje: prijavljeni z Google računom. Brisanje tekem: samo skrbnik.
+// SKRBNIK_ID zamenjaj s svojim ID-jem (aplikacija ga pokaže v zavihku Izvoz po prijavi).
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAdmin() {
+      return request.auth != null && request.auth.uid in ['SKRBNIK_ID'];
+    }
+    match /games/{gameId} {
+      allow read: if true;
+      allow create, update: if request.auth != null;
+      allow delete: if isAdmin();
+    }
+    match /rosters/{team} {
+      allow read: if true;
+      allow create, update: if request.auth != null;
+      allow delete: if isAdmin();
+    }
+  }
+}

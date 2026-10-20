@@ -1,12 +1,21 @@
 # Rokomet Celje – analitika tekem
 
-Odzivna spletna aplikacija za namizni in mobilni brskalnik. Uporablja lokalni `localStorage`; podatki niso samodejno sinhronizirani med napravami. Za uporabo na drugi napravi prenesite varnostno kopijo JSON in jo tam uvozite.
+Odzivna spletna aplikacija za namizni in mobilni brskalnik. Podatki se shranjujejo v `localStorage` naprave. Ko je nastavljena **skupna baza** (Firebase, glej spodaj), se tekme samodejno delijo: vsak s povezavo jih gleda v živo, prijavljeni z Google računom jih vnašajo, briše jih samo skrbnik.
 
 ## Zagon
 
 - Na računalniku: razširite ZIP in odprite `index.html`.
 - Za namestitev kot PWA (ikona na začetnem zaslonu in delo brez povezave) aplikacijo objavite na HTTPS naslovu. Service worker je aktiven samo prek HTTPS ali localhost.
 - Prvič odprite **Ekipa in igralke** ter dopolnite vratarke, ki jih Excelov indeks ne vsebuje.
+
+## Skupna baza (Firebase)
+
+1. Na https://console.firebase.google.com ustvari projekt in vanj dodaj spletno aplikacijo (`</>`). Vrednosti iz `firebaseConfig` prepiši v `firebase-config.js`.
+2. **Authentication → Sign-in method → Google → Enable**. V **Authentication → Settings → Authorized domains** dodaj `isvrljuga.github.io`.
+3. **Firestore Database → Create database** (production mode), nato v zavihek **Rules** prilepi vsebino `firestore.rules`.
+4. Odpri aplikacijo, se prijavi in v zavihku **Izvoz** prepiši svoj ID v `adminUids` v `firebase-config.js` in namesto `SKRBNIK_ID` v pravilih (Rules → Publish).
+
+Tekme se delijo s povezavo `…/#tekma=<id>` (gumb »Kopiraj povezavo« na tekmi). Tekme, uvožene iz Excela, ostanejo lokalne.
 
 ## Funkcionalnosti
 
