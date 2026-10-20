@@ -202,7 +202,9 @@ function liveRecalc(g){
     if(c.half==='1'&&L.half==='2'){livePush(g,{type:'time',person:p,mode:c.mode,half:'1',start:c.start,end:30});L.court[p]={half:'2',start:0,mode:c.mode};fix.closed++}
     if(ended){liveCloseCourt(g,p);fix.closed++}
   }
-  const keyOf=(p,h)=>`${p}\u0001${h}`,spans=new Map(),exclusions=g.events.filter(e=>e.type==='exclusion'&&e.forTeam==='celje'&&e.forPersonType!=='bench');
+  const keyOf=(p,h)=>`${p}\u0001${h}`,spans=new Map(),exclEv=g.events.filter(e=>e.type==='exclusion'&&e.forTeam==='celje'&&e.forPersonType!=='bench'),
+    // Starejši vnosi: naš prekršek z 2 min brez zapisa izključitve šteje kot izključitev.
+    exclusions=exclEv.concat(g.events.filter(e=>e.type==='foul'&&e.twoMin&&LIVE_OWN_FOUL.includes(e.code)&&!exclEv.some(x=>x.person===e.person&&x.half===e.half&&Math.abs(x.minute-e.minute)<=1)).map(e=>({...e,duration:'2'})));
   for(const e of g.events){if(e.type!=='time')continue;const s=Math.max(0,Number(e.start)),t=Math.min(30,Number(e.end));if(!(t>s))continue;const k=keyOf(e.person,e.half);(spans.get(k)||spans.set(k,[]).get(k)).push({s,t,mode:e.mode||'full'})}
   const rebuilt=[];
   for(const [k,list] of spans){
