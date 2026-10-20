@@ -2,7 +2,7 @@
 // Brez nastavitev v firebase-config.js aplikacija deluje kot prej, samo v tej napravi.
 const CLOUD=window.CELJE_CLOUD||{};
 const cloudOn=!!CLOUD.firebase?.apiKey;
-const CLOUD_TEAMS=['members','juniors'];
+const CLOUD_TEAMS=['members','juniors','cadets','other'];
 let cloudUser=null,cloudDb=null,cloudReady=false,cloudTimer=null;
 let cloudSent={},cloudRemote={},cloudRosterSent={};
 
@@ -130,7 +130,7 @@ renderMatches=function(){
   $$('#view-matches [data-open]').forEach(b=>{b.insertAdjacentHTML('afterend',`<button class="btn small danger" data-del-game="${b.dataset.open}">Izbriši</button>`)});
   $$('[data-del-game]').forEach(b=>b.onclick=()=>{
     const g=db().games.find(x=>x.id===b.dataset.delGame);if(!g)return;
-    if(!confirm(`Izbrišem tekmo Celje – ${g.opponent} (${g.date}) in vse njene akcije?${cloudOn&&!g.imported?' Izbrisala se bo za vse.':''}`))return;
+    if(!confirm(`Izbrišem tekmo ${g.home||'Celje'} – ${g.opponent} (${g.date}) in vse njene akcije?${cloudOn&&!g.imported?' Izbrisala se bo za vse.':''}`))return;
     db().games=db().games.filter(x=>x.id!==g.id);save();render();toast('Tekma izbrisana.');
   });
 };
