@@ -88,6 +88,14 @@ renderMatches=function(){
   cloudRenderMatches();
   if(cloudOn&&!cloudUser)$('#view-matches').insertAdjacentHTML('afterbegin',`<div class="lv-start"><div><p class="eyebrow">Samo ogled</p><h2>Tekme Celja v živo</h2><p>Rezultati in akcije se osvežujejo sami. Za vnos tekem se prijavi.</p></div><div class="lv-startbtns"><button class="btn lime lv-startbig" data-cloud-login>Prijava za vnos</button></div></div>`);
   $$('[data-cloud-login]').forEach(b=>b.onclick=cloudSignIn);
+  // Brisanje neposredno s seznama (odprte in zaključene tekme); s skupno bazo samo skrbnik.
+  if(cloudOn&&!cloudAdmin())return;
+  $$('#view-matches [data-open]').forEach(b=>{b.insertAdjacentHTML('afterend',`<button class="btn small danger" data-del-game="${b.dataset.open}">Izbriši</button>`)});
+  $$('[data-del-game]').forEach(b=>b.onclick=()=>{
+    const g=db().games.find(x=>x.id===b.dataset.delGame);if(!g)return;
+    if(!confirm(`Izbrišem tekmo Celje – ${g.opponent} (${g.date}) in vse njene akcije?${cloudOn&&!g.imported?' Izbrisala se bo za vse.':''}`))return;
+    db().games=db().games.filter(x=>x.id!==g.id);save();render();toast('Tekma izbrisana.');
+  });
 };
 const cloudRenderExports=renderExports;
 renderExports=function(){
