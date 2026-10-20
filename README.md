@@ -1,6 +1,6 @@
 # Rokomet Celje – analitika tekem
 
-Odzivna spletna aplikacija za namizni in mobilni brskalnik. Podatki se shranjujejo v `localStorage` naprave. Ko je nastavljena **skupna baza** (Firebase, glej spodaj), se tekme samodejno delijo: vsak s povezavo jih gleda v živo, prijavljeni z Google računom jih vnašajo, briše jih samo skrbnik.
+Odzivna spletna aplikacija za namizni in mobilni brskalnik. Podatki se shranjujejo v `localStorage` naprave. Ko je nastavljena **skupna baza** (Firebase, glej spodaj), se tekme samodejno delijo: vsak s povezavo jih gleda v živo, prijavljeni (Google račun ali katerikoli e-poštni naslov z geslom) jih vnašajo, briše jih samo skrbnik.
 
 ## Zagon
 
@@ -11,7 +11,7 @@ Odzivna spletna aplikacija za namizni in mobilni brskalnik. Podatki se shranjuje
 ## Skupna baza (Firebase)
 
 1. Na https://console.firebase.google.com ustvari projekt in vanj dodaj spletno aplikacijo (`</>`). Vrednosti iz `firebaseConfig` prepiši v `firebase-config.js`.
-2. **Authentication → Sign-in method → Google → Enable**. V **Authentication → Settings → Authorized domains** dodaj `isvrljuga.github.io`.
+2. **Authentication → Sign-in method**: vklopi **Google** in **Email/Password**. V **Authentication → Settings → Authorized domains** dodaj `isvrljuga.github.io`.
 3. **Firestore Database → Create database** (production mode), nato v zavihek **Rules** prilepi vsebino `firestore.rules`.
 4. Odpri aplikacijo, se prijavi in v zavihku **Izvoz** prepiši svoj ID v `adminUids` v `firebase-config.js` in namesto `SKRBNIK_ID` v pravilih (Rules → Publish).
 
