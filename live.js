@@ -5,7 +5,8 @@ const LIVE_KINDS=[['shot','Strel'],['assist','Asistenca'],['foul','Prekršek'],[
 const LIVE_OPP_KINDS=[['shot','Strel nasprotnic'],['exclusion','Izključitev']];
 const LIVE_SHOT=[['9M','9 m'],['6M','6 m'],['7M','7 m'],['wing','Krilo'],['break','Prodor'],['fast','Protinapad']];
 const LIVE_RESULT=[['goal','Gol','good'],['save','Obramba','mid'],['miss','Zgrešen','bad']];
-const LIVE_FOUL=[['POA','V obrambi','aktiven'],['PON','V obrambi','neaktiven'],['PNA','V napadu','aktiven'],['PNN','V napadu','neaktiven']];
+const LIVE_FOUL=[['POA','Naš v obrambi','aktiven'],['PON','Naš v obrambi','neaktiven'],['PNA','Pridobljen','prekršek nasprotnice · aktiven'],['PNN','Pridobljen','prekršek nasprotnice · neaktiven']];
+const LIVE_OWN_FOUL=['POA','PON'];
 const LIVE_EXCL=[['2','2 minuti'],['4','4 minute'],['red','Rdeči karton']];
 const LIVE_MODES=[['full','Napad in obramba'],['attack','Samo napad'],['defense','Samo obramba']];
 const LIVE_OPP='__opp';
@@ -16,7 +17,7 @@ function liveKindsFor(p){
   return LIVE_KINDS;
 }
 let liveSel={person:null,kind:null,shot:null,seven:false,two:false},liveOpts=[],liveTimer=null,liveFlashT=null,liveGameId=null;
-let liveSub={out:null,ret:null,pick:[]},liveExpired=new Set();
+let liveSub={out:null,ret:null,pick:[]},liveExpired=new Set(),liveBlameAsk=null;
 const LIVE_COURT_MAX=7;
 
 // Enkratna dopolnitev seznama mladink (obstoječi podatki v brskalniku ne vzamejo novih SEEDS).
@@ -43,7 +44,17 @@ function liveFlash(msg){const t=$('#lvToast');if(!t)return;t.textContent=msg;t.c
 function liveAdd(g,e){
   const L=liveState(g),sec=liveSec(L);
   const ev=Object.assign({id:id(),created:new Date().toISOString(),half:L.half,minute:Math.floor(sec/60)},e);
-  g.events.push(ev);save();liveClear();renderLive(g);liveFlash(`Shranjeno · ${liveWho(ev)} · ${liveDesc(ev)}`);
+  const prev=g.events[g.events.length-1];
+  g.events.push(ev);
+  liveBlameAsk=ev.type==='shot'&&ev.side==='opponent'&&ev.result==='goal'&&!(prev?.type==='blame'&&prev.half===ev.half&&prev.minute>=ev.minute-1)?{half:ev.half,minute:ev.minute}:null;
+  save();liveClear();renderLive(g);liveFlash(`Shranjeno · ${liveWho(ev)} · ${liveDesc(ev)}`);
+}
+// Prekršek: naš (v obrambi) z 2 min pošlje igralko na klop; pridobljen z 2 min zapiše izključitev nasprotnice.
+function liveFoul(g,P,k,seven,two){
+  const own=LIVE_OWN_FOUL.includes(k),ev=livePush(g,{type:'foul',person:P,code:k,seven,twoMin:two});
+  if(two){if(own)liveExclude(g,P,'2');else livePush(g,{type:'exclusion',forTeam:'opponent',forPersonType:'bench',person:'Nasprotna klop / vratarka',duration:'2'})}
+  liveBlameAsk=null;save();liveClear();renderLive(g);
+  liveFlash(`Shranjeno · ${liveWho(ev)} · ${liveDesc(ev)}${two?(own?' · 2 min, gre na klop':' · izključitev nasprotnice'):''}`);
 }
 function livePush(g,e){const L=liveState(g);const ev=Object.assign({id:id(),created:new Date().toISOString(),half:L.half,minute:Math.floor(liveSec(L)/60)},e);g.events.push(ev);return ev}
 function liveOpenCourt(g,p,mode='full'){const L=liveState(g);L.court[p]={half:L.half,start:liveHalfMin(liveSec(L)),mode}}
@@ -85,8 +96,9 @@ function liveGroups(g){
     {title:S.shot?'Izid · dotik shrani':'Izid · najprej tip strela',cls:'g3 big',items:LIVE_RESULT.map(([k,l,t])=>mk(l,opp?`V golu: ${shortName(L.keeper)}`:'',`res-${t}${S.shot?'':' dis'}`,()=>{if(S.shot)liveAdd(g,{type:'shot',side:opp?'opponent':'celje',shot:S.shot,result:k,person:opp?'':P,keeper:opp?L.keeper:''})}))}]};
   if(S.kind==='assist')return {title:'Asistenca',groups:[{title:'Izid akcije · dotik shrani',cls:'g2',items:TYPES.assist.map(([k,l])=>mk(l,'','',()=>liveAdd(g,{type:'assist',person:P,code:k})))}]};
   if(S.kind==='foul')return {title:'Prekršek',groups:[
-    {title:'Posledica (neobvezno)',cls:'g2',items:[mk('→ 7 m','vodil v sedemmetrovko',`tog${S.seven?' sel':''}`,()=>{liveSel.seven=!S.seven;renderLive(g)}),mk('+ 2 min','sledila izključitev',`tog${S.two?' sel':''}`,()=>{liveSel.two=!S.two;renderLive(g)})]},
-    {title:'Tip prekrška · dotik shrani',cls:'g2',items:LIVE_FOUL.map(([k,l,sub])=>mk(l,sub,'',()=>liveAdd(g,{type:'foul',person:P,code:k,seven:S.seven,twoMin:S.two})))}]};
+    {title:'Posledica (neobvezno)',cls:'g2',items:[mk('→ 7 m','vodil v sedemmetrovko',`tog${S.seven?' sel':''}`,()=>{liveSel.seven=!S.seven;renderLive(g)}),mk('+ 2 min','izključitev (naša igralka gre na klop)',`tog${S.two?' sel':''}`,()=>{liveSel.two=!S.two;renderLive(g)})]},
+    {title:'Naš prekršek (v obrambi) · dotik shrani',cls:'g2',items:LIVE_FOUL.filter(f=>LIVE_OWN_FOUL.includes(f[0])).map(([k,l,sub])=>mk(l,sub,'',()=>liveFoul(g,P,k,S.seven,S.two)))},
+    {title:'Prekršek nasprotnice (pridobljen) · dotik shrani',cls:'g2',items:LIVE_FOUL.filter(f=>!LIVE_OWN_FOUL.includes(f[0])).map(([k,l,sub])=>mk(l,sub,'',()=>liveFoul(g,P,k,S.seven,S.two)))}]};
   if(S.kind==='error')return {title:'Napaka',groups:[{title:'Vrsta · dotik shrani',cls:'g2 big',items:TYPES.error.map(([k,l])=>mk(l,'','',()=>liveAdd(g,{type:'error',person:P,code:k})))}]};
   if(S.kind==='gain')return {title:'Dobljena žoga',groups:[{title:'Vrsta · dotik shrani',cls:'g2 big',items:TYPES.gain.map(([k,l])=>mk(l,'','',()=>liveAdd(g,{type:'gain',person:P,code:k})))}]};
   if(S.kind==='blame')return {title:'Krivda',groups:[{title:'Potrdi · dotik shrani',cls:'g1 big',items:[mk('Krivda za prejeti gol','−0,5 točke pri novem indeksu','res-bad',()=>liveAdd(g,{type:'blame',person:P}))]}]};
@@ -103,6 +115,7 @@ const LIVE_ICON={
   undo:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 14L4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 010 11H11"/></svg>',
   swap:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4L3 8l4 4"/><path d="M3 8h14"/><path d="M17 20l4-4-4-4"/><path d="M21 16H7"/></svg>',
   grid:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg>',
+  calc:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 10-2.3 5.7"/><path d="M20 4v7h-7"/></svg>',
   list:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/></svg>'
 };
 
@@ -135,6 +148,7 @@ function renderLive(g){
       <button class="lv-play ${L.since?'run':''}" data-lv="run" aria-label="${L.since?'Ustavi uro':'Zaženi uro'}">${L.since?LIVE_ICON.pause:LIVE_ICON.play}<span class="lv-txt">${L.since?'Pavza':'Start'}</span></button>
     </div>
   </header>
+  ${liveBlameAsk?liveBlameHtml(L):''}
   <nav class="lv-crumbs" aria-label="Koraki vnosa">
     <button class="${S.person?'done':'cur'}" data-lv="clear">1 · ${esc(S.person?selName:'Igralka')}</button>
     <button class="${S.kind?'done':S.person?'cur':''}" data-lv="unkind">2 · ${esc(S.kind?liveLab(liveKindsFor(S.person),S.kind):'Akcija')}</button>
@@ -163,6 +177,7 @@ function renderLive(g){
     <div class="lv-loglabel"><p class="lv-lbl">Zadnje</p><small>${g.events.length} akcij</small></div>
     ${log}
     <button class="lv-btn ${scr==='subs'?'on':''} ${exDone?'alert':''}" data-lv="${scr==='subs'?'entry':'subs'}" aria-label="${scr==='subs'?'Nazaj na akcije':'Menjave in izključitve'}">${scr==='subs'?LIVE_ICON.grid:LIVE_ICON.swap}<span class="lv-txt">${scr==='subs'?'Akcije':'Menjave'}</span>${ex.length?`<i class="lv-cnt">${ex.length}</i>`:''}</button>
+    <button class="lv-btn lv-wide" data-lv="recalc" aria-label="Preračunaj tekmo">${LIVE_ICON.calc}<span class="lv-txt">Preračunaj</span></button>
     <button class="lv-btn" data-lv="classic" aria-label="Zapisnik in zaključek tekme">${LIVE_ICON.list}<span class="lv-txt">Zapisnik</span></button>
     <button class="lv-btn" data-lv="undo" aria-label="Razveljavi zadnjo akcijo" ${g.events.length?'':'disabled'}>${LIVE_ICON.undo}<span class="lv-txt">Razveljavi</span></button>
   </footer>
@@ -170,6 +185,61 @@ function renderLive(g){
 </div>`;
   $('#live').onclick=ev=>liveClick(g,ev);
   liveStartTimer();
+}
+
+function liveBlameHtml(L){
+  const keepers=new Set(db().roster.keepers);let names=Object.keys(L.court).filter(p=>!keepers.has(p));
+  if(!names.length)names=db().roster.players;
+  return `<div class="lv-blame" role="group" aria-label="Krivda za prejeti gol"><b>Prejet gol (${liveBlameAsk.half}. P ${liveBlameAsk.minute}') – krivda naše igralke?</b><div class="lv-blamebtns">${names.map(p=>`<button class="lv-chip" data-blame="${esc(p)}">${esc(shortName(p))}</button>`).join('')}<button class="lv-chip" data-lv="blameNone">Brez krivde</button></div></div>`;
+}
+
+// Preračun tekme iz zapisanih akcij: zaključi odprte vnose igralnega časa, odpravi prekrivanja,
+// odšteje čas izključitev in preveri seštevek (vratarke = odigrani čas, igralke = 6 × čas − izključitve).
+function liveRecalc(g){
+  const L=liveState(g),keepers=new Set(db().roster.keepers),sec=liveSec(L);
+  const ended=g.complete||(L.half==='2'&&sec>=1800),fix={closed:0,merged:0,excl:0};
+  for(const [p,c] of Object.entries(L.court)){
+    if(c.half==='1'&&L.half==='2'){livePush(g,{type:'time',person:p,mode:c.mode,half:'1',start:c.start,end:30});L.court[p]={half:'2',start:0,mode:c.mode};fix.closed++}
+    if(ended){liveCloseCourt(g,p);fix.closed++}
+  }
+  const keyOf=(p,h)=>`${p}\u0001${h}`,spans=new Map(),exclusions=g.events.filter(e=>e.type==='exclusion'&&e.forTeam==='celje'&&e.forPersonType!=='bench');
+  for(const e of g.events){if(e.type!=='time')continue;const s=Math.max(0,Number(e.start)),t=Math.min(30,Number(e.end));if(!(t>s))continue;const k=keyOf(e.person,e.half);(spans.get(k)||spans.set(k,[]).get(k)).push({s,t,mode:e.mode||'full'})}
+  const rebuilt=[];
+  for(const [k,list] of spans){
+    const [person,half]=k.split('\u0001');list.sort((a,b)=>a.s-b.s);
+    let merged=[];for(const x of list){const last=merged[merged.length-1];if(last&&x.s<=last.t){if(x.s<last.t)fix.merged++;last.t=Math.max(last.t,x.t)}else merged.push({...x})}
+    for(const ex of exclusions.filter(e=>e.person===person)){
+      const from=(ex.half==='2'?30:0)+Number(ex.minute),to=from+(ex.duration==='4'?4:2),off=half==='2'?30:0;
+      const a=from-off,b=to-off;if(b<=0||a>=30)continue;
+      const next=[];for(const x of merged){if(b<=x.s||a>=x.t){next.push(x);continue}fix.excl++;if(a>x.s)next.push({...x,t:a});if(b<x.t)next.push({...x,s:b})}merged=next;
+    }
+    for(const x of merged)if(x.t>x.s)rebuilt.push({id:id(),type:'time',created:new Date().toISOString(),person,mode:x.mode,half,start:x.s,end:x.t});
+  }
+  const at=e=>(e.half==='2'?30:0)+(e.type==='time'?Number(e.end):Number(e.minute)||0);
+  g.events=g.events.filter(e=>e.type!=='time').concat(rebuilt).map((e,i)=>[e,i]).sort((a,b)=>at(a[0])-at(b[0])||a[1]-b[1]).map(x=>x[0]);
+  const played=ended?60:Math.min(30,(L.secs['1']||0)/60)+(L.half==='2'?Math.min(30,sec/60):0);
+  const mins={};for(const e of rebuilt)mins[e.person]=(mins[e.person]||0)+(e.end-e.start);
+  for(const p of Object.keys(L.court)){const c=L.court[p];mins[p]=(mins[p]||0)+Math.max(0,(c.half===L.half?sec/60:30)-c.start)}
+  const exclMin=exclusions.reduce((n,e)=>n+(e.duration==='4'?4:2),0);
+  const sum=f=>Object.entries(mins).filter(([p])=>f(p)).reduce((n,[,m])=>n+m,0);
+  const goalsAgainst=g.events.filter(e=>e.type==='shot'&&e.side==='opponent'&&e.result==='goal').length,blames=g.events.filter(e=>e.type==='blame').length;
+  save();
+  return {fix,played,ended,keeper:sum(p=>keepers.has(p)),field:sum(p=>!keepers.has(p)),expKeeper:played,expField:Math.max(0,6*played-exclMin),exclMin,mins,goalsAgainst,blames};
+}
+function liveRecalcDialog(g){
+  const r=liveRecalc(g),f=x=>fmt(Math.round(x*10)/10),ok=(a,b)=>Math.abs(a-b)<.6;
+  const row=(label,a,b,note)=>`<tr><td>${label}</td><td>${f(a)}</td><td>${f(b)}</td><td style="color:${ok(a,b)?'#2f6b1f':'var(--red)'};font-weight:800">${ok(a,b)?'✓':(a>b?'+':'')+f(a-b)}</td></tr>${note?`<tr><td colspan="4" class="muted" style="font-size:12px">${note}</td></tr>`:''}`;
+  const keepers=new Set(db().roster.keepers),players=Object.entries(r.mins).sort((a,b)=>b[1]-a[1]);
+  const overlay=document.createElement('div');overlay.className='modal-backdrop';
+  overlay.innerHTML=`<div class="modal"><div class="panel-head"><div><p class="eyebrow">${r.ended?'Tekma zaključena':'Tekma v teku'} · odigrano ${f(r.played)} min</p><h2>Preračun tekme</h2></div><button class="btn small" data-close>Zapri</button></div>
+    <p class="muted" style="margin-top:0">Zaprtih vnosov: ${r.fix.closed} · odpravljenih prekrivanj: ${r.fix.merged} · upoštevanih izključitev: ${r.fix.excl}</p>
+    <div class="tablescroll"><table class="table"><thead><tr><th>Igralni čas</th><th>Zapisano</th><th>Pričakovano</th><th>Razlika</th></tr></thead><tbody>
+    ${row('Vratarke',r.keeper,r.expKeeper)}${row('Igralke v polju',r.field,r.expField,`6 × ${f(r.played)} min − ${f(r.exclMin)} min izključitev`)}</tbody></table></div>
+    ${r.goalsAgainst>r.blames?`<div class="hint">Prejetih golov: ${r.goalsAgainst}, zapisanih krivd: ${r.blames}. Krivdo lahko dodaš pri igralki (akcija Krivda).</div>`:''}
+    ${ok(r.field,r.expField)&&ok(r.keeper,r.expKeeper)?'':'<div class="hint">Razlika pomeni, da kakšna menjava ni bila vpisana. Popravi jo v Menjave (ali v Zapisniku izbriši napačen vnos igralnega časa) in znova preračunaj.</div>'}
+    <div class="tablescroll" style="margin-top:12px"><table class="table"><thead><tr><th>Igralka</th><th>Minute</th></tr></thead><tbody>${players.map(([p,m])=>`<tr><td>${esc(p)}${keepers.has(p)?' · vrat.':''}</td><td>${f(m)}</td></tr>`).join('')||'<tr><td colspan="2">Ni zapisanega igralnega časa.</td></tr>'}</tbody></table></div></div>`;
+  document.body.appendChild(overlay);overlay.querySelector('[data-close]').onclick=()=>overlay.remove();overlay.onclick=e=>{if(e.target===overlay)overlay.remove()};
+  renderGame();
 }
 
 function liveSubsHtml(g,L,lineup){
@@ -222,6 +292,7 @@ function liveClick(g,ev){
   if(d.lvOpt!==undefined){liveOpts[Number(d.lvOpt)]?.();return}
   if(d.lvKeeper){L.keeper=d.lvKeeper;save();renderLive(g);return}
   if(liveSubClick(g,L,d))return;
+  if(d.blame&&liveBlameAsk){const ev=livePush(g,{type:'blame',person:d.blame,half:liveBlameAsk.half,minute:liveBlameAsk.minute});liveBlameAsk=null;save();renderLive(g);liveFlash(`Shranjeno · ${liveWho(ev)} · krivda za prejeti gol`);return}
   switch(d.lv){
     case 'back':livePause(L);save();liveClear();gameId=null;view='matches';render();break;
     case 'classic':setLivePref(false);liveClear();renderGame();break;
@@ -231,6 +302,8 @@ function liveClick(g,ev){
     case 'run':if(L.since)livePause(L);else if(liveSec(L)<1800)L.since=Date.now();save();renderLive(g);break;
     case 'clear':liveClear();renderLive(g);break;
     case 'unkind':if(liveSel.person){liveSel.kind=null;liveSel.shot=null;liveSel.seven=false;liveSel.two=false;renderLive(g)}break;
+    case 'recalc':liveRecalcDialog(g);break;
+    case 'blameNone':liveBlameAsk=null;renderLive(g);break;
     case 'undo':if(g.events.length){const e=g.events.pop();if(e.type==='exclusion')L.excl=liveExcl(L).filter(x=>x.ev!==e.id);save();renderLive(g);liveFlash('Zadnja akcija razveljavljena.')}break;
     case 'subs':L.screen='subs';liveClear();liveSub.out=liveSub.ret=null;save();renderLive(g);break;
     case 'entry':L.screen='entry';liveSub.out=liveSub.ret=null;save();renderLive(g);break;
@@ -248,10 +321,14 @@ function liveStartTimer(){
     const L=g.live,sec=liveSec(L),m=Math.floor(sec/60);
     clock.textContent=`${String(m).padStart(2,'0')}:${String(sec%60).padStart(2,'0')}`;
     $('#lvQuarter').textContent=`${qName(quarter(L.half,m))} min`;
-    if(L.since&&sec>=1800){livePause(L);save();renderLive(g);liveFlash(`Konec ${L.half}. polčasa.`);return}
-    let expired=null;
-    for(const x of liveExcl(L)){const left=liveLeft(L,x);$$(`[data-excl-left="${x.id}"]`).forEach(el=>el.textContent=left>0?liveMMSS(left):'vrnitev');if(left<=0&&!liveExpired.has(x.id)){liveExpired.add(x.id);expired=x}}
-    if(expired){renderLive(g);liveFlash(`${shortName(expired.person)} · izključitev je potekla – vpiši vrnitev v Menjave`)}
+    if(L.since&&sec>=1800){livePause(L);if(L.half==='2'){for(const p of Object.keys(L.court))liveCloseCourt(g,p)}save();renderLive(g);liveFlash(L.half==='2'?'Konec tekme – igralni čas je zaključen.':'Konec 1. polčasa.');return}
+    let expired=null,back=null;
+    for(const x of [...liveExcl(L)]){const left=liveLeft(L,x);$$(`[data-excl-left="${x.id}"]`).forEach(el=>el.textContent=left>0?liveMMSS(left):'vrnitev');if(left>0||liveExpired.has(x.id))continue;liveExpired.add(x.id);
+      // Po izteku se ista igralka sama vrne na igrišče (trener jo lahko nato zamenja v Menjave), če je prostor.
+      const active=liveExcl(L).filter(y=>y!==x&&liveLeft(L,y)>0).length;
+      if(x.returnable&&!L.court[x.person]&&Object.keys(L.court).length<LIVE_COURT_MAX-active){L.excl=liveExcl(L).filter(y=>y!==x);liveOpenCourt(g,x.person);back=x}else expired=x}
+    if(back){save();renderLive(g);liveFlash(`${shortName(back.person)} se je vrnila po izključitvi – v Menjave jo lahko zamenjaš`)}
+    else if(expired){renderLive(g);liveFlash(`${shortName(expired.person)} · izključitev je potekla – vpiši vrnitev v Menjave`)}
   },1000);
 }
 
@@ -287,5 +364,6 @@ renderGame=function(){
   if(g&&!g.imported&&!g.complete&&livePref()){if(liveGameId!==g.id){liveClear();liveSub={out:null,ret:null,pick:[]};liveExpired=new Set((g.live?.excl||[]).filter(x=>liveLeft(g.live,x)<=0).map(x=>x.id))}renderLive(g);return}
   classicRenderGame();
   if(g&&!g.imported&&!g.complete){$('#backGames')?.insertAdjacentHTML('afterend','<button class="btn small lime" id="openLive">Vnos v živo</button>');$('#openLive').onclick=()=>{setLivePref(true);renderGame()}}
+  if(g&&!g.imported&&$('#backGames')){$('#backGames').insertAdjacentHTML('afterend','<button class="btn small" id="recalcGame">Preračunaj tekmo</button>');$('#recalcGame').onclick=()=>liveRecalcDialog(g)}
 };
 render();
