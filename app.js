@@ -13,7 +13,7 @@ const SEEDS = {
   members:{players:['Lara Kolobarič','Zala Petek','Sarah Pilih Derča','Ella Podergajs','Lenja Ripnak','Alja Vrček','Ajla Mehulić','Vita Sečki','Zoja Verbovšek','Tinkara Korošec','Ela Adamič','Lina Kolobarič','Zala Kuri','Pia Kljun','Lana Švrljuga','Kaja Krebs','Larissa Zukič','Lana Kačičnik','Tiana Novak','Tia Kavalar'],keepers:['Nika Kuri','Zoja Brglez']},
   juniors:{players:['Zala Petek','Sarah Pilih Derča','Lenja Ripnak','Ajla Mehulić','Vita Sečki','Zoja Verbovšek','Tinkara Korošec','Lina Kolobarič','Zala Kuri','Pia Kljun','Lana Švrljuga','Teja Jereb','Zoja Jurak','Brina Mernik','Larissa Zukić','Tiana Novak','Tia Kavalar'],keepers:['Nika Kuri','Zoja Brglez']}
 };
-SEEDS.cadets={players:[],keepers:['Zoja Brglez','Kaja Vrbančič']};
+SEEDS.cadets={players:['Teja Jereb','Taja Lešnik','Alina Novak','Eva Gobec','Zoja Jurak','Neli Reher','Neja Šlogar','Sofija Čelan','Pia Vrečer','Zoja Rea Privšek','Lina Kristavčnik','Brina Mernik','Mia Kostić','Oriana Rozoničnik','Eva Pavlič Novak','Tia Topličanec'],keepers:['Zoya Brglez','Kaja Vrbančič']};
 SEEDS.other={players:[],keepers:[]};
 const TEAM_LABELS={members:'Članice',juniors:'Mladinke',cadets:'Kadetinje',other:'Ostalo'};
 const blank=()=>({teams:Object.fromEntries(Object.keys(SEEDS).map(t=>[t,{roster:structuredClone(SEEDS[t]),games:[]}]))});
