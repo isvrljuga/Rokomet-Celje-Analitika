@@ -7,6 +7,9 @@ let cloudUser=null,cloudDb=null,cloudReady=false,cloudTimer=null;
 let cloudSent={},cloudRemote={},cloudRosterSent={};
 
 function cloudAdmin(){return !!cloudUser&&(CLOUD.adminUids||[]).includes(cloudUser.uid)}
+// Urejati sme skrbnik ali tisti, ki je tekmo ustvaril; nova (še neposlana) tekma je od trenutnega uporabnika.
+function cloudOwner(gid){return cloudRemote[gid]?cloudRemote[gid].owner||null:cloudUser?.uid||null}
+function cloudCanEdit(g){return !cloudOn||!g||g.imported||cloudAdmin()||(!!cloudUser&&cloudOwner(g.id)===cloudUser.uid)}
 function cloudGameJson(g){const {updatedAt,...rest}=g;return JSON.stringify(rest)}
 function cloudLoadScript(src){return new Promise((res,rej)=>{const s=document.createElement('script');s.src=src;s.onload=res;s.onerror=rej;document.head.appendChild(s)})}
 function cloudStatus(text){const c=$('.connection');if(c)c.innerHTML=`<span class="dot"></span> ${esc(text)}`}
@@ -30,9 +33,10 @@ function cloudPush(){
   const local=new Map();
   for(const t of CLOUD_TEAMS)for(const g of state.teams[t].games){if(g.imported)continue;local.set(g.id,{t,g})}
   for(const [gid,{t,g}] of local){
-    const j=cloudGameJson(g);if(cloudSent[gid]===j)continue;
+    const j=cloudGameJson(g);if(cloudSent[gid]===j||!cloudCanEdit(g))continue;
     cloudSent[gid]=j;g.updatedAt=Date.now();
-    cloudDb.collection('games').doc(gid).set({team:t,json:j,updatedAt:g.updatedAt,by:cloudUser.uid,byName:cloudUser.displayName||''}).catch(e=>{delete cloudSent[gid];cloudErr(e)});
+    const r=cloudRemote[gid],owner=r?.owner||cloudUser.uid,ownerName=r?.owner?r.ownerName||'':cloudUser.displayName||'';
+    cloudDb.collection('games').doc(gid).set({team:t,json:j,updatedAt:g.updatedAt,owner,ownerName,by:cloudUser.uid,byName:cloudUser.displayName||''}).catch(e=>{delete cloudSent[gid];cloudErr(e)});
   }
   // Brisanje: posamezna tekma, ki je skrbnik ni več imel, se izbriše; več hkrati (npr. uvoz kopije) se ne briše.
   const missing=Object.keys(cloudRemote).filter(gid=>!local.has(gid));
@@ -51,7 +55,7 @@ function cloudOnGames(snap){
     const list=state.teams[d.team]?.games;if(!list)return;
     const i=list.findIndex(x=>x.id===gid);
     // Prijavljen vnašalec obdrži svojo novejšo, še neposlano različico.
-    if(i>=0&&cloudUser&&(list[i].updatedAt||0)>d.updatedAt)return;
+    if(i>=0&&cloudCanEdit(list[i])&&cloudUser&&(list[i].updatedAt||0)>d.updatedAt)return;
     const g=Object.assign(JSON.parse(d.json),{updatedAt:d.updatedAt});
     if(i>=0)list[i]=g;else list.push(g);
     cloudSent[gid]=d.json;changed=true;
@@ -79,10 +83,14 @@ save=function(){cloudLocalSave();if(cloudOn&&cloudReady){clearTimeout(cloudTimer
 
 const cloudRenderGame=renderGame;
 renderGame=function(){
-  const g=game();
-  if(cloudOn&&!cloudUser&&g&&!g.imported)classicRenderGame();else cloudRenderGame();
+  const g=game(),ro=cloudOn&&!!g&&!cloudCanEdit(g);
+  document.body.classList.toggle('ro',cloudOn&&(!cloudUser||ro));
+  if(ro)classicRenderGame();else cloudRenderGame();
+  if(ro&&cloudUser){const r=cloudRemote[g.id];$('#view-game .match-banner')?.insertAdjacentHTML('afterend',`<div class="hint" style="margin:0 0 16px">Samo ogled – tekmo vnaša ${esc(r?.ownerName||'drug uporabnik')}. Urejati jo lahko le on in skrbnik.</div>`)}
   if(cloudOn&&g&&!g.imported&&$('#backGames')){$('#backGames').insertAdjacentHTML('afterend','<button class="btn small" id="shareGame">Kopiraj povezavo</button>');$('#shareGame').onclick=()=>cloudCopy(g.id)}
 };
+const cloudRender=render;
+render=function(){cloudUi();cloudRender()};
 const cloudRenderMatches=renderMatches;
 renderMatches=function(){
   cloudRenderMatches();
