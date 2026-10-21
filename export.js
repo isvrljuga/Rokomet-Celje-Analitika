@@ -191,3 +191,22 @@ function matchWorkbook(){
   return [{name:'Skupno igralke',rows:sum},{name:'Skupno ekipa',rows:team},...built.map(b=>({name:xpSheetName(b.g.opponent,used),rows:b.rows})),overviewElementsSheet()];
 }
 newWorkbook=matchWorkbook;
+
+// Skupni pregled: delež igralnega časa in indeks na čas po istem pravilu kot v izvozu.
+// Možni čas igralke v polju je vsota (360 − naše izključitve) / 6 po tekmah, vratarke 60 min na tekmo.
+const xpOverviewRender=renderOverview;
+renderOverview=function(){
+  xpOverviewRender();
+  const table=$('#view-overview table'),games=db().games;if(!table||!games.length)return;
+  const pot=games.reduce((n,g)=>n+xpData(g).potential,0),keepers=new Set(db().roster.keepers);
+  table.querySelector('thead tr').insertAdjacentHTML('beforeend','<th title="Igralni čas / možni čas">% časa</th><th title="Indeks / delež igralnega časa">Index na čas</th>');
+  for(const tr of table.querySelectorAll('tbody tr')){
+    const p=tr.cells[0].textContent.trim(),s=playerStats(p),share=s.minutes/(keepers.has(p)?60*games.length:pot||1);
+    tr.insertAdjacentHTML('beforeend',`<td>${share?fmt(share*100)+' %':'—'}</td><td class="xp-itime" data-new="${share?s.indexNew/share:''}" data-old="${share?s.indexOld/share:''}">${share?fmt(s.indexNew/share):'—'}</td>`);
+  }
+  table.querySelector('tfoot tr')?.insertAdjacentHTML('beforeend','<td></td><td></td>');
+  table.closest('.panel').insertAdjacentHTML('beforeend',`<div class="hint">Možni čas igralke v polju: ${fmt(pot)} min (vsota (360 − izključitve) / 6 po tekmah); vratarke ${60*games.length} min. % časa = igralni čas / možni čas; index na čas = index / delež časa. Minute samo v napadu ali samo v obrambi štejejo pol.</div>`);
+  const upd=mode=>$$('.xp-itime').forEach(c=>{if(c.dataset[mode]!=='')c.textContent=fmt(Number(c.dataset[mode]))});
+  $$('[data-index],[data-aggregate-index]').forEach(b=>b.addEventListener('click',()=>upd((b.dataset.index||b.dataset.aggregateIndex)==='old'?'old':'new')));
+};
+if(view==='overview')render();
