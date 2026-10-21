@@ -160,7 +160,7 @@ render();
 const EXCEL_IMPORT = {
   "format": "celje-excel-import",
   "version": 2,
-  "batchId": "celje-2026-six-matches-v1",
+  "batchId": "excel-2026-nov-index-v3",
   "teams": {
     "members": {
       "games": [
@@ -175,1200 +175,7 @@ const EXCEL_IMPORT = {
           "complete": true,
           "events": [],
           "imported": {
-            "version": 1,
-            "old": {
-              "rows": [
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "9Z",
-                  "quarters": [
-                    0,
-                    1,
-                    1,
-                    0
-                  ],
-                  "cell": "A6"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "9O",
-                  "quarters": [
-                    1,
-                    1,
-                    2,
-                    0
-                  ],
-                  "cell": "A7"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "9G",
-                  "quarters": [
-                    2,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A8"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "7O",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A9"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "7G",
-                  "quarters": [
-                    2,
-                    1,
-                    1,
-                    0
-                  ],
-                  "cell": "A10"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "9O",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A12"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "9G",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A13"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "6O",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A14"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "6G",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A15"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "7G",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A16"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "9Z",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A18"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "9O",
-                  "quarters": [
-                    0,
-                    1,
-                    1,
-                    0
-                  ],
-                  "cell": "A19"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "9G",
-                  "quarters": [
-                    1,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A20"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "7Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A21"
-                },
-                {
-                  "person": "Ella Podergajs",
-                  "code": "KO",
-                  "quarters": [
-                    2,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A23"
-                },
-                {
-                  "person": "Ella Podergajs",
-                  "code": "KG",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A24"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "KZ",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A26"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "KO",
-                  "quarters": [
-                    1,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A27"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "PDG",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A28"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "KG",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A30"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "6G",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A31"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "9O",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    2
-                  ],
-                  "cell": "A33"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "KZ",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A34"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "PDG",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A35"
-                },
-                {
-                  "person": "Ela Adamič",
-                  "code": "KO",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A37"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "9O",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    2
-                  ],
-                  "cell": "A39"
-                },
-                {
-                  "person": "Zala Kuri",
-                  "code": "6G",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A41"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "AO",
-                  "quarters": [
-                    2,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A45"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "AG",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A46"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "AZ",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A48"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "AO",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A49"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "A7",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A50"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "AO",
-                  "quarters": [
-                    0,
-                    1,
-                    2,
-                    0
-                  ],
-                  "cell": "A52"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "AG",
-                  "quarters": [
-                    0,
-                    2,
-                    0,
-                    0
-                  ],
-                  "cell": "A53"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "A7",
-                  "quarters": [
-                    1,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A54"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "AG",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A56"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "AG",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    2
-                  ],
-                  "cell": "A58"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "POA",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A62"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "PNA",
-                  "quarters": [
-                    3,
-                    1,
-                    2,
-                    2
-                  ],
-                  "cell": "A63"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "PNN",
-                  "quarters": [
-                    1,
-                    3,
-                    5,
-                    7
-                  ],
-                  "cell": "A64"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    1
-                  ],
-                  "cell": "A66"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "PNA",
-                  "quarters": [
-                    3,
-                    1,
-                    1,
-                    0
-                  ],
-                  "cell": "A67"
-                },
-                {
-                  "person": "Ella Podergajs",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A69"
-                },
-                {
-                  "person": "Ella Podergajs",
-                  "code": "PNN",
-                  "quarters": [
-                    1,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A70"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "POA",
-                  "quarters": [
-                    1,
-                    0,
-                    2,
-                    0
-                  ],
-                  "cell": "A72"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "PON",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A73"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "PNA",
-                  "quarters": [
-                    3,
-                    0,
-                    0,
-                    2
-                  ],
-                  "cell": "A74"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "PNN",
-                  "quarters": [
-                    1,
-                    0,
-                    1,
-                    1
-                  ],
-                  "cell": "A75"
-                },
-                {
-                  "person": "Alja Vrček",
-                  "code": "POA",
-                  "quarters": [
-                    1,
-                    2,
-                    1,
-                    0
-                  ],
-                  "cell": "A77"
-                },
-                {
-                  "person": "Alja Vrček",
-                  "code": "PNN",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A78"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    1
-                  ],
-                  "cell": "A80"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "PNA",
-                  "quarters": [
-                    1,
-                    3,
-                    3,
-                    2
-                  ],
-                  "cell": "A81"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "PNN",
-                  "quarters": [
-                    0,
-                    2,
-                    2,
-                    0
-                  ],
-                  "cell": "A82"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A84"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    2
-                  ],
-                  "cell": "A85"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "PNN",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A86"
-                },
-                {
-                  "person": "Ela Adamič",
-                  "code": "PNN",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A88"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A90"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "PNN",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A91"
-                },
-                {
-                  "person": "Zala Kuri",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A93"
-                },
-                {
-                  "person": "Zala Kuri",
-                  "code": "PON",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A94"
-                },
-                {
-                  "person": "Zala Kuri",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    1,
-                    1,
-                    0
-                  ],
-                  "cell": "A95"
-                },
-                {
-                  "person": "Zala Kuri",
-                  "code": "PNN",
-                  "quarters": [
-                    0,
-                    1,
-                    2,
-                    0
-                  ],
-                  "cell": "A96"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "NA",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A100"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "NN",
-                  "quarters": [
-                    3,
-                    0,
-                    2,
-                    0
-                  ],
-                  "cell": "A101"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "NA",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A103"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "NN",
-                  "quarters": [
-                    1,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A104"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "NN",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A106"
-                },
-                {
-                  "person": "Ella Podergajs",
-                  "code": "NA",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A108"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "NN",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A110"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "NA",
-                  "quarters": [
-                    0,
-                    2,
-                    1,
-                    1
-                  ],
-                  "cell": "A112"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "NN",
-                  "quarters": [
-                    0,
-                    1,
-                    1,
-                    0
-                  ],
-                  "cell": "A113"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "NN",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A115"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "NN",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A117"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "NA",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    3
-                  ],
-                  "cell": "A119"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "DA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A123"
-                },
-                {
-                  "person": "Ella Podergajs",
-                  "code": "DA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A125"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "DN",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A127"
-                },
-                {
-                  "person": "Tinkara Korošec",
-                  "code": "DA",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A129"
-                }
-              ],
-              "minutes": {
-                "Lara Kolobarič": 39,
-                "Zala Petek": 57.5,
-                "Sarah Pilih Derča": 32.5,
-                "Ella Podergajs": 44,
-                "Lenja Ripnak": 46.5,
-                "Alja Vrček": 42,
-                "Ajla Mehulić": 21,
-                "Vita Sečki": 13,
-                "Zoja Verbovšek": 19,
-                "Tinkara Korošec": 8.5,
-                "Ela Adamič": 8,
-                "Lina Kolobarič": 9,
-                "Zala Kuri": 8,
-                "Pia Kljun": 0,
-                "Lana Švrljuga": 0,
-                "Kaja Krebs": 0,
-                "Larissa Zukič": 0,
-                "Lana Kačičnik": 0,
-                "Tiana Novak": 0,
-                "Tia Kavalar": 0
-              },
-              "opponents": [
-                {
-                  "code": "9Z",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ]
-                },
-                {
-                  "code": "9O",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "9G",
-                  "quarters": [
-                    1,
-                    1,
-                    2,
-                    0
-                  ]
-                },
-                {
-                  "code": "KZ",
-                  "quarters": [
-                    2,
-                    0,
-                    1,
-                    1
-                  ]
-                },
-                {
-                  "code": "KO",
-                  "quarters": [
-                    1,
-                    3,
-                    0,
-                    1
-                  ]
-                },
-                {
-                  "code": "KG",
-                  "quarters": [
-                    2,
-                    2,
-                    1,
-                    4
-                  ]
-                },
-                {
-                  "code": "6Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "6O",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "6G",
-                  "quarters": [
-                    2,
-                    1,
-                    1,
-                    1
-                  ]
-                },
-                {
-                  "code": "PDZ",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "PDO",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                {
-                  "code": "PDG",
-                  "quarters": [
-                    0,
-                    1,
-                    3,
-                    1
-                  ]
-                },
-                {
-                  "code": "PTZ",
-                  "quarters": [
-                    2,
-                    1,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "PTO",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    2
-                  ]
-                },
-                {
-                  "code": "PTG",
-                  "quarters": [
-                    3,
-                    2,
-                    3,
-                    4
-                  ]
-                },
-                {
-                  "code": "7Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "7O",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "7G",
-                  "quarters": [
-                    2,
-                    2,
-                    1,
-                    2
-                  ]
-                }
-              ],
-              "keepers": [
-                {
-                  "person": "Nika Kuri",
-                  "minutes": 60,
-                  "conceded": 42,
-                  "shots": 50,
-                  "sevenSaves": 0
-                }
-              ],
-              "indices": {
-                "Tiana Novak": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Larissa Zukič": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Lina Kolobarič": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  -0.5
-                ],
-                "Zala Petek": [
-                  2.1,
-                  2.2,
-                  -0.9,
-                  3.1
-                ],
-                "Ella Podergajs": [
-                  -1.1,
-                  0.7,
-                  -0.2,
-                  1.4
-                ],
-                "Lenja Ripnak": [
-                  1.6,
-                  -0.2,
-                  0.4,
-                  0.4
-                ],
-                "Kaja Krebs": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Zoja Verbovšek": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  1.7
-                ],
-                "Ela Adamič": [
-                  0.0,
-                  0.0,
-                  -0.2,
-                  0.0
-                ],
-                "Zala Kuri": [
-                  0.0,
-                  0.0,
-                  0.4,
-                  1.8
-                ],
-                "Ajla Mehulić": [
-                  0.0,
-                  -2.1,
-                  -1.0,
-                  -0.3
-                ],
-                "Lana Švrljuga": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Lara Kolobarič": [
-                  4.2,
-                  0.9,
-                  -1.5,
-                  0.0
-                ],
-                "Vita Sečki": [
-                  0.0,
-                  2.8,
-                  0.0,
-                  -0.7
-                ],
-                "Lana Kačičnik": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Alja Vrček": [
-                  0.4,
-                  0.8,
-                  0.4,
-                  0.0
-                ],
-                "Pia Kljun": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Sarah Pilih Derča": [
-                  1.7,
-                  2.4,
-                  4.6,
-                  -0.4
-                ],
-                "Tinkara Korošec": [
-                  0.0,
-                  0.0,
-                  0.7,
-                  0.0
-                ],
-                "Tia Kavalar": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ]
-              },
-              "teamIndex": 25.6,
-              "file": "Celje članice sezona 2026 - stari index 2025.xlsx",
-              "sheet": "Ajdovščina"
-            },
+            "version": 2,
             "new": {
               "rows": [
                 {
@@ -1379,8 +186,7 @@ const EXCEL_IMPORT = {
                     1,
                     1,
                     0
-                  ],
-                  "cell": "B5"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -1390,8 +196,7 @@ const EXCEL_IMPORT = {
                     1,
                     2,
                     0
-                  ],
-                  "cell": "B6"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -1401,8 +206,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B7"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -1412,8 +216,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B8"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -1423,8 +226,7 @@ const EXCEL_IMPORT = {
                     1,
                     1,
                     0
-                  ],
-                  "cell": "B9"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -1434,8 +236,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B10"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -1445,8 +246,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B11"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -1456,8 +256,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B12"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -1467,8 +266,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B13"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -1478,8 +276,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B14"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -1489,8 +286,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B15"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -1500,8 +296,7 @@ const EXCEL_IMPORT = {
                     1,
                     1,
                     0
-                  ],
-                  "cell": "B16"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -1511,8 +306,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B17"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -1522,8 +316,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B18"
+                  ]
                 },
                 {
                   "person": "Ella Podergajs",
@@ -1533,8 +326,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B19"
+                  ]
                 },
                 {
                   "person": "Ella Podergajs",
@@ -1544,8 +336,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B20"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -1555,8 +346,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B21"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -1566,8 +356,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B22"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -1577,8 +366,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B23"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -1588,8 +376,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B24"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -1599,8 +386,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B25"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -1610,8 +396,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     2
-                  ],
-                  "cell": "B26"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -1621,8 +406,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B27"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -1632,8 +416,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B28"
+                  ]
                 },
                 {
                   "person": "Ela Adamič",
@@ -1643,8 +426,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B29"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -1654,8 +436,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     2
-                  ],
-                  "cell": "B30"
+                  ]
                 },
                 {
                   "person": "Zala Kuri",
@@ -1665,8 +446,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B31"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -1676,8 +456,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B34"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -1687,8 +466,7 @@ const EXCEL_IMPORT = {
                     1,
                     1,
                     0
-                  ],
-                  "cell": "B36"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -1698,8 +476,7 @@ const EXCEL_IMPORT = {
                     1,
                     2,
                     0
-                  ],
-                  "cell": "B37"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -1709,8 +486,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B38"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -1720,8 +496,7 @@ const EXCEL_IMPORT = {
                     1,
                     2,
                     2
-                  ],
-                  "cell": "B40"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -1731,8 +506,7 @@ const EXCEL_IMPORT = {
                     3,
                     5,
                     7
-                  ],
-                  "cell": "B41"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -1742,8 +516,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     1
-                  ],
-                  "cell": "B42"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -1753,8 +526,7 @@ const EXCEL_IMPORT = {
                     1,
                     1,
                     0
-                  ],
-                  "cell": "B44"
+                  ]
                 },
                 {
                   "person": "Ella Podergajs",
@@ -1764,8 +536,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B48"
+                  ]
                 },
                 {
                   "person": "Ella Podergajs",
@@ -1775,8 +546,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B49"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -1786,8 +556,7 @@ const EXCEL_IMPORT = {
                     0,
                     2,
                     0
-                  ],
-                  "cell": "B50"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -1797,8 +566,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B51"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -1808,8 +576,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     2
-                  ],
-                  "cell": "B52"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -1819,8 +586,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     1
-                  ],
-                  "cell": "B53"
+                  ]
                 },
                 {
                   "person": "Alja Vrček",
@@ -1830,8 +596,7 @@ const EXCEL_IMPORT = {
                     2,
                     1,
                     0
-                  ],
-                  "cell": "B54"
+                  ]
                 },
                 {
                   "person": "Alja Vrček",
@@ -1841,8 +606,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B57"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -1852,8 +616,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     1
-                  ],
-                  "cell": "B58"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -1863,8 +626,7 @@ const EXCEL_IMPORT = {
                     3,
                     3,
                     2
-                  ],
-                  "cell": "B60"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -1874,8 +636,7 @@ const EXCEL_IMPORT = {
                     2,
                     2,
                     0
-                  ],
-                  "cell": "B61"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -1885,8 +646,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B66"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -1896,8 +656,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     2
-                  ],
-                  "cell": "B68"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -1907,8 +666,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B69"
+                  ]
                 },
                 {
                   "person": "Ela Adamič",
@@ -1918,8 +676,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B77"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -1929,8 +686,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B80"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -1940,8 +696,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B81"
+                  ]
                 },
                 {
                   "person": "Zala Kuri",
@@ -1951,8 +706,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B83"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -1962,8 +716,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B88"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -1973,8 +726,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B89"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -1984,8 +736,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B90"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -1995,8 +746,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B91"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -2006,8 +756,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B92"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -2017,8 +766,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B93"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -2028,8 +776,7 @@ const EXCEL_IMPORT = {
                     1,
                     2,
                     0
-                  ],
-                  "cell": "B94"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -2039,8 +786,7 @@ const EXCEL_IMPORT = {
                     2,
                     0,
                     0
-                  ],
-                  "cell": "B95"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -2050,8 +796,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B96"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -2061,8 +806,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B97"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -2072,8 +816,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     2
-                  ],
-                  "cell": "B98"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -2083,8 +826,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B101"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -2094,8 +836,7 @@ const EXCEL_IMPORT = {
                     0,
                     2,
                     0
-                  ],
-                  "cell": "B102"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -2105,8 +846,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B103"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -2116,8 +856,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B104"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -2127,8 +866,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B105"
+                  ]
                 },
                 {
                   "person": "Ella Podergajs",
@@ -2138,8 +876,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B106"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -2149,8 +886,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B107"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -2160,8 +896,7 @@ const EXCEL_IMPORT = {
                     2,
                     1,
                     1
-                  ],
-                  "cell": "B108"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -2171,8 +906,7 @@ const EXCEL_IMPORT = {
                     1,
                     1,
                     0
-                  ],
-                  "cell": "B109"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -2182,8 +916,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B110"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -2193,8 +926,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B111"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -2204,8 +936,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     3
-                  ],
-                  "cell": "B112"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -2215,8 +946,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B115"
+                  ]
                 },
                 {
                   "person": "Ella Podergajs",
@@ -2226,8 +956,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B116"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -2237,8 +966,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B117"
+                  ]
                 },
                 {
                   "person": "Tinkara Korošec",
@@ -2248,8 +976,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B118"
+                  ]
                 }
               ],
               "minutes": {
@@ -2265,9 +992,7 @@ const EXCEL_IMPORT = {
                 "Tinkara Korošec": 8.5,
                 "Ela Adamič": 8,
                 "Lina Kolobarič": 9,
-                "Zala Kuri": 8,
-                "Pia Kljun": 0,
-                "Lana Švrljuga": 0
+                "Zala Kuri": 8
               },
               "opponents": [
                 {
@@ -2276,15 +1001,6 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1,
-                    0
-                  ]
-                },
-                {
-                  "code": "9O",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
                     0
                   ]
                 },
@@ -2298,48 +1014,12 @@ const EXCEL_IMPORT = {
                   ]
                 },
                 {
-                  "code": "6Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "6O",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
                   "code": "6G",
                   "quarters": [
                     2,
                     1,
                     1,
                     1
-                  ]
-                },
-                {
-                  "code": "7Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "7O",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
                   ]
                 },
                 {
@@ -2376,15 +1056,6 @@ const EXCEL_IMPORT = {
                     2,
                     1,
                     4
-                  ]
-                },
-                {
-                  "code": "PDZ",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
                   ]
                 },
                 {
@@ -2443,109 +1114,97 @@ const EXCEL_IMPORT = {
                   "otherRatio": "35/43"
                 }
               ],
+              "file": "Celje članice sezona 2026 nov index.xlsx",
+              "sheet": "Ajdovščina",
               "fouls": [
                 {
                   "person": "Lara Kolobarič",
                   "code": "POA",
                   "seven": 0,
-                  "twoMin": 1,
-                  "cell": "H34:I34"
+                  "twoMin": 1
                 },
                 {
                   "person": "Lara Kolobarič",
                   "code": "PNA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H36:I36"
+                  "twoMin": 0
                 },
                 {
                   "person": "Zala Petek",
                   "code": "POA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H38:I38"
+                  "twoMin": 0
                 },
                 {
                   "person": "Zala Petek",
                   "code": "PNA",
                   "seven": 2,
-                  "twoMin": 2,
-                  "cell": "H40:I40"
+                  "twoMin": 2
                 },
                 {
                   "person": "Sarah Pilih Derča",
                   "code": "POA",
                   "seven": 1,
-                  "twoMin": 1,
-                  "cell": "H42:I42"
+                  "twoMin": 1
                 },
                 {
                   "person": "Sarah Pilih Derča",
                   "code": "PNA",
                   "seven": 0,
-                  "twoMin": 1,
-                  "cell": "H44:I44"
+                  "twoMin": 1
                 },
                 {
                   "person": "Ella Podergajs",
                   "code": "PNA",
                   "seven": 1,
-                  "twoMin": 1,
-                  "cell": "H48:I48"
+                  "twoMin": 1
                 },
                 {
                   "person": "Lenja Ripnak",
                   "code": "POA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H50:I50"
+                  "twoMin": 0
                 },
                 {
                   "person": "Lenja Ripnak",
                   "code": "PNA",
                   "seven": 1,
-                  "twoMin": 1,
-                  "cell": "H52:I52"
+                  "twoMin": 1
                 },
                 {
                   "person": "Alja Vrček",
                   "code": "POA",
                   "seven": 2,
-                  "twoMin": 2,
-                  "cell": "H54:I54"
+                  "twoMin": 2
                 },
                 {
                   "person": "Ajla Mehulić",
                   "code": "POA",
                   "seven": 1,
-                  "twoMin": 1,
-                  "cell": "H58:I58"
+                  "twoMin": 1
                 },
                 {
                   "person": "Ajla Mehulić",
                   "code": "PNA",
                   "seven": 2,
-                  "twoMin": 2,
-                  "cell": "H60:I60"
+                  "twoMin": 2
                 },
                 {
                   "person": "Vita Sečki",
                   "code": "PNA",
                   "seven": 0,
-                  "twoMin": 1,
-                  "cell": "H64:I64"
+                  "twoMin": 1
                 },
                 {
                   "person": "Zoja Verbovšek",
                   "code": "POA",
                   "seven": 1,
-                  "twoMin": 1,
-                  "cell": "H66:I66"
+                  "twoMin": 1
                 }
               ],
               "summaries": {
                 "Lara Kolobarič": {
-                  "index": 1.999999999999999,
+                  "index": 2.3999999999999995,
                   "goal": 2,
                   "sevenGoal": 4,
                   "saves": 4,
@@ -2564,7 +1223,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 1
                 },
                 "Zala Petek": {
-                  "index": 8,
+                  "index": 8.399999999999999,
                   "goal": 3,
                   "sevenGoal": 1,
                   "saves": 2,
@@ -2602,7 +1261,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Ella Podergajs": {
-                  "index": -1.4000000000000006,
+                  "index": -0.8000000000000005,
                   "goal": 1,
                   "sevenGoal": 0,
                   "saves": 3,
@@ -2621,7 +1280,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 1
                 },
                 "Lenja Ripnak": {
-                  "index": 1.2999999999999996,
+                  "index": 1.4999999999999998,
                   "goal": 1,
                   "sevenGoal": 0,
                   "saves": 2,
@@ -2697,7 +1356,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Zoja Verbovšek": {
-                  "index": 1.6,
+                  "index": 1.8000000000000003,
                   "goal": 1,
                   "sevenGoal": 0,
                   "saves": 2,
@@ -2735,7 +1394,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Ela Adamič": {
-                  "index": -0.8,
+                  "index": -0.6,
                   "goal": 0,
                   "sevenGoal": 0,
                   "saves": 1,
@@ -2754,7 +1413,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Lina Kolobarič": {
-                  "index": -1.2000000000000002,
+                  "index": -0.8000000000000002,
                   "goal": 0,
                   "sevenGoal": 0,
                   "saves": 2,
@@ -2790,251 +1449,1036 @@ const EXCEL_IMPORT = {
                   "PNN": 0,
                   "blame": 2,
                   "sevenDrawn": 0
-                },
-                "Pia Kljun": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
-                "Lana Švrljuga": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
                 }
               },
               "notes": [],
-              "teamIndex": 18.699999999999996,
-              "reportedTeamIndex": 19.299999999999997,
-              "file": "Celje članice sezona 2026 nov index.xlsx",
-              "sheet": "Ajdovščina"
+              "teamIndex": 21.1,
+              "reportedTeamIndex": 21.1
             },
-            "differences": [
-              {
-                "person": "Ajla Mehulić",
-                "code": "A7",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
+            "old": {
+              "rows": [
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "9Z",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "9O",
+                  "quarters": [
+                    1,
+                    1,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "9G",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "7O",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "7G",
+                  "quarters": [
+                    2,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "9O",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "9G",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "6O",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "6G",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "7G",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9Z",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9O",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9G",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "7Z",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "KO",
+                  "quarters": [
+                    2,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "KZ",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "KO",
+                  "quarters": [
+                    1,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PDG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "6G",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "9O",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "KZ",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ela Adamič",
+                  "code": "KO",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "9O",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "6G",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    1,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "POA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PNA",
+                  "quarters": [
+                    3,
+                    1,
+                    2,
+                    2
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PNN",
+                  "quarters": [
+                    1,
+                    3,
+                    5,
+                    7
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PNA",
+                  "quarters": [
+                    3,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "PNN",
+                  "quarters": [
+                    1,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "POA",
+                  "quarters": [
+                    1,
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PNA",
+                  "quarters": [
+                    3,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PNN",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "POA",
+                  "quarters": [
+                    1,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "PNN",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PNA",
+                  "quarters": [
+                    1,
+                    3,
+                    3,
+                    2
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    2,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PNN",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ela Adamič",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "AO",
+                  "quarters": [
+                    2,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "AG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "AZ",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "AO",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "A7",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "A7",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    1,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "A7",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "NA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "NN",
+                  "quarters": [
+                    3,
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "NN",
+                  "quarters": [
+                    1,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "NN",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "NA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    2,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    3
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "DN",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Tinkara Korošec",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                }
+              ],
+              "minutes": {
+                "Lara Kolobarič": 39,
+                "Zala Petek": 57.5,
+                "Sarah Pilih Derča": 32.5,
+                "Ella Podergajs": 44,
+                "Lenja Ripnak": 46.5,
+                "Alja Vrček": 42,
+                "Ajla Mehulić": 21,
+                "Vita Sečki": 13,
+                "Zoja Verbovšek": 19,
+                "Tinkara Korošec": 8.5,
+                "Ela Adamič": 8,
+                "Lina Kolobarič": 9,
+                "Zala Kuri": 8
+              },
+              "opponents": [
+                {
+                  "code": "9Z",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "code": "9G",
+                  "quarters": [
+                    1,
+                    1,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "code": "6G",
+                  "quarters": [
+                    2,
+                    1,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "code": "7G",
+                  "quarters": [
+                    2,
+                    2,
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "code": "KZ",
+                  "quarters": [
+                    2,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "code": "KO",
+                  "quarters": [
+                    1,
+                    3,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "KG",
+                  "quarters": [
+                    2,
+                    2,
+                    1,
+                    4
+                  ]
+                },
+                {
+                  "code": "PDO",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    1,
+                    3,
+                    1
+                  ]
+                },
+                {
+                  "code": "PTZ",
+                  "quarters": [
+                    2,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "PTO",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "code": "PTG",
+                  "quarters": [
+                    3,
+                    2,
+                    3,
+                    4
+                  ]
+                }
+              ],
+              "keepers": [
+                {
+                  "person": "Nika Kuri",
+                  "minutes": 60,
+                  "conceded": 42,
+                  "shots": 50,
+                  "sevenRatio": "7/7",
+                  "otherRatio": "35/43"
+                }
+              ],
+              "file": "Celje članice sezona 2026 nov index.xlsx",
+              "sheet": "Ajdovščina",
+              "indices": {
+                "Lara Kolobarič": [
+                  4.2,
+                  0.9,
+                  -1.1,
+                  0.0
                 ],
-                "new": [
-                  0,
-                  0,
-                  1,
-                  0
+                "Zala Petek": [
+                  2.1,
+                  2.2,
+                  -0.9,
+                  3.1
+                ],
+                "Sarah Pilih Derča": [
+                  1.7,
+                  -0.6,
+                  1.6,
+                  -0.4
+                ],
+                "Ella Podergajs": [
+                  -1.1,
+                  0.7,
+                  -0.2,
+                  1.4
+                ],
+                "Lenja Ripnak": [
+                  1.6,
+                  -0.2,
+                  0.4,
+                  0.4
+                ],
+                "Vita Sečki": [
+                  0.0,
+                  2.8,
+                  0.0,
+                  -0.7
+                ],
+                "Zoja Verbovšek": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.7
+                ],
+                "Ela Adamič": [
+                  0.0,
+                  0.0,
+                  -0.2,
+                  0.0
+                ],
+                "Lina Kolobarič": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  -0.5
+                ],
+                "Zala Kuri": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.8
+                ],
+                "Alja Vrček": [
+                  0.4,
+                  0.8,
+                  0.4,
+                  0.0
+                ],
+                "Ajla Mehulić": [
+                  0.0,
+                  0.9,
+                  2.0,
+                  -0.3
+                ],
+                "Tinkara Korošec": [
+                  0.0,
+                  0.0,
+                  0.7,
+                  0.0
                 ]
               },
-              {
-                "person": "Ajla Mehulić",
-                "code": "AG",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  0,
-                  2,
-                  0,
-                  0
-                ]
-              },
-              {
-                "person": "Ajla Mehulić",
-                "code": "AO",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  0,
-                  1,
-                  2,
-                  0
-                ]
-              },
-              {
-                "person": "Lara Kolobarič",
-                "code": "PNA",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  0,
-                  1,
-                  1,
-                  0
-                ]
-              },
-              {
-                "person": "Lara Kolobarič",
-                "code": "PNN",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  0,
-                  1,
-                  2,
-                  0
-                ]
-              },
-              {
-                "person": "Lara Kolobarič",
-                "code": "POA",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  0,
-                  0,
-                  1,
-                  0
-                ]
-              },
-              {
-                "person": "Sarah Pilih Derča",
-                "code": "A7",
-                "old": [
-                  1,
-                  0,
-                  1,
-                  0
-                ],
-                "new": [
-                  1,
-                  0,
-                  0,
-                  0
-                ]
-              },
-              {
-                "person": "Sarah Pilih Derča",
-                "code": "AG",
-                "old": [
-                  0,
-                  2,
-                  0,
-                  0
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  0
-                ]
-              },
-              {
-                "person": "Sarah Pilih Derča",
-                "code": "AO",
-                "old": [
-                  0,
-                  1,
-                  2,
-                  0
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  0
-                ]
-              },
-              {
-                "person": "Zala Kuri",
-                "code": "PNA",
-                "old": [
-                  0,
-                  1,
-                  1,
-                  0
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  0
-                ]
-              },
-              {
-                "person": "Zala Kuri",
-                "code": "PNN",
-                "old": [
-                  0,
-                  1,
-                  2,
-                  0
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  0
-                ]
-              },
-              {
-                "person": "Zala Kuri",
-                "code": "POA",
-                "old": [
-                  0,
-                  0,
-                  1,
-                  0
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  0
-                ]
-              }
-            ],
-            "aliases": {
-              "Lana Kolobarič": "Lara Kolobarič",
-              "Alja Mehulič": "Ajla Mehulić",
-              "Ajla Mehulič": "Ajla Mehulić"
-            }
+              "teamIndex": 25.6
+            },
+            "differences": [],
+            "aliases": []
           }
         },
         {
@@ -3048,1207 +2492,7 @@ const EXCEL_IMPORT = {
           "complete": true,
           "events": [],
           "imported": {
-            "version": 1,
-            "old": {
-              "rows": [
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "9Z",
-                  "quarters": [
-                    2,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A6"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "9O",
-                  "quarters": [
-                    0,
-                    2,
-                    0,
-                    0
-                  ],
-                  "cell": "A7"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "9G",
-                  "quarters": [
-                    2,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A8"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "PDG",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    1
-                  ],
-                  "cell": "A9"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "7O",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A10"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "7G",
-                  "quarters": [
-                    2,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A11"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "9O",
-                  "quarters": [
-                    0,
-                    2,
-                    0,
-                    0
-                  ],
-                  "cell": "A13"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "PDO",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A14"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "PDG",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A15"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "9Z",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A17"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "9O",
-                  "quarters": [
-                    1,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A18"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "9G",
-                  "quarters": [
-                    0,
-                    2,
-                    1,
-                    0
-                  ],
-                  "cell": "A19"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "PDO",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A20"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "PDG",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A21"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "PTG",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A22"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "7O",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A23"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "7G",
-                  "quarters": [
-                    0,
-                    1,
-                    1,
-                    0
-                  ],
-                  "cell": "A24"
-                },
-                {
-                  "person": "Ella Podergajs",
-                  "code": "KO",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A26"
-                },
-                {
-                  "person": "Ella Podergajs",
-                  "code": "KG",
-                  "quarters": [
-                    0,
-                    2,
-                    0,
-                    0
-                  ],
-                  "cell": "A27"
-                },
-                {
-                  "person": "Ella Podergajs",
-                  "code": "PTG",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A28"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "KO",
-                  "quarters": [
-                    1,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A30"
-                },
-                {
-                  "person": "Alja Vrček",
-                  "code": "6Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A32"
-                },
-                {
-                  "person": "Alja Vrček",
-                  "code": "6G",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    1
-                  ],
-                  "cell": "A33"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "PDG",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    2
-                  ],
-                  "cell": "A35"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "7G",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A36"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "KZ",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A38"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "KG",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A39"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "6O",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A40"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "9O",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A42"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "9G",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A43"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "KG",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    2
-                  ],
-                  "cell": "A44"
-                },
-                {
-                  "person": "Kaja Krebs",
-                  "code": "KG",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A46"
-                },
-                {
-                  "person": "Kaja Krebs",
-                  "code": "6O",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A47"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "AZ",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A51"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "AO",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A52"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "A7",
-                  "quarters": [
-                    2,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A53"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "AO",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A55"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "AG",
-                  "quarters": [
-                    1,
-                    3,
-                    1,
-                    0
-                  ],
-                  "cell": "A56"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "A7",
-                  "quarters": [
-                    0,
-                    0,
-                    2,
-                    0
-                  ],
-                  "cell": "A57"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "AG",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A59"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "A7",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A60"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "AZ",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A62"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "AO",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A63"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "AG",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    2
-                  ],
-                  "cell": "A64"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "AG",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A66"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "PNA",
-                  "quarters": [
-                    1,
-                    2,
-                    2,
-                    0
-                  ],
-                  "cell": "A70"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "PNN",
-                  "quarters": [
-                    1,
-                    1,
-                    1,
-                    2
-                  ],
-                  "cell": "A71"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "POA",
-                  "quarters": [
-                    1,
-                    0,
-                    2,
-                    1
-                  ],
-                  "cell": "A73"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "PNA",
-                  "quarters": [
-                    1,
-                    1,
-                    1,
-                    1
-                  ],
-                  "cell": "A74"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "PNN",
-                  "quarters": [
-                    1,
-                    0,
-                    1,
-                    1
-                  ],
-                  "cell": "A75"
-                },
-                {
-                  "person": "Ella Podergajs",
-                  "code": "PNN",
-                  "quarters": [
-                    1,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A77"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "POA",
-                  "quarters": [
-                    1,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A79"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "PNA",
-                  "quarters": [
-                    1,
-                    2,
-                    0,
-                    0
-                  ],
-                  "cell": "A80"
-                },
-                {
-                  "person": "Alja Vrček",
-                  "code": "POA",
-                  "quarters": [
-                    2,
-                    0,
-                    0,
-                    2
-                  ],
-                  "cell": "A82"
-                },
-                {
-                  "person": "Alja Vrček",
-                  "code": "PON",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A83"
-                },
-                {
-                  "person": "Alja Vrček",
-                  "code": "PNA",
-                  "quarters": [
-                    4,
-                    1,
-                    2,
-                    0
-                  ],
-                  "cell": "A84"
-                },
-                {
-                  "person": "Alja Vrček",
-                  "code": "PNN",
-                  "quarters": [
-                    2,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A85"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    3,
-                    0,
-                    3
-                  ],
-                  "cell": "A87"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "PNN",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A88"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A90"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "PNN",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A91"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    0,
-                    2,
-                    0
-                  ],
-                  "cell": "A93"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A94"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "PNN",
-                  "quarters": [
-                    0,
-                    0,
-                    2,
-                    2
-                  ],
-                  "cell": "A95"
-                },
-                {
-                  "person": "Kaja Krebs",
-                  "code": "PNA",
-                  "quarters": [
-                    3,
-                    1,
-                    0,
-                    2
-                  ],
-                  "cell": "A97"
-                },
-                {
-                  "person": "Kaja Krebs",
-                  "code": "PNN",
-                  "quarters": [
-                    1,
-                    2,
-                    0,
-                    0
-                  ],
-                  "cell": "A98"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "NA",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A102"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "NN",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    1
-                  ],
-                  "cell": "A104"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "NN",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A106"
-                },
-                {
-                  "person": "Alja Vrček",
-                  "code": "NN",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A108"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "NA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A110"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "NN",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A111"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "DA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A115"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "DN",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A117"
-                },
-                {
-                  "person": "Ella Podergajs",
-                  "code": "DA",
-                  "quarters": [
-                    1,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A119"
-                },
-                {
-                  "person": "Ella Podergajs",
-                  "code": "DN",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A120"
-                },
-                {
-                  "person": "Alja Vrček",
-                  "code": "DA",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A122"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "DA",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A124"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "DA",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A126"
-                }
-              ],
-              "minutes": {
-                "Lara Kolobarič": 38,
-                "Zala Petek": 42,
-                "Sarah Pilih Derča": 53.5,
-                "Ella Podergajs": 42,
-                "Lenja Ripnak": 25,
-                "Alja Vrček": 55,
-                "Ajla Mehulić": 17,
-                "Vita Sečki": 35,
-                "Zoja Verbovšek": 25,
-                "Tinkara Korošec": 0,
-                "Ela Adamič": 0,
-                "Lina Kolobarič": 0,
-                "Zala Kuri": 6.5,
-                "Pia Kljun": 0,
-                "Lana Švrljuga": 0,
-                "Kaja Krebs": 15,
-                "Larissa Zukič": 0,
-                "Lana Kačičnik": 0,
-                "Tiana Novak": 0,
-                "Tia Kavalar": 0
-              },
-              "opponents": [
-                {
-                  "code": "9Z",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    2
-                  ]
-                },
-                {
-                  "code": "9O",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "9G",
-                  "quarters": [
-                    0,
-                    1,
-                    1,
-                    0
-                  ]
-                },
-                {
-                  "code": "KZ",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "KO",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ]
-                },
-                {
-                  "code": "KG",
-                  "quarters": [
-                    0,
-                    1,
-                    2,
-                    0
-                  ]
-                },
-                {
-                  "code": "6Z",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "6O",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "6G",
-                  "quarters": [
-                    3,
-                    2,
-                    1,
-                    3
-                  ]
-                },
-                {
-                  "code": "PDZ",
-                  "quarters": [
-                    2,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "PDO",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "PDG",
-                  "quarters": [
-                    2,
-                    1,
-                    2,
-                    2
-                  ]
-                },
-                {
-                  "code": "PTZ",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ]
-                },
-                {
-                  "code": "PTO",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "PTG",
-                  "quarters": [
-                    1,
-                    4,
-                    3,
-                    3
-                  ]
-                },
-                {
-                  "code": "7Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                {
-                  "code": "7O",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "7G",
-                  "quarters": [
-                    2,
-                    0,
-                    2,
-                    1
-                  ]
-                }
-              ],
-              "keepers": [
-                {
-                  "person": "Nika Kuri",
-                  "minutes": 38,
-                  "conceded": 26,
-                  "shots": 27,
-                  "sevenSaves": 0
-                },
-                {
-                  "person": "Klara Horvatič",
-                  "minutes": 22,
-                  "conceded": 11,
-                  "shots": 13,
-                  "sevenSaves": 0
-                }
-              ],
-              "indices": {
-                "Tiana Novak": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Larissa Zukič": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Lina Kolobarič": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Zala Petek": [
-                  1.0,
-                  5.7,
-                  2.3,
-                  -0.2
-                ],
-                "Ella Podergajs": [
-                  1.2,
-                  4.2,
-                  0.7,
-                  0.0
-                ],
-                "Lenja Ripnak": [
-                  0.2,
-                  0.2,
-                  0.0,
-                  0.0
-                ],
-                "Kaja Krebs": [
-                  1.2,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Zoja Verbovšek": [
-                  0.0,
-                  0.0,
-                  3.4,
-                  3.5
-                ],
-                "Ela Adamič": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Zala Kuri": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Ajla Mehulić": [
-                  0.0,
-                  0.3,
-                  0.0,
-                  7.5
-                ],
-                "Lana Švrljuga": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Lara Kolobarič": [
-                  5.7,
-                  -1.0,
-                  1.4,
-                  1.7
-                ],
-                "Vita Sečki": [
-                  0.0,
-                  0.0,
-                  2.8,
-                  -0.6
-                ],
-                "Lana Kačičnik": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Alja Vrček": [
-                  1.2,
-                  0.0,
-                  1.4,
-                  1.8
-                ],
-                "Pia Kljun": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Sarah Pilih Derča": [
-                  -0.2,
-                  5.2,
-                  3.2,
-                  2.6
-                ],
-                "Tinkara Korošec": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Tia Kavalar": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ]
-              },
-              "teamIndex": 56.39999999999999,
-              "file": "Celje članice sezona 2026 - stari index 2025.xlsx",
-              "sheet": "Velenje"
-            },
+            "version": 2,
             "new": {
               "rows": [
                 {
@@ -4259,8 +2503,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B5"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -4270,8 +2513,7 @@ const EXCEL_IMPORT = {
                     2,
                     0,
                     0
-                  ],
-                  "cell": "B6"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -4281,8 +2523,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B7"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -4292,8 +2533,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B8"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -4303,8 +2543,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B9"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -4314,8 +2553,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     1
-                  ],
-                  "cell": "B10"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -4325,8 +2563,7 @@ const EXCEL_IMPORT = {
                     2,
                     0,
                     0
-                  ],
-                  "cell": "B11"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -4336,8 +2573,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B12"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -4347,8 +2583,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B13"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -4358,8 +2593,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B14"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -4369,8 +2603,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B15"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -4380,8 +2613,7 @@ const EXCEL_IMPORT = {
                     2,
                     1,
                     0
-                  ],
-                  "cell": "B16"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -4391,8 +2623,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B17"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -4402,8 +2633,7 @@ const EXCEL_IMPORT = {
                     1,
                     1,
                     0
-                  ],
-                  "cell": "B18"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -4413,8 +2643,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B19"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -4424,8 +2653,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B20"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -4435,8 +2663,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B21"
+                  ]
                 },
                 {
                   "person": "Ella Podergajs",
@@ -4446,8 +2673,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B22"
+                  ]
                 },
                 {
                   "person": "Ella Podergajs",
@@ -4457,8 +2683,7 @@ const EXCEL_IMPORT = {
                     2,
                     0,
                     0
-                  ],
-                  "cell": "B23"
+                  ]
                 },
                 {
                   "person": "Ella Podergajs",
@@ -4468,8 +2693,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B24"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -4479,8 +2703,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B25"
+                  ]
                 },
                 {
                   "person": "Alja Vrček",
@@ -4490,8 +2713,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B26"
+                  ]
                 },
                 {
                   "person": "Alja Vrček",
@@ -4501,8 +2723,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     1
-                  ],
-                  "cell": "B27"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -4512,8 +2733,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B28"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -4523,8 +2743,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     2
-                  ],
-                  "cell": "B29"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -4534,8 +2753,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B30"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -4545,8 +2763,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B31"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -4556,8 +2773,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B32"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -4567,8 +2783,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B33"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -4578,8 +2793,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B34"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -4589,8 +2803,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     2
-                  ],
-                  "cell": "B35"
+                  ]
                 },
                 {
                   "person": "Kaja Krebs",
@@ -4600,8 +2813,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B36"
+                  ]
                 },
                 {
                   "person": "Kaja Krebs",
@@ -4611,8 +2823,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B37"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -4622,8 +2833,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     2
-                  ],
-                  "cell": "B42"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -4633,8 +2843,7 @@ const EXCEL_IMPORT = {
                     2,
                     0,
                     0
-                  ],
-                  "cell": "B43"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -4644,8 +2853,7 @@ const EXCEL_IMPORT = {
                     2,
                     2,
                     0
-                  ],
-                  "cell": "B46"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -4655,8 +2863,7 @@ const EXCEL_IMPORT = {
                     1,
                     1,
                     2
-                  ],
-                  "cell": "B47"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -4666,8 +2873,7 @@ const EXCEL_IMPORT = {
                     0,
                     2,
                     1
-                  ],
-                  "cell": "B48"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -4677,8 +2883,7 @@ const EXCEL_IMPORT = {
                     1,
                     1,
                     1
-                  ],
-                  "cell": "B50"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -4688,8 +2893,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     1
-                  ],
-                  "cell": "B51"
+                  ]
                 },
                 {
                   "person": "Ella Podergajs",
@@ -4699,8 +2903,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B55"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -4710,8 +2913,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B56"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -4721,8 +2923,7 @@ const EXCEL_IMPORT = {
                     2,
                     0,
                     0
-                  ],
-                  "cell": "B58"
+                  ]
                 },
                 {
                   "person": "Alja Vrček",
@@ -4732,8 +2933,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     2
-                  ],
-                  "cell": "B60"
+                  ]
                 },
                 {
                   "person": "Alja Vrček",
@@ -4743,8 +2943,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B61"
+                  ]
                 },
                 {
                   "person": "Alja Vrček",
@@ -4754,8 +2953,7 @@ const EXCEL_IMPORT = {
                     1,
                     2,
                     0
-                  ],
-                  "cell": "B62"
+                  ]
                 },
                 {
                   "person": "Alja Vrček",
@@ -4765,8 +2963,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B63"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -4776,8 +2973,7 @@ const EXCEL_IMPORT = {
                     3,
                     0,
                     3
-                  ],
-                  "cell": "B66"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -4787,8 +2983,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B67"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -4798,8 +2993,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B68"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -4809,8 +3003,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B71"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -4820,8 +3013,7 @@ const EXCEL_IMPORT = {
                     0,
                     2,
                     0
-                  ],
-                  "cell": "B72"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -4831,8 +3023,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B74"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -4842,8 +3033,7 @@ const EXCEL_IMPORT = {
                     0,
                     2,
                     2
-                  ],
-                  "cell": "B75"
+                  ]
                 },
                 {
                   "person": "Kaja Krebs",
@@ -4853,8 +3043,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B78"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -4864,8 +3053,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B94"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -4875,8 +3063,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B95"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -4886,8 +3073,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B96"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -4897,8 +3083,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B97"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -4908,8 +3093,7 @@ const EXCEL_IMPORT = {
                     3,
                     1,
                     0
-                  ],
-                  "cell": "B98"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -4919,8 +3103,7 @@ const EXCEL_IMPORT = {
                     0,
                     2,
                     0
-                  ],
-                  "cell": "B99"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -4930,8 +3113,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B100"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -4941,8 +3123,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B101"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -4952,8 +3133,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B102"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -4963,8 +3143,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B103"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -4974,8 +3153,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     2
-                  ],
-                  "cell": "B104"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -4985,8 +3163,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B105"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -4996,8 +3173,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B108"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -5007,8 +3183,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     1
-                  ],
-                  "cell": "B109"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -5018,8 +3193,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B110"
+                  ]
                 },
                 {
                   "person": "Alja Vrček",
@@ -5029,8 +3203,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B111"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -5040,8 +3213,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B112"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -5051,8 +3223,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B113"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -5062,8 +3233,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B116"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -5073,8 +3243,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B117"
+                  ]
                 },
                 {
                   "person": "Ella Podergajs",
@@ -5084,8 +3253,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B118"
+                  ]
                 },
                 {
                   "person": "Ella Podergajs",
@@ -5095,8 +3263,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B119"
+                  ]
                 },
                 {
                   "person": "Alja Vrček",
@@ -5106,8 +3273,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B120"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -5117,8 +3283,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B121"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -5128,8 +3293,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B122"
+                  ]
                 }
               ],
               "minutes": {
@@ -5142,12 +3306,7 @@ const EXCEL_IMPORT = {
                 "Ajla Mehulić": 17,
                 "Vita Sečki": 35,
                 "Zoja Verbovšek": 25,
-                "Tinkara Korošec": 0,
-                "Ela Adamič": 0,
-                "Lina Kolobarič": 0,
                 "Zala Kuri": 6.5,
-                "Pia Kljun": 0,
-                "Lana Švrljuga": 0,
                 "Kaja Krebs": 15
               },
               "opponents": [
@@ -5188,15 +3347,6 @@ const EXCEL_IMPORT = {
                   ]
                 },
                 {
-                  "code": "6O",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
                   "code": "6G",
                   "quarters": [
                     3,
@@ -5212,15 +3362,6 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ]
-                },
-                {
-                  "code": "7O",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
                   ]
                 },
                 {
@@ -5263,15 +3404,6 @@ const EXCEL_IMPORT = {
                   "code": "PDZ",
                   "quarters": [
                     2,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "PDO",
-                  "quarters": [
-                    0,
                     0,
                     0,
                     0
@@ -5332,67 +3464,61 @@ const EXCEL_IMPORT = {
                   "otherRatio": "9/11"
                 }
               ],
+              "file": "Celje članice sezona 2026 nov index.xlsx",
+              "sheet": "Velenje",
               "fouls": [
                 {
                   "person": "Sarah Pilih Derča",
                   "code": "POA",
                   "seven": 1,
-                  "twoMin": 2,
-                  "cell": "H48:I48"
+                  "twoMin": 2
                 },
                 {
                   "person": "Sarah Pilih Derča",
                   "code": "PNA",
                   "seven": 2,
-                  "twoMin": 0,
-                  "cell": "H50:I50"
+                  "twoMin": 0
                 },
                 {
                   "person": "Lenja Ripnak",
                   "code": "POA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H56:I56"
+                  "twoMin": 0
                 },
                 {
                   "person": "Lenja Ripnak",
                   "code": "PNA",
                   "seven": 1,
-                  "twoMin": 1,
-                  "cell": "H58:I58"
+                  "twoMin": 1
                 },
                 {
                   "person": "Alja Vrček",
                   "code": "POA",
                   "seven": 1,
-                  "twoMin": 1,
-                  "cell": "H60:I60"
+                  "twoMin": 1
                 },
                 {
                   "person": "Alja Vrček",
                   "code": "PNA",
                   "seven": 3,
-                  "twoMin": 0,
-                  "cell": "H62:I62"
+                  "twoMin": 0
                 },
                 {
                   "person": "Ajla Mehulić",
                   "code": "PNA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H66:I66"
+                  "twoMin": 0
                 },
                 {
                   "person": "Zoja Verbovšek",
                   "code": "POA",
                   "seven": 2,
-                  "twoMin": 0,
-                  "cell": "H72:I72"
+                  "twoMin": 0
                 }
               ],
               "summaries": {
                 "Lara Kolobarič": {
-                  "index": 7.199999999999999,
+                  "index": 6.999999999999998,
                   "goal": 4,
                   "sevenGoal": 2,
                   "saves": 2,
@@ -5411,7 +3537,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Zala Petek": {
-                  "index": 6.699999999999999,
+                  "index": 7.300000000000001,
                   "goal": 1,
                   "sevenGoal": 0,
                   "saves": 3,
@@ -5430,7 +3556,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Sarah Pilih Derča": {
-                  "index": 6.600000000000001,
+                  "index": 7.000000000000002,
                   "goal": 5,
                   "sevenGoal": 2,
                   "saves": 3,
@@ -5449,7 +3575,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 2
                 },
                 "Ella Podergajs": {
-                  "index": 5.6,
+                  "index": 5.799999999999999,
                   "goal": 3,
                   "sevenGoal": 0,
                   "saves": 1,
@@ -5468,7 +3594,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Lenja Ripnak": {
-                  "index": 1,
+                  "index": 1.4000000000000001,
                   "goal": 0,
                   "sevenGoal": 0,
                   "saves": 2,
@@ -5487,7 +3613,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 1
                 },
                 "Alja Vrček": {
-                  "index": 7.699999999999999,
+                  "index": 7.5,
                   "goal": 2,
                   "sevenGoal": 0,
                   "saves": 0,
@@ -5544,7 +3670,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Zoja Verbovšek": {
-                  "index": 5.8,
+                  "index": 6,
                   "goal": 4,
                   "sevenGoal": 0,
                   "saves": 1,
@@ -5562,122 +3688,8 @@ const EXCEL_IMPORT = {
                   "blame": 3,
                   "sevenDrawn": 0
                 },
-                "Tinkara Korošec": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
-                "Ela Adamič": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
-                "Lina Kolobarič": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
-                "Zala Kuri": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
-                "Pia Kljun": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
-                "Lana Švrljuga": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
                 "Kaja Krebs": {
-                  "index": -0.6,
+                  "index": -0.3999999999999999,
                   "goal": 1,
                   "sevenGoal": 0,
                   "saves": 1,
@@ -5697,82 +3709,1048 @@ const EXCEL_IMPORT = {
                 }
               },
               "notes": [],
-              "teamIndex": 48.0,
-              "reportedTeamIndex": 48.599999999999994,
-              "file": "Celje članice sezona 2026 nov index.xlsx",
-              "sheet": "Velenje"
+              "teamIndex": 49.6,
+              "reportedTeamIndex": 49.6
             },
-            "differences": [
-              {
-                "person": "Kaja Krebs",
-                "code": "PNA",
-                "old": [
-                  3,
-                  1,
-                  0,
-                  2
+            "old": {
+              "rows": [
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "9Z",
+                  "quarters": [
+                    2,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "9O",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "9G",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "7O",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "7G",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "9O",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PDO",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9Z",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9O",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9G",
+                  "quarters": [
+                    0,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "7O",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "7G",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PDO",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "KO",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "KO",
+                  "quarters": [
+                    1,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "6Z",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "6G",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "7G",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "6O",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "KZ",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "9O",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "9G",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "person": "Kaja Krebs",
+                  "code": "6O",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Kaja Krebs",
+                  "code": "KG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "PNN",
+                  "quarters": [
+                    1,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PNA",
+                  "quarters": [
+                    1,
+                    2,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PNN",
+                  "quarters": [
+                    1,
+                    1,
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "POA",
+                  "quarters": [
+                    1,
+                    0,
+                    2,
+                    1
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PNA",
+                  "quarters": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PNN",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "PNN",
+                  "quarters": [
+                    1,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "POA",
+                  "quarters": [
+                    1,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PNA",
+                  "quarters": [
+                    1,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "POA",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "PON",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "PNA",
+                  "quarters": [
+                    4,
+                    1,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "PNN",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    3,
+                    0,
+                    3
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    0,
+                    2,
+                    2
+                  ]
+                },
+                {
+                  "person": "Kaja Krebs",
+                  "code": "PNA",
+                  "quarters": [
+                    3,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "AZ",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "AO",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "A7",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "AG",
+                  "quarters": [
+                    1,
+                    3,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "A7",
+                  "quarters": [
+                    0,
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "A7",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "AZ",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "NA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "NN",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "DN",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "DA",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "DN",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "DA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                }
+              ],
+              "minutes": {
+                "Lara Kolobarič": 38,
+                "Zala Petek": 42,
+                "Sarah Pilih Derča": 53.5,
+                "Ella Podergajs": 42,
+                "Lenja Ripnak": 25,
+                "Alja Vrček": 55,
+                "Ajla Mehulić": 17,
+                "Vita Sečki": 35,
+                "Zoja Verbovšek": 25,
+                "Zala Kuri": 6.5,
+                "Kaja Krebs": 15
+              },
+              "opponents": [
+                {
+                  "code": "9Z",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "code": "9O",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "9G",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "code": "6Z",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "6G",
+                  "quarters": [
+                    3,
+                    2,
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "code": "7Z",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "7G",
+                  "quarters": [
+                    2,
+                    0,
+                    2,
+                    1
+                  ]
+                },
+                {
+                  "code": "KZ",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "KO",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    1,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "code": "PDZ",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "PDG",
+                  "quarters": [
+                    2,
+                    1,
+                    2,
+                    2
+                  ]
+                },
+                {
+                  "code": "PTZ",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "code": "PTO",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "PTG",
+                  "quarters": [
+                    1,
+                    4,
+                    3,
+                    3
+                  ]
+                }
+              ],
+              "keepers": [
+                {
+                  "person": "Nika Kuri",
+                  "minutes": 38,
+                  "conceded": 26,
+                  "shots": 27,
+                  "sevenRatio": "3/3",
+                  "otherRatio": "23/24"
+                },
+                {
+                  "person": "Klara Horvatič",
+                  "minutes": 22,
+                  "conceded": 11,
+                  "shots": 13,
+                  "sevenRatio": "2/2",
+                  "otherRatio": "9/11"
+                }
+              ],
+              "file": "Celje članice sezona 2026 nov index.xlsx",
+              "sheet": "Velenje",
+              "indices": {
+                "Lara Kolobarič": [
+                  5.7,
+                  -1.0,
+                  1.4,
+                  1.7
                 ],
-                "new": [
-                  3,
-                  0,
-                  0,
-                  0
+                "Zala Petek": [
+                  1.0,
+                  5.7,
+                  2.3,
+                  -0.2
+                ],
+                "Sarah Pilih Derča": [
+                  -0.2,
+                  5.2,
+                  3.2,
+                  2.6
+                ],
+                "Ella Podergajs": [
+                  1.2,
+                  4.2,
+                  0.7,
+                  0.0
+                ],
+                "Lenja Ripnak": [
+                  0.2,
+                  0.2,
+                  0.0,
+                  0.0
+                ],
+                "Alja Vrček": [
+                  1.2,
+                  0.0,
+                  1.4,
+                  1.8
+                ],
+                "Ajla Mehulić": [
+                  0.0,
+                  0.3,
+                  0.0,
+                  7.5
+                ],
+                "Vita Sečki": [
+                  0.0,
+                  0.0,
+                  2.8,
+                  -0.6
+                ],
+                "Zoja Verbovšek": [
+                  0.0,
+                  0.0,
+                  3.4,
+                  3.5
+                ],
+                "Kaja Krebs": [
+                  1.2,
+                  0.0,
+                  0.0,
+                  0.0
                 ]
               },
-              {
-                "person": "Kaja Krebs",
-                "code": "PNN",
-                "old": [
-                  1,
-                  2,
-                  0,
-                  0
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  0
-                ]
-              },
-              {
-                "person": "Lara Kolobarič",
-                "code": "PNA",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  0,
-                  1,
-                  0,
-                  2
-                ]
-              },
-              {
-                "person": "Lara Kolobarič",
-                "code": "PNN",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  1,
-                  2,
-                  0,
-                  0
-                ]
-              }
-            ],
-            "aliases": {
-              "Lana Kolobarič": "Lara Kolobarič",
-              "Alja Mehulič": "Ajla Mehulić",
-              "Ajla Mehulič": "Ajla Mehulić"
-            }
+              "teamIndex": 56.4
+            },
+            "differences": [],
+            "aliases": []
           }
         },
         {
@@ -5786,1009 +4764,7 @@ const EXCEL_IMPORT = {
           "complete": true,
           "events": [],
           "imported": {
-            "version": 1,
-            "old": {
-              "rows": [
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "9Z",
-                  "quarters": [
-                    0,
-                    2,
-                    0,
-                    0
-                  ],
-                  "cell": "A6"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "9O",
-                  "quarters": [
-                    1,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A7"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "9G",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A8"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "7O",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A9"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "7G",
-                  "quarters": [
-                    1,
-                    2,
-                    0,
-                    0
-                  ],
-                  "cell": "A10"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "6G",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A12"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "PDO",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A13"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "PDG",
-                  "quarters": [
-                    0,
-                    0,
-                    2,
-                    1
-                  ],
-                  "cell": "A14"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "PTG",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A15"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "9Z",
-                  "quarters": [
-                    1,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A17"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "9O",
-                  "quarters": [
-                    2,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A18"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "9G",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A19"
-                },
-                {
-                  "person": "Ella Podergajs",
-                  "code": "KG",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A21"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "KZ",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A23"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "KO",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A24"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "KG",
-                  "quarters": [
-                    1,
-                    1,
-                    1,
-                    0
-                  ],
-                  "cell": "A25"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "PDG",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A26"
-                },
-                {
-                  "person": "Alja Vrček",
-                  "code": "6G",
-                  "quarters": [
-                    0,
-                    2,
-                    1,
-                    0
-                  ],
-                  "cell": "A28"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "PDO",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A30"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "7G",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    3
-                  ],
-                  "cell": "A32"
-                },
-                {
-                  "person": "Zala Kuri",
-                  "code": "6G",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A34"
-                },
-                {
-                  "person": "Kaja Krebs",
-                  "code": "KO",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A36"
-                },
-                {
-                  "person": "Kaja Krebs",
-                  "code": "KG",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A37"
-                },
-                {
-                  "person": "Kaja Krebs",
-                  "code": "PTG",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A38"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "AZ",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A42"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "AG",
-                  "quarters": [
-                    2,
-                    2,
-                    3,
-                    0
-                  ],
-                  "cell": "A43"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "A7",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A44"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "AO",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A46"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "AG",
-                  "quarters": [
-                    1,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A47"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "A7",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    2
-                  ],
-                  "cell": "A48"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "AO",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A50"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "AG",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    1
-                  ],
-                  "cell": "A51"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "POA",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    2
-                  ],
-                  "cell": "A55"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A56"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "PNN",
-                  "quarters": [
-                    2,
-                    0,
-                    1,
-                    2
-                  ],
-                  "cell": "A57"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    0,
-                    2,
-                    1
-                  ],
-                  "cell": "A59"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "PNA",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A60"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "PNN",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A61"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "POA",
-                  "quarters": [
-                    1,
-                    1,
-                    1,
-                    0
-                  ],
-                  "cell": "A63"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    1
-                  ],
-                  "cell": "A64"
-                },
-                {
-                  "person": "Alja Vrček",
-                  "code": "POA",
-                  "quarters": [
-                    1,
-                    2,
-                    1,
-                    1
-                  ],
-                  "cell": "A66"
-                },
-                {
-                  "person": "Alja Vrček",
-                  "code": "PON",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A67"
-                },
-                {
-                  "person": "Alja Vrček",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A68"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    4,
-                    2,
-                    2
-                  ],
-                  "cell": "A70"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "PNN",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    2
-                  ],
-                  "cell": "A71"
-                },
-                {
-                  "person": "Zala Kuri",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    0,
-                    2,
-                    1
-                  ],
-                  "cell": "A73"
-                },
-                {
-                  "person": "Zala Kuri",
-                  "code": "PON",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A74"
-                },
-                {
-                  "person": "Kaja Krebs",
-                  "code": "POA",
-                  "quarters": [
-                    4,
-                    1,
-                    1,
-                    1
-                  ],
-                  "cell": "A76"
-                },
-                {
-                  "person": "Kaja Krebs",
-                  "code": "PNA",
-                  "quarters": [
-                    1,
-                    0,
-                    2,
-                    0
-                  ],
-                  "cell": "A77"
-                },
-                {
-                  "person": "Kaja Krebs",
-                  "code": "PNN",
-                  "quarters": [
-                    2,
-                    2,
-                    2,
-                    1
-                  ],
-                  "cell": "A78"
-                },
-                {
-                  "person": "Lara Kolobarič",
-                  "code": "NA",
-                  "quarters": [
-                    1,
-                    1,
-                    1,
-                    2
-                  ],
-                  "cell": "A82"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "NA",
-                  "quarters": [
-                    1,
-                    2,
-                    0,
-                    0
-                  ],
-                  "cell": "A84"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "NN",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A85"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "NN",
-                  "quarters": [
-                    1,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A87"
-                },
-                {
-                  "person": "Alja Vrček",
-                  "code": "NA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A89"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "NA",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A91"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "NN",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    3
-                  ],
-                  "cell": "A92"
-                },
-                {
-                  "person": "Kaja Krebs",
-                  "code": "NA",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A94"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "DA",
-                  "quarters": [
-                    2,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A98"
-                },
-                {
-                  "person": "Alja Vrček",
-                  "code": "DA",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A100"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "DA",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    3
-                  ],
-                  "cell": "A102"
-                }
-              ],
-              "minutes": {
-                "Lara Kolobarič": 41,
-                "Zala Petek": 60,
-                "Sarah Pilih Derča": 38,
-                "Ella Podergajs": 7,
-                "Lenja Ripnak": 60,
-                "Alja Vrček": 50,
-                "Ajla Mehulić": 28,
-                "Vita Sečki": 0,
-                "Zoja Verbovšek": 1,
-                "Tinkara Korošec": 0,
-                "Ela Adamič": 0,
-                "Lina Kolobarič": 0,
-                "Zala Kuri": 16,
-                "Pia Kljun": 0,
-                "Lana Švrljuga": 0,
-                "Kaja Krebs": 53,
-                "Larissa Zukič": 0,
-                "Lana Kačičnik": 0,
-                "Tiana Novak": 0,
-                "Tia Kavalar": 0
-              },
-              "opponents": [
-                {
-                  "code": "9Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "9O",
-                  "quarters": [
-                    3,
-                    0,
-                    0,
-                    3
-                  ]
-                },
-                {
-                  "code": "9G",
-                  "quarters": [
-                    0,
-                    1,
-                    2,
-                    0
-                  ]
-                },
-                {
-                  "code": "KZ",
-                  "quarters": [
-                    1,
-                    1,
-                    3,
-                    1
-                  ]
-                },
-                {
-                  "code": "KO",
-                  "quarters": [
-                    1,
-                    2,
-                    0,
-                    1
-                  ]
-                },
-                {
-                  "code": "KG",
-                  "quarters": [
-                    1,
-                    5,
-                    1,
-                    1
-                  ]
-                },
-                {
-                  "code": "6Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "6O",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                {
-                  "code": "6G",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "PDZ",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "PDO",
-                  "quarters": [
-                    0,
-                    0,
-                    2,
-                    0
-                  ]
-                },
-                {
-                  "code": "PDG",
-                  "quarters": [
-                    0,
-                    2,
-                    1,
-                    3
-                  ]
-                },
-                {
-                  "code": "PTZ",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "PTO",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "PTG",
-                  "quarters": [
-                    2,
-                    2,
-                    1,
-                    1
-                  ]
-                },
-                {
-                  "code": "7Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                {
-                  "code": "7O",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "7G",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ]
-                }
-              ],
-              "keepers": [
-                {
-                  "person": "Nika Kuri",
-                  "minutes": 22,
-                  "conceded": 9,
-                  "shots": 16,
-                  "sevenSaves": 1
-                },
-                {
-                  "person": "Klara Horvatič",
-                  "minutes": 38,
-                  "conceded": 16,
-                  "shots": 24,
-                  "sevenSaves": 0
-                }
-              ],
-              "indices": {
-                "Tiana Novak": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Larissa Zukič": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Lina Kolobarič": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Zala Petek": [
-                  3.5,
-                  0.4,
-                  3.8,
-                  6.9
-                ],
-                "Ella Podergajs": [
-                  0.0,
-                  0.0,
-                  1.4,
-                  0.0
-                ],
-                "Lenja Ripnak": [
-                  2.8,
-                  1.8,
-                  1.8,
-                  -0.2
-                ],
-                "Kaja Krebs": [
-                  1.6,
-                  0.2,
-                  -0.3,
-                  3.0
-                ],
-                "Zoja Verbovšek": [
-                  0.0,
-                  0.0,
-                  0.7,
-                  2.1
-                ],
-                "Ela Adamič": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Zala Kuri": [
-                  1.8,
-                  0.0,
-                  0.8,
-                  0.4
-                ],
-                "Ajla Mehulić": [
-                  0.0,
-                  -0.2,
-                  1.0,
-                  1.3
-                ],
-                "Lana Švrljuga": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Lara Kolobarič": [
-                  2.8,
-                  2.9,
-                  3.3,
-                  -1.4
-                ],
-                "Vita Sečki": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Lana Kačičnik": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Alja Vrček": [
-                  0.4,
-                  2.9,
-                  2.2,
-                  1.1
-                ],
-                "Pia Kljun": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Sarah Pilih Derča": [
-                  -0.1,
-                  0.0,
-                  -0.3,
-                  0.4
-                ],
-                "Tinkara Korošec": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Tia Kavalar": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ]
-              },
-              "teamIndex": 48.8,
-              "file": "Celje članice sezona 2026 - stari index 2025.xlsx",
-              "sheet": "Krka"
-            },
+            "version": 2,
             "new": {
               "rows": [
                 {
@@ -6799,8 +4775,7 @@ const EXCEL_IMPORT = {
                     2,
                     0,
                     0
-                  ],
-                  "cell": "B5"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -6810,8 +4785,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B6"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -6821,8 +4795,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B7"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -6832,8 +4805,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B8"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -6843,8 +4815,7 @@ const EXCEL_IMPORT = {
                     2,
                     0,
                     0
-                  ],
-                  "cell": "B9"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -6854,8 +4825,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B10"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -6865,8 +4835,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B11"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -6876,8 +4845,7 @@ const EXCEL_IMPORT = {
                     0,
                     2,
                     1
-                  ],
-                  "cell": "B12"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -6887,8 +4855,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B13"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -6898,8 +4865,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B14"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -6909,8 +4875,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B15"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -6920,8 +4885,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B16"
+                  ]
                 },
                 {
                   "person": "Ella Podergajs",
@@ -6931,8 +4895,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B17"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -6942,8 +4905,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B18"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -6953,8 +4915,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B19"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -6964,8 +4925,7 @@ const EXCEL_IMPORT = {
                     1,
                     1,
                     0
-                  ],
-                  "cell": "B20"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -6975,8 +4935,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B21"
+                  ]
                 },
                 {
                   "person": "Alja Vrček",
@@ -6986,8 +4945,7 @@ const EXCEL_IMPORT = {
                     2,
                     1,
                     0
-                  ],
-                  "cell": "B22"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -6997,8 +4955,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B23"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -7008,8 +4965,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     3
-                  ],
-                  "cell": "B24"
+                  ]
                 },
                 {
                   "person": "Zala Kuri",
@@ -7019,8 +4975,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B25"
+                  ]
                 },
                 {
                   "person": "Kaja Krebs",
@@ -7030,8 +4985,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B26"
+                  ]
                 },
                 {
                   "person": "Kaja Krebs",
@@ -7041,8 +4995,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B27"
+                  ]
                 },
                 {
                   "person": "Kaja Krebs",
@@ -7052,8 +5005,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B28"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -7063,8 +5015,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B31"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -7074,8 +5025,7 @@ const EXCEL_IMPORT = {
                     0,
                     2,
                     0
-                  ],
-                  "cell": "B33"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -7085,8 +5035,7 @@ const EXCEL_IMPORT = {
                     2,
                     2,
                     1
-                  ],
-                  "cell": "B34"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -7096,8 +5045,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     2
-                  ],
-                  "cell": "B35"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -7107,8 +5055,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B37"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -7118,8 +5065,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     2
-                  ],
-                  "cell": "B38"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -7129,8 +5075,7 @@ const EXCEL_IMPORT = {
                     0,
                     2,
                     1
-                  ],
-                  "cell": "B39"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -7140,8 +5085,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B41"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -7151,8 +5095,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B42"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -7162,8 +5105,7 @@ const EXCEL_IMPORT = {
                     1,
                     1,
                     0
-                  ],
-                  "cell": "B47"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -7173,8 +5115,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     1
-                  ],
-                  "cell": "B49"
+                  ]
                 },
                 {
                   "person": "Alja Vrček",
@@ -7184,8 +5125,7 @@ const EXCEL_IMPORT = {
                     2,
                     1,
                     1
-                  ],
-                  "cell": "B51"
+                  ]
                 },
                 {
                   "person": "Alja Vrček",
@@ -7195,8 +5135,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B52"
+                  ]
                 },
                 {
                   "person": "Alja Vrček",
@@ -7206,8 +5145,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B53"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -7217,8 +5155,7 @@ const EXCEL_IMPORT = {
                     4,
                     2,
                     2
-                  ],
-                  "cell": "B57"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -7228,8 +5165,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     2
-                  ],
-                  "cell": "B58"
+                  ]
                 },
                 {
                   "person": "Kaja Krebs",
@@ -7239,8 +5175,7 @@ const EXCEL_IMPORT = {
                     1,
                     1,
                     1
-                  ],
-                  "cell": "B67"
+                  ]
                 },
                 {
                   "person": "Zala Kuri",
@@ -7250,8 +5185,7 @@ const EXCEL_IMPORT = {
                     0,
                     2,
                     1
-                  ],
-                  "cell": "B79"
+                  ]
                 },
                 {
                   "person": "Zala Kuri",
@@ -7261,8 +5195,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B80"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -7272,8 +5205,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B85"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -7283,8 +5215,7 @@ const EXCEL_IMPORT = {
                     2,
                     3,
                     0
-                  ],
-                  "cell": "B86"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -7294,8 +5225,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B87"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -7305,8 +5235,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B88"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -7316,8 +5245,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B89"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -7327,19 +5255,17 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     2
-                  ],
-                  "cell": "B90"
+                  ]
                 },
                 {
-                  "person": "Lenja Rišnak",
+                  "person": "Lenja Ripnak",
                   "code": "AG",
                   "quarters": [
                     1,
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B91"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -7349,8 +5275,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B92"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -7360,8 +5285,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     1
-                  ],
-                  "cell": "B93"
+                  ]
                 },
                 {
                   "person": "Lara Kolobarič",
@@ -7371,8 +5295,7 @@ const EXCEL_IMPORT = {
                     1,
                     1,
                     2
-                  ],
-                  "cell": "B96"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -7382,8 +5305,7 @@ const EXCEL_IMPORT = {
                     2,
                     0,
                     0
-                  ],
-                  "cell": "B97"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -7393,8 +5315,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B98"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -7404,8 +5325,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B99"
+                  ]
                 },
                 {
                   "person": "Alja Vrček",
@@ -7415,8 +5335,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B100"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -7426,8 +5345,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B101"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -7437,8 +5355,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     3
-                  ],
-                  "cell": "B102"
+                  ]
                 },
                 {
                   "person": "Kaja Krebs",
@@ -7448,8 +5365,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B103"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -7459,8 +5375,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B106"
+                  ]
                 },
                 {
                   "person": "Alja Vrček",
@@ -7470,8 +5385,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B107"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -7481,8 +5395,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     3
-                  ],
-                  "cell": "B108"
+                  ]
                 }
               ],
               "minutes": {
@@ -7493,26 +5406,11 @@ const EXCEL_IMPORT = {
                 "Lenja Ripnak": 60,
                 "Alja Vrček": 50,
                 "Ajla Mehulić": 28,
-                "Vita Sečki": 0,
                 "Zoja Verbovšek": 1,
-                "Tinkara Korošec": 0,
-                "Ela Adamič": 0,
-                "Lina Kolobarič": 0,
                 "Zala Kuri": 16,
-                "Pia Kljun": 0,
-                "Lana Švrljuga": 0,
                 "Kaja Krebs": 53
               },
               "opponents": [
-                {
-                  "code": "9Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
                 {
                   "code": "9O",
                   "quarters": [
@@ -7528,15 +5426,6 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     2,
-                    0
-                  ]
-                },
-                {
-                  "code": "6Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
                     0
                   ]
                 },
@@ -7613,15 +5502,6 @@ const EXCEL_IMPORT = {
                   ]
                 },
                 {
-                  "code": "PDZ",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
                   "code": "PDO",
                   "quarters": [
                     0,
@@ -7637,24 +5517,6 @@ const EXCEL_IMPORT = {
                     2,
                     1,
                     3
-                  ]
-                },
-                {
-                  "code": "PTZ",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "PTO",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
                   ]
                 },
                 {
@@ -7685,81 +5547,73 @@ const EXCEL_IMPORT = {
                   "otherRatio": "15/23"
                 }
               ],
+              "file": "Celje članice sezona 2026 nov index.xlsx",
+              "sheet": "Krka",
               "fouls": [
                 {
                   "person": "Lara Kolobarič",
                   "code": "POA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H31:I31"
+                  "twoMin": 0
                 },
                 {
                   "person": "Zala Petek",
                   "code": "PNA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H37:I37"
+                  "twoMin": 0
                 },
                 {
                   "person": "Sarah Pilih Derča",
                   "code": "POA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H39:I39"
+                  "twoMin": 0
                 },
                 {
                   "person": "Sarah Pilih Derča",
                   "code": "PNA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H41:I41"
+                  "twoMin": 0
                 },
                 {
                   "person": "Lenja Ripnak",
                   "code": "PNA",
                   "seven": 2,
-                  "twoMin": 1,
-                  "cell": "H49:I49"
+                  "twoMin": 1
                 },
                 {
                   "person": "Alja Vrček",
                   "code": "POA",
                   "seven": 0,
-                  "twoMin": 2,
-                  "cell": "H51:I51"
+                  "twoMin": 2
                 },
                 {
                   "person": "Alja Vrček",
                   "code": "PNA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H53:I53"
+                  "twoMin": 0
                 },
                 {
                   "person": "Ajla Mehulić",
                   "code": "PNA",
                   "seven": 3,
-                  "twoMin": 0,
-                  "cell": "H57:I57"
+                  "twoMin": 0
                 },
                 {
                   "person": "Kaja Krebs",
                   "code": "POA",
                   "seven": 0,
-                  "twoMin": 1,
-                  "cell": "H67:I67"
+                  "twoMin": 1
                 },
                 {
                   "person": "Zala Kuri",
                   "code": "POA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H79:I79"
+                  "twoMin": 0
                 }
               ],
               "summaries": {
                 "Lara Kolobarič": {
-                  "index": 6.499999999999998,
+                  "index": 6.5,
                   "goal": 1,
                   "sevenGoal": 3,
                   "saves": 2,
@@ -7778,7 +5632,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Zala Petek": {
-                  "index": 13.4,
+                  "index": 13.6,
                   "goal": 5,
                   "sevenGoal": 0,
                   "saves": 1,
@@ -7873,7 +5727,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 1
                 },
                 "Ajla Mehulić": {
-                  "index": 5.699999999999999,
+                  "index": 5.8999999999999995,
                   "goal": 0,
                   "sevenGoal": 0,
                   "saves": 1,
@@ -7891,86 +5745,10 @@ const EXCEL_IMPORT = {
                   "blame": 1,
                   "sevenDrawn": 3
                 },
-                "Vita Sečki": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
                 "Zoja Verbovšek": {
                   "index": 2.8,
                   "goal": 0,
                   "sevenGoal": 4,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
-                "Tinkara Korošec": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
-                "Ela Adamič": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
-                "Lina Kolobarič": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
                   "saves": 0,
                   "miss": 0,
                   "sevenFailed": 0,
@@ -8005,46 +5783,8 @@ const EXCEL_IMPORT = {
                   "blame": 1,
                   "sevenDrawn": 0
                 },
-                "Pia Kljun": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
-                "Lana Švrljuga": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
                 "Kaja Krebs": {
-                  "index": 3.5,
+                  "index": 3.9000000000000004,
                   "goal": 2,
                   "sevenGoal": 0,
                   "saves": 2,
@@ -8064,146 +5804,2803 @@ const EXCEL_IMPORT = {
                 }
               },
               "notes": [],
-              "teamIndex": 48.699999999999996,
-              "reportedTeamIndex": 42.89999999999999,
-              "file": "Celje članice sezona 2026 nov index.xlsx",
-              "sheet": "Krka"
+              "teamIndex": 49.5,
+              "reportedTeamIndex": 49.5
             },
-            "differences": [
-              {
-                "person": "Kaja Krebs",
-                "code": "PNA",
-                "old": [
-                  1,
-                  0,
-                  2,
-                  0
+            "old": {
+              "rows": [
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "9Z",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "9O",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "9G",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "7O",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "7G",
+                  "quarters": [
+                    1,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "6G",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PDO",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    0,
+                    2,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PTG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9Z",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9O",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9G",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "KZ",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "KO",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "KG",
+                  "quarters": [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PDG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "6G",
+                  "quarters": [
+                    0,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PDO",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "7G",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "6G",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Kaja Krebs",
+                  "code": "KO",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Kaja Krebs",
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Kaja Krebs",
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "POA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "PNA",
+                  "quarters": [
+                    1,
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "PNN",
+                  "quarters": [
+                    2,
+                    2,
+                    2,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "POA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PNN",
+                  "quarters": [
+                    2,
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    0,
+                    2,
+                    1
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PNA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PNN",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "POA",
+                  "quarters": [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "POA",
+                  "quarters": [
+                    1,
+                    2,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    4,
+                    2,
+                    2
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Kaja Krebs",
+                  "code": "POA",
+                  "quarters": [
+                    3,
+                    1,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    0,
+                    2,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "PON",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "AZ",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "AG",
+                  "quarters": [
+                    2,
+                    2,
+                    3,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "A7",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "A7",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "AG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "NA",
+                  "quarters": [
+                    1,
+                    1,
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "NA",
+                  "quarters": [
+                    1,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "NN",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    3
+                  ]
+                },
+                {
+                  "person": "Kaja Krebs",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "DA",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    3
+                  ]
+                }
+              ],
+              "minutes": {
+                "Lara Kolobarič": 41,
+                "Zala Petek": 60,
+                "Sarah Pilih Derča": 38,
+                "Ella Podergajs": 7,
+                "Lenja Ripnak": 60,
+                "Alja Vrček": 50,
+                "Ajla Mehulić": 28,
+                "Zoja Verbovšek": 1,
+                "Zala Kuri": 16,
+                "Kaja Krebs": 53
+              },
+              "opponents": [
+                {
+                  "code": "9O",
+                  "quarters": [
+                    3,
+                    0,
+                    0,
+                    3
+                  ]
+                },
+                {
+                  "code": "9G",
+                  "quarters": [
+                    0,
+                    1,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "code": "6O",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "6G",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "7Z",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "7O",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "7G",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "code": "KZ",
+                  "quarters": [
+                    1,
+                    1,
+                    3,
+                    1
+                  ]
+                },
+                {
+                  "code": "KO",
+                  "quarters": [
+                    1,
+                    2,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "KG",
+                  "quarters": [
+                    1,
+                    5,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "code": "PDO",
+                  "quarters": [
+                    0,
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    2,
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "code": "PTG",
+                  "quarters": [
+                    2,
+                    2,
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "keepers": [
+                {
+                  "person": "Nika Kuri",
+                  "minutes": 22,
+                  "conceded": 9,
+                  "shots": 16,
+                  "sevenRatio": "0/1",
+                  "otherRatio": "9/15"
+                },
+                {
+                  "person": "Klara Horvatič",
+                  "minutes": 38,
+                  "conceded": 16,
+                  "shots": 24,
+                  "sevenRatio": "1/1",
+                  "otherRatio": "15/23"
+                }
+              ],
+              "file": "Celje članice sezona 2026 nov index.xlsx",
+              "sheet": "Krka",
+              "indices": {
+                "Lara Kolobarič": [
+                  3.2,
+                  2.9,
+                  3.3,
+                  -1.4
                 ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  0
+                "Zala Petek": [
+                  2.5,
+                  0.4,
+                  3.8,
+                  6.9
+                ],
+                "Sarah Pilih Derča": [
+                  -0.1,
+                  0.0,
+                  -0.3,
+                  0.4
+                ],
+                "Ella Podergajs": [
+                  0.0,
+                  0.0,
+                  1.4,
+                  0.0
+                ],
+                "Lenja Ripnak": [
+                  3.8,
+                  1.8,
+                  1.8,
+                  -0.2
+                ],
+                "Alja Vrček": [
+                  0.4,
+                  2.9,
+                  2.2,
+                  1.1
+                ],
+                "Ajla Mehulić": [
+                  0.0,
+                  -0.2,
+                  1.0,
+                  1.3
+                ],
+                "Zoja Verbovšek": [
+                  0.0,
+                  0.0,
+                  0.7,
+                  2.1
+                ],
+                "Zala Kuri": [
+                  1.8,
+                  0.0,
+                  0.8,
+                  0.4
+                ],
+                "Kaja Krebs": [
+                  1.2,
+                  0.2,
+                  -0.3,
+                  3.0
                 ]
               },
-              {
-                "person": "Kaja Krebs",
-                "code": "PNN",
-                "old": [
-                  2,
-                  2,
-                  2,
-                  1
+              "teamIndex": 48.8
+            },
+            "differences": [],
+            "aliases": []
+          }
+        },
+        {
+          "date": "2026-10-17",
+          "opponent": "Ptuj",
+          "finalHome": 29,
+          "finalAway": 31,
+          "firstHalfHome": 17,
+          "firstHalfAway": 15,
+          "id": "excel-2026-members-2026-10-17",
+          "complete": true,
+          "events": [],
+          "imported": {
+            "version": 2,
+            "new": {
+              "rows": [
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "9Z",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "9O",
+                  "quarters": [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "9G",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "9G",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PDG",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9O",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9G",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "7G",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    3
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PDG",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "9G",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "KO",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "KG",
+                  "quarters": [
+                    3,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "6G",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PTG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "6G",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "POA",
+                  "quarters": [
+                    1,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    1,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    0,
+                    2,
+                    5
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PNA",
+                  "quarters": [
+                    2,
+                    1,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "POA",
+                  "quarters": [
+                    3,
+                    2,
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PNA",
+                  "quarters": [
+                    1,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    2,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "PNA",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "POA",
+                  "quarters": [
+                    2,
+                    2,
+                    3,
+                    2
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PNA",
+                  "quarters": [
+                    2,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "POA",
+                  "quarters": [
+                    3,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "PNA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    4
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "POA",
+                  "quarters": [
+                    2,
+                    4,
+                    4,
+                    3
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Larissa Zukič",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Larissa Zukič",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "AG",
+                  "quarters": [
+                    2,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "AG",
+                  "quarters": [
+                    2,
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "AO",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "AG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "NA",
+                  "quarters": [
+                    1,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "DA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "DA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                }
+              ],
+              "minutes": {
+                "Lara Kolobarič": 31.5,
+                "Zala Petek": 55.5,
+                "Sarah Pilih Derča": 55.5,
+                "Ella Podergajs": 60,
+                "Lenja Ripnak": 56,
+                "Alja Vrček": 9,
+                "Ajla Mehulić": 19,
+                "Zala Kuri": 45.5,
+                "Pia Kljun": 4,
+                "Larissa Zukič": 10
+              },
+              "opponents": [
+                {
+                  "code": "9O",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "9G",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "code": "6G",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "code": "7O",
+                  "quarters": [
+                    1,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "7G",
+                  "quarters": [
+                    1,
+                    4,
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "code": "KZ",
+                  "quarters": [
+                    2,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "code": "KO",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "KG",
+                  "quarters": [
+                    2,
+                    3,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "code": "PDO",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "code": "PDG",
+                  "quarters": [
+                    1,
+                    1,
+                    4,
+                    1
+                  ]
+                },
+                {
+                  "code": "PTO",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "PTG",
+                  "quarters": [
+                    1,
+                    0,
+                    2,
+                    0
+                  ]
+                }
+              ],
+              "keepers": [
+                {
+                  "person": "Nika Kuri",
+                  "minutes": 60,
+                  "conceded": 31,
+                  "shots": 41,
+                  "sevenRatio": "9/11",
+                  "otherRatio": "22/30"
+                }
+              ],
+              "file": "Celje članice sezona 2026 nov index.xlsx",
+              "sheet": "Ptuj",
+              "fouls": [
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "POA",
+                  "seven": 1,
+                  "twoMin": 2
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "POA",
+                  "seven": 1,
+                  "twoMin": 0
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PNA",
+                  "seven": 2,
+                  "twoMin": 3
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "POA",
+                  "seven": 2,
+                  "twoMin": 0
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "POA",
+                  "seven": 1,
+                  "twoMin": 0
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "POA",
+                  "seven": 3,
+                  "twoMin": 2
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PNA",
+                  "seven": 0,
+                  "twoMin": 1
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PNN",
+                  "seven": 0,
+                  "twoMin": 1
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "POA",
+                  "seven": 1,
+                  "twoMin": 1
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "PNA",
+                  "seven": 0,
+                  "twoMin": 1
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PNA",
+                  "seven": 2,
+                  "twoMin": 1
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "POA",
+                  "seven": 2,
+                  "twoMin": 2
+                }
+              ],
+              "summaries": {
+                "Lara Kolobarič": {
+                  "index": 4.3999999999999995,
+                  "goal": 3,
+                  "sevenGoal": 0,
+                  "saves": 3,
+                  "miss": 2,
+                  "sevenFailed": 0,
+                  "assist": 3,
+                  "DA": 1,
+                  "DN": 0,
+                  "NA": 2,
+                  "NN": 1,
+                  "POA": 3,
+                  "PON": 0,
+                  "PNA": 2,
+                  "PNN": 3,
+                  "blame": 5,
+                  "sevenDrawn": 0
+                },
+                "Zala Petek": {
+                  "index": 13,
+                  "goal": 3,
+                  "sevenGoal": 0,
+                  "saves": 0,
+                  "miss": 0,
+                  "sevenFailed": 0,
+                  "assist": 5,
+                  "DA": 0,
+                  "DN": 0,
+                  "NA": 1,
+                  "NN": 1,
+                  "POA": 7,
+                  "PON": 0,
+                  "PNA": 5,
+                  "PNN": 2,
+                  "blame": 1,
+                  "sevenDrawn": 2
+                },
+                "Sarah Pilih Derča": {
+                  "index": 11.299999999999995,
+                  "goal": 4,
+                  "sevenGoal": 4,
+                  "saves": 2,
+                  "miss": 0,
+                  "sevenFailed": 0,
+                  "assist": 2,
+                  "DA": 1,
+                  "DN": 0,
+                  "NA": 1,
+                  "NN": 0,
+                  "POA": 8,
+                  "PON": 0,
+                  "PNA": 3,
+                  "PNN": 2,
+                  "blame": 6,
+                  "sevenDrawn": 0
+                },
+                "Ella Podergajs": {
+                  "index": 9.099999999999998,
+                  "goal": 7,
+                  "sevenGoal": 0,
+                  "saves": 2,
+                  "miss": 0,
+                  "sevenFailed": 0,
+                  "assist": 0,
+                  "DA": 1,
+                  "DN": 0,
+                  "NA": 1,
+                  "NN": 1,
+                  "POA": 4,
+                  "PON": 0,
+                  "PNA": 2,
+                  "PNN": 1,
+                  "blame": 4,
+                  "sevenDrawn": 0
+                },
+                "Lenja Ripnak": {
+                  "index": 10.399999999999997,
+                  "goal": 6,
+                  "sevenGoal": 0,
+                  "saves": 0,
+                  "miss": 0,
+                  "sevenFailed": 0,
+                  "assist": 0,
+                  "DA": 1,
+                  "DN": 0,
+                  "NA": 0,
+                  "NN": 0,
+                  "POA": 9,
+                  "PON": 0,
+                  "PNA": 3,
+                  "PNN": 1,
+                  "blame": 6,
+                  "sevenDrawn": 0
+                },
+                "Alja Vrček": {
+                  "index": 1.3000000000000003,
+                  "goal": 1,
+                  "sevenGoal": 0,
+                  "saves": 0,
+                  "miss": 0,
+                  "sevenFailed": 0,
+                  "assist": 0,
+                  "DA": 0,
+                  "DN": 0,
+                  "NA": 0,
+                  "NN": 0,
+                  "POA": 3,
+                  "PON": 0,
+                  "PNA": 1,
+                  "PNN": 0,
+                  "blame": 3,
+                  "sevenDrawn": 0
+                },
+                "Ajla Mehulić": {
+                  "index": 7.1,
+                  "goal": 1,
+                  "sevenGoal": 0,
+                  "saves": 0,
+                  "miss": 0,
+                  "sevenFailed": 0,
+                  "assist": 4,
+                  "DA": 0,
+                  "DN": 0,
+                  "NA": 1,
+                  "NN": 1,
+                  "POA": 1,
+                  "PON": 0,
+                  "PNA": 6,
+                  "PNN": 3,
+                  "blame": 1,
+                  "sevenDrawn": 2
+                },
+                "Zala Kuri": {
+                  "index": 4.5,
+                  "goal": 0,
+                  "sevenGoal": 0,
+                  "saves": 0,
+                  "miss": 0,
+                  "sevenFailed": 0,
+                  "assist": 0,
+                  "DA": 0,
+                  "DN": 0,
+                  "NA": 0,
+                  "NN": 0,
+                  "POA": 13,
+                  "PON": 1,
+                  "PNA": 3,
+                  "PNN": 0,
+                  "blame": 3,
+                  "sevenDrawn": 0
+                },
+                "Pia Kljun": {
+                  "index": 0.7,
+                  "goal": 0,
+                  "sevenGoal": 0,
+                  "saves": 0,
+                  "miss": 0,
+                  "sevenFailed": 0,
+                  "assist": 0,
+                  "DA": 1,
+                  "DN": 0,
+                  "NA": 0,
+                  "NN": 0,
+                  "POA": 0,
+                  "PON": 0,
+                  "PNA": 0,
+                  "PNN": 0,
+                  "blame": 0,
+                  "sevenDrawn": 0
+                },
+                "Larissa Zukič": {
+                  "index": 0.5,
+                  "goal": 0,
+                  "sevenGoal": 0,
+                  "saves": 0,
+                  "miss": 0,
+                  "sevenFailed": 0,
+                  "assist": 0,
+                  "DA": 0,
+                  "DN": 0,
+                  "NA": 0,
+                  "NN": 0,
+                  "POA": 2,
+                  "PON": 1,
+                  "PNA": 0,
+                  "PNN": 0,
+                  "blame": 1,
+                  "sevenDrawn": 0
+                }
+              },
+              "notes": [],
+              "teamIndex": 62.3,
+              "reportedTeamIndex": 62.3
+            },
+            "old": {
+              "rows": [
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "9Z",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "9O",
+                  "quarters": [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "9G",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "9G",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PDG",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9O",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9G",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "7G",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    3
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PDG",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "9G",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "KO",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "KG",
+                  "quarters": [
+                    3,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "6G",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PTG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "6G",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "POA",
+                  "quarters": [
+                    1,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    1,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    0,
+                    2,
+                    5
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PNA",
+                  "quarters": [
+                    2,
+                    1,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "POA",
+                  "quarters": [
+                    3,
+                    2,
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PNA",
+                  "quarters": [
+                    1,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    2,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "PNA",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "POA",
+                  "quarters": [
+                    2,
+                    2,
+                    3,
+                    2
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PNA",
+                  "quarters": [
+                    2,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "POA",
+                  "quarters": [
+                    3,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Alja Vrček",
+                  "code": "PNA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    4
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "POA",
+                  "quarters": [
+                    2,
+                    4,
+                    4,
+                    3
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Larissa Zukič",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Larissa Zukič",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "AG",
+                  "quarters": [
+                    2,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "AG",
+                  "quarters": [
+                    2,
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "AO",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "AG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "NA",
+                  "quarters": [
+                    1,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lara Kolobarič",
+                  "code": "DA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ella Podergajs",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "DA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                }
+              ],
+              "minutes": {
+                "Lara Kolobarič": 31.5,
+                "Zala Petek": 55.5,
+                "Sarah Pilih Derča": 55.5,
+                "Ella Podergajs": 60,
+                "Lenja Ripnak": 56,
+                "Alja Vrček": 9,
+                "Ajla Mehulić": 19,
+                "Zala Kuri": 45.5,
+                "Pia Kljun": 4,
+                "Larissa Zukič": 10
+              },
+              "opponents": [
+                {
+                  "code": "9O",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "9G",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "code": "6G",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "code": "7O",
+                  "quarters": [
+                    1,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "7G",
+                  "quarters": [
+                    1,
+                    4,
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "code": "KZ",
+                  "quarters": [
+                    2,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "code": "KO",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "KG",
+                  "quarters": [
+                    2,
+                    3,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "code": "PDO",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "code": "PDG",
+                  "quarters": [
+                    1,
+                    1,
+                    4,
+                    1
+                  ]
+                },
+                {
+                  "code": "PTO",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "PTG",
+                  "quarters": [
+                    1,
+                    0,
+                    2,
+                    0
+                  ]
+                }
+              ],
+              "keepers": [
+                {
+                  "person": "Nika Kuri",
+                  "minutes": 60,
+                  "conceded": 31,
+                  "shots": 41,
+                  "sevenRatio": "9/11",
+                  "otherRatio": "22/30"
+                }
+              ],
+              "file": "Celje članice sezona 2026 nov index.xlsx",
+              "sheet": "Ptuj",
+              "indices": {
+                "Lara Kolobarič": [
+                  3.6,
+                  0.9,
+                  1.1,
+                  0.0
                 ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  0
+                "Zala Petek": [
+                  4.8,
+                  1.4,
+                  2.1,
+                  2.3
+                ],
+                "Sarah Pilih Derča": [
+                  4.6,
+                  2.7,
+                  1.8,
+                  4.1
+                ],
+                "Ella Podergajs": [
+                  5.4,
+                  2.9,
+                  0.4,
+                  1.6
+                ],
+                "Lenja Ripnak": [
+                  2.9,
+                  2.2,
+                  5.4,
+                  2.2
+                ],
+                "Alja Vrček": [
+                  2.6,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Ajla Mehulić": [
+                  0.0,
+                  2.7,
+                  0.0,
+                  1.7
+                ],
+                "Zala Kuri": [
+                  0.8,
+                  1.6,
+                  1.6,
+                  1.6
+                ],
+                "Larissa Zukič": [
+                  0.0,
+                  0.0,
+                  0.4,
+                  0.8
+                ],
+                "Pia Kljun": [
+                  0.0,
+                  0.0,
+                  0.7,
+                  0.0
                 ]
               },
-              {
-                "person": "Kaja Krebs",
-                "code": "POA",
-                "old": [
-                  4,
-                  1,
-                  1,
-                  1
-                ],
-                "new": [
-                  3,
-                  1,
-                  1,
-                  1
-                ]
-              },
-              {
-                "person": "Lara Kolobarič",
-                "code": "PNA",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  1,
-                  0,
-                  2,
-                  0
-                ]
-              },
-              {
-                "person": "Lara Kolobarič",
-                "code": "PNN",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  2,
-                  2,
-                  2,
-                  1
-                ]
-              },
-              {
-                "person": "Lara Kolobarič",
-                "code": "POA",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  1,
-                  0,
-                  0,
-                  0
-                ]
-              },
-              {
-                "person": "Lenja Rišnak",
-                "code": "AG",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  1,
-                  0,
-                  0,
-                  0
-                ]
-              },
-              {
-                "person": "Zala Petek",
-                "code": "AG",
-                "old": [
-                  1,
-                  1,
-                  0,
-                  1
-                ],
-                "new": [
-                  0,
-                  1,
-                  0,
-                  1
-                ]
-              }
-            ],
-            "aliases": {
-              "Lana Kolobarič": "Lara Kolobarič",
-              "Alja Mehulič": "Ajla Mehulić",
-              "Ajla Mehulič": "Ajla Mehulić"
-            }
+              "teamIndex": 66.9
+            },
+            "differences": [],
+            "aliases": []
           }
         }
       ],
@@ -8214,16 +8611,12 @@ const EXCEL_IMPORT = {
           "Ela Adamič",
           "Ella Podergajs",
           "Kaja Krebs",
-          "Lana Kačičnik",
-          "Lana Švrljuga",
           "Lara Kolobarič",
           "Larissa Zukič",
           "Lenja Ripnak",
           "Lina Kolobarič",
           "Pia Kljun",
           "Sarah Pilih Derča",
-          "Tia Kavalar",
-          "Tiana Novak",
           "Tinkara Korošec",
           "Vita Sečki",
           "Zala Kuri",
@@ -8249,1216 +8642,7 @@ const EXCEL_IMPORT = {
           "complete": true,
           "events": [],
           "imported": {
-            "version": 1,
-            "old": {
-              "rows": [
-                {
-                  "person": "Zala Petek",
-                  "code": "6G",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A6"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "PDG",
-                  "quarters": [
-                    2,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A7"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "PTG",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A8"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "9Z",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A10"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "9G",
-                  "quarters": [
-                    2,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A11"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "PDO",
-                  "quarters": [
-                    1,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A12"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "7G",
-                  "quarters": [
-                    0,
-                    0,
-                    2,
-                    0
-                  ],
-                  "cell": "A13"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "KG",
-                  "quarters": [
-                    2,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A15"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "PDG",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A16"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "PTG",
-                  "quarters": [
-                    2,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A17"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "9G",
-                  "quarters": [
-                    1,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A19"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "PDG",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A20"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "PTG",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A21"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "KZ",
-                  "quarters": [
-                    0,
-                    0,
-                    2,
-                    0
-                  ],
-                  "cell": "A23"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "KO",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A24"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "PTG",
-                  "quarters": [
-                    0,
-                    2,
-                    0,
-                    1
-                  ],
-                  "cell": "A25"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "9Z",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    1
-                  ],
-                  "cell": "A27"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "9G",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    2
-                  ],
-                  "cell": "A28"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "KG",
-                  "quarters": [
-                    2,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A29"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "PDG",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A30"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "9G",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A32"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "PDG",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    2
-                  ],
-                  "cell": "A33"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "7G",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A34"
-                },
-                {
-                  "person": "Zala Kuri",
-                  "code": "6Z",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A36"
-                },
-                {
-                  "person": "Zala Kuri",
-                  "code": "PTZ",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A37"
-                },
-                {
-                  "person": "Zala Kuri",
-                  "code": "PTG",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A38"
-                },
-                {
-                  "person": "Pia Kljun",
-                  "code": "PTG",
-                  "quarters": [
-                    0,
-                    0,
-                    2,
-                    1
-                  ],
-                  "cell": "A40"
-                },
-                {
-                  "person": "Lana Švrljuga",
-                  "code": "KO",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A42"
-                },
-                {
-                  "person": "Lana Švrljuga",
-                  "code": "KG",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A43"
-                },
-                {
-                  "person": "Teja Jereb",
-                  "code": "PDG",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    2
-                  ],
-                  "cell": "A45"
-                },
-                {
-                  "person": "Zoja Jurak",
-                  "code": "PDO",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A47"
-                },
-                {
-                  "person": "Brina Mernik",
-                  "code": "PTG",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A49"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "AG",
-                  "quarters": [
-                    2,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A53"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "AG",
-                  "quarters": [
-                    3,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A55"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "A7",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A56"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "AZ",
-                  "quarters": [
-                    0,
-                    0,
-                    2,
-                    0
-                  ],
-                  "cell": "A58"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "AG",
-                  "quarters": [
-                    1,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A59"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "A7",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A60"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "AG",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A62"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "AZ",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A64"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "AO",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A65"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "POA",
-                  "quarters": [
-                    1,
-                    3,
-                    0,
-                    0
-                  ],
-                  "cell": "A69"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "PNN",
-                  "quarters": [
-                    2,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A70"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "POA",
-                  "quarters": [
-                    4,
-                    0,
-                    4,
-                    0
-                  ],
-                  "cell": "A72"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "PNA",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A73"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "PON",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A75"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    0,
-                    3,
-                    0
-                  ],
-                  "cell": "A76"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "PNN",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A77"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "PNA",
-                  "quarters": [
-                    2,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A79"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "PNN",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A80"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    4,
-                    0,
-                    0
-                  ],
-                  "cell": "A82"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "PON",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A83"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A85"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A86"
-                },
-                {
-                  "person": "Tinkara Korošec",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    2,
-                    2,
-                    0
-                  ],
-                  "cell": "A88"
-                },
-                {
-                  "person": "Tinkara Korošec",
-                  "code": "PNA",
-                  "quarters": [
-                    1,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A89"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    2,
-                    0,
-                    2
-                  ],
-                  "cell": "A91"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A92"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "PNN",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    1
-                  ],
-                  "cell": "A93"
-                },
-                {
-                  "person": "Zala Kuri",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    2,
-                    0,
-                    3
-                  ],
-                  "cell": "A95"
-                },
-                {
-                  "person": "Zala Kuri",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A96"
-                },
-                {
-                  "person": "Lana Švrljuga",
-                  "code": "PON",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A98"
-                },
-                {
-                  "person": "Teja Jereb",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A100"
-                },
-                {
-                  "person": "Teja Jereb",
-                  "code": "PON",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A101"
-                },
-                {
-                  "person": "Teja Jereb",
-                  "code": "PNN",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    1
-                  ],
-                  "cell": "A102"
-                },
-                {
-                  "person": "Zoja Jurak",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A104"
-                },
-                {
-                  "person": "Zoja Jurak",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    3,
-                    0,
-                    0
-                  ],
-                  "cell": "A105"
-                },
-                {
-                  "person": "Zoja Jurak",
-                  "code": "PNN",
-                  "quarters": [
-                    0,
-                    2,
-                    0,
-                    0
-                  ],
-                  "cell": "A106"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "NA",
-                  "quarters": [
-                    0,
-                    2,
-                    0,
-                    0
-                  ],
-                  "cell": "A110"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "NN",
-                  "quarters": [
-                    1,
-                    0,
-                    2,
-                    0
-                  ],
-                  "cell": "A112"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "NN",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A114"
-                },
-                {
-                  "person": "Tinkara Korošec",
-                  "code": "NA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A116"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "NA",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A118"
-                },
-                {
-                  "person": "Pia Kljun",
-                  "code": "NN",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A120"
-                },
-                {
-                  "person": "Teja Jereb",
-                  "code": "NA",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A122"
-                },
-                {
-                  "person": "Teja Jereb",
-                  "code": "NN",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    1
-                  ],
-                  "cell": "A123"
-                },
-                {
-                  "person": "Zoja Jurak",
-                  "code": "NA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A125"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "DA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A129"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "DA",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A131"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "DA",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A133"
-                },
-                {
-                  "person": "Pia Kljun",
-                  "code": "DA",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A135"
-                },
-                {
-                  "person": "Lana Švrljuga",
-                  "code": "DA",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A137"
-                },
-                {
-                  "person": "Teja Jereb",
-                  "code": "DN",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A139"
-                }
-              ],
-              "minutes": {
-                "Zala Petek": 30,
-                "Sarah Pilih Derča": 29,
-                "Lenja Ripnak": 26,
-                "Ajla Mehulić": 30,
-                "Vita Sečki": 31,
-                "Zoja Verbovšek": 53,
-                "Tinkara Korošec": 35,
-                "Lina Kolobarič": 31,
-                "Zala Kuri": 25,
-                "Pia Kljun": 17,
-                "Lana Švrljuga": 14,
-                "Teja Jereb": 19,
-                "Zoja Jurak": 15,
-                "Brina Mernik": 5,
-                "Larissa Zukić": 0
-              },
-              "opponents": [
-                {
-                  "code": "9Z",
-                  "quarters": [
-                    0,
-                    3,
-                    2,
-                    0
-                  ]
-                },
-                {
-                  "code": "9O",
-                  "quarters": [
-                    5,
-                    4,
-                    3,
-                    6
-                  ]
-                },
-                {
-                  "code": "9G",
-                  "quarters": [
-                    4,
-                    3,
-                    2,
-                    2
-                  ]
-                },
-                {
-                  "code": "KZ",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "KO",
-                  "quarters": [
-                    2,
-                    0,
-                    1,
-                    2
-                  ]
-                },
-                {
-                  "code": "KG",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                {
-                  "code": "6Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                {
-                  "code": "6O",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ]
-                },
-                {
-                  "code": "6G",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    2
-                  ]
-                },
-                {
-                  "code": "PDZ",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                {
-                  "code": "PDO",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "PDG",
-                  "quarters": [
-                    1,
-                    1,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "PTZ",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "PTO",
-                  "quarters": [
-                    1,
-                    0,
-                    3,
-                    0
-                  ]
-                },
-                {
-                  "code": "PTG",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    2
-                  ]
-                },
-                {
-                  "code": "7Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "7O",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "7G",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ]
-                }
-              ],
-              "keepers": [
-                {
-                  "person": "Nika Kuri",
-                  "minutes": 46,
-                  "conceded": 14,
-                  "shots": 35,
-                  "sevenSaves": 0
-                },
-                {
-                  "person": "Zoja Brglez",
-                  "minutes": 14,
-                  "conceded": 6,
-                  "shots": 13,
-                  "sevenSaves": 0
-                }
-              ],
-              "indices": {
-                "Lina Kolobarič": [
-                  0.0,
-                  2.8,
-                  1.4,
-                  4.6
-                ],
-                "Zala Petek": [
-                  6.6,
-                  2.9,
-                  0.0,
-                  0.0
-                ],
-                "Zoja Jurak": [
-                  0.0,
-                  -0.3,
-                  0.0,
-                  0.2
-                ],
-                "Larissa Zukić": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Lenja Ripnak": [
-                  7.4,
-                  0.0,
-                  1.4,
-                  0.0
-                ],
-                "Zoja Verbovšek": [
-                  2.8,
-                  0.4,
-                  -0.4,
-                  5.2
-                ],
-                "Zala Kuri": [
-                  0.0,
-                  1.8,
-                  0.0,
-                  0.8
-                ],
-                "Ajla Mehulić": [
-                  4.5,
-                  3.8,
-                  2.3,
-                  0.0
-                ],
-                "Lana Švrljuga": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  2.3
-                ],
-                "Vita Sečki": [
-                  0.0,
-                  4.6,
-                  -0.8,
-                  1.4
-                ],
-                "Pia Kljun": [
-                  0.0,
-                  0.0,
-                  3.5,
-                  0.7
-                ],
-                "Sarah Pilih Derča": [
-                  6.1,
-                  0.0,
-                  4.1,
-                  0.0
-                ],
-                "Tinkara Korošec": [
-                  0.0,
-                  0.1,
-                  0.8,
-                  0.0
-                ],
-                "Brina Mernik": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  1.4
-                ],
-                "Teja Jereb": [
-                  0.0,
-                  0.0,
-                  -0.7,
-                  2.9
-                ]
-              },
-              "teamIndex": 74.6,
-              "file": "Celje mladinke sezona 2026 - stari index 2025.xlsx",
-              "sheet": "Krka"
-            },
+            "version": 2,
             "new": {
               "rows": [
                 {
@@ -9469,8 +8653,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B5"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -9480,8 +8663,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B6"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -9491,8 +8673,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B7"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -9502,8 +8683,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B8"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -9513,8 +8693,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B9"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -9524,8 +8703,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B10"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -9535,8 +8713,7 @@ const EXCEL_IMPORT = {
                     0,
                     2,
                     0
-                  ],
-                  "cell": "B11"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -9546,8 +8723,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B12"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -9557,8 +8733,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B13"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -9568,8 +8743,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B14"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -9579,8 +8753,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B15"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -9590,8 +8763,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B16"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -9601,8 +8773,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B17"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -9612,8 +8783,7 @@ const EXCEL_IMPORT = {
                     0,
                     2,
                     0
-                  ],
-                  "cell": "B18"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -9623,8 +8793,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B19"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -9634,8 +8803,7 @@ const EXCEL_IMPORT = {
                     2,
                     0,
                     1
-                  ],
-                  "cell": "B20"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -9645,8 +8813,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     1
-                  ],
-                  "cell": "B21"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -9656,8 +8823,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     2
-                  ],
-                  "cell": "B22"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -9667,8 +8833,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B23"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -9678,8 +8843,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B24"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -9689,8 +8853,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B25"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -9700,8 +8863,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B26"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -9711,8 +8873,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     2
-                  ],
-                  "cell": "B27"
+                  ]
                 },
                 {
                   "person": "Zala Kuri",
@@ -9722,8 +8883,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B28"
+                  ]
                 },
                 {
                   "person": "Zala Kuri",
@@ -9733,8 +8893,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B29"
+                  ]
                 },
                 {
                   "person": "Zala Kuri",
@@ -9744,8 +8903,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B30"
+                  ]
                 },
                 {
                   "person": "Pia Kljun",
@@ -9755,8 +8913,7 @@ const EXCEL_IMPORT = {
                     0,
                     2,
                     1
-                  ],
-                  "cell": "B31"
+                  ]
                 },
                 {
                   "person": "Lana Švrljuga",
@@ -9766,8 +8923,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B32"
+                  ]
                 },
                 {
                   "person": "Lana Švrljuga",
@@ -9777,8 +8933,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B33"
+                  ]
                 },
                 {
                   "person": "Teja Jereb",
@@ -9788,8 +8943,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     2
-                  ],
-                  "cell": "B34"
+                  ]
                 },
                 {
                   "person": "Zoja Jurak",
@@ -9799,8 +8953,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B35"
+                  ]
                 },
                 {
                   "person": "Brina Mernik",
@@ -9810,8 +8963,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B36"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -9821,8 +8973,7 @@ const EXCEL_IMPORT = {
                     3,
                     0,
                     0
-                  ],
-                  "cell": "B39"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -9832,8 +8983,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B42"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -9843,8 +8993,7 @@ const EXCEL_IMPORT = {
                     0,
                     4,
                     0
-                  ],
-                  "cell": "B43"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -9854,8 +9003,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B45"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -9865,8 +9013,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B48"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -9876,8 +9023,7 @@ const EXCEL_IMPORT = {
                     0,
                     3,
                     0
-                  ],
-                  "cell": "B49"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -9887,8 +9033,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B50"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -9898,8 +9043,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B53"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -9909,8 +9053,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B54"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -9920,8 +9063,7 @@ const EXCEL_IMPORT = {
                     4,
                     0,
                     0
-                  ],
-                  "cell": "B55"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -9931,8 +9073,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B56"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -9942,8 +9083,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B59"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -9953,8 +9093,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B61"
+                  ]
                 },
                 {
                   "person": "Tinkara Korošec",
@@ -9964,8 +9103,7 @@ const EXCEL_IMPORT = {
                     2,
                     2,
                     0
-                  ],
-                  "cell": "B63"
+                  ]
                 },
                 {
                   "person": "Tinkara Korošec",
@@ -9975,8 +9113,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B65"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -9986,8 +9123,7 @@ const EXCEL_IMPORT = {
                     2,
                     0,
                     2
-                  ],
-                  "cell": "B67"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -9997,8 +9133,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B69"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -10008,8 +9143,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     1
-                  ],
-                  "cell": "B70"
+                  ]
                 },
                 {
                   "person": "Zala Kuri",
@@ -10019,8 +9153,7 @@ const EXCEL_IMPORT = {
                     2,
                     0,
                     3
-                  ],
-                  "cell": "B71"
+                  ]
                 },
                 {
                   "person": "Zala Kuri",
@@ -10030,8 +9163,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B73"
+                  ]
                 },
                 {
                   "person": "Lana Švrljuga",
@@ -10041,8 +9173,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B80"
+                  ]
                 },
                 {
                   "person": "Teja Jereb",
@@ -10052,8 +9183,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B83"
+                  ]
                 },
                 {
                   "person": "Teja Jereb",
@@ -10063,8 +9193,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B84"
+                  ]
                 },
                 {
                   "person": "Teja Jereb",
@@ -10074,8 +9203,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     1
-                  ],
-                  "cell": "B86"
+                  ]
                 },
                 {
                   "person": "Zoja Jurak",
@@ -10085,8 +9213,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B87"
+                  ]
                 },
                 {
                   "person": "Zoja Jurak",
@@ -10096,8 +9223,7 @@ const EXCEL_IMPORT = {
                     3,
                     0,
                     0
-                  ],
-                  "cell": "B89"
+                  ]
                 },
                 {
                   "person": "Zoja Jurak",
@@ -10107,8 +9233,7 @@ const EXCEL_IMPORT = {
                     2,
                     0,
                     0
-                  ],
-                  "cell": "B90"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -10118,8 +9243,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B93"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -10129,8 +9253,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B94"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -10140,8 +9263,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B95"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -10151,8 +9273,7 @@ const EXCEL_IMPORT = {
                     0,
                     2,
                     0
-                  ],
-                  "cell": "B96"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -10162,8 +9283,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B97"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -10173,8 +9293,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B98"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -10184,8 +9303,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B99"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -10195,8 +9313,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B100"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -10206,8 +9323,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B101"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -10217,8 +9333,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B102"
+                  ]
                 },
                 {
                   "person": "Teja Jereb",
@@ -10228,8 +9343,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B103"
+                  ]
                 },
                 {
                   "person": "Teja Jereb",
@@ -10239,8 +9353,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B104"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -10250,8 +9363,7 @@ const EXCEL_IMPORT = {
                     2,
                     0,
                     0
-                  ],
-                  "cell": "B107"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -10261,8 +9373,7 @@ const EXCEL_IMPORT = {
                     0,
                     2,
                     0
-                  ],
-                  "cell": "B108"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -10272,8 +9383,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B109"
+                  ]
                 },
                 {
                   "person": "Tinkara Korošec",
@@ -10283,8 +9393,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B110"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -10294,8 +9403,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B111"
+                  ]
                 },
                 {
                   "person": "Pia Kljun",
@@ -10305,8 +9413,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B112"
+                  ]
                 },
                 {
                   "person": "Teja Jereb",
@@ -10316,8 +9423,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     1
-                  ],
-                  "cell": "B113"
+                  ]
                 },
                 {
                   "person": "Teja Jereb",
@@ -10327,8 +9433,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B114"
+                  ]
                 },
                 {
                   "person": "Zoja Jurak",
@@ -10338,8 +9443,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B115"
+                  ]
                 },
                 {
                   "person": "Zoja Jurak",
@@ -10349,8 +9453,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B116"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -10360,8 +9463,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B119"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -10371,8 +9473,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B120"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -10382,8 +9483,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B121"
+                  ]
                 },
                 {
                   "person": "Pia Kljun",
@@ -10393,8 +9493,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B122"
+                  ]
                 },
                 {
                   "person": "Lana Švrljuga",
@@ -10404,8 +9503,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B123"
+                  ]
                 },
                 {
                   "person": "Teja Jereb",
@@ -10415,8 +9513,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B124"
+                  ]
                 }
               ],
               "minutes": {
@@ -10433,8 +9530,7 @@ const EXCEL_IMPORT = {
                 "Lana Švrljuga": 14,
                 "Teja Jereb": 19,
                 "Zoja Jurak": 15,
-                "Brina Mernik": 5,
-                "Larissa Zukić": 0
+                "Brina Mernik": 5
               },
               "opponents": [
                 {
@@ -10492,24 +9588,6 @@ const EXCEL_IMPORT = {
                   ]
                 },
                 {
-                  "code": "7Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "7O",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
                   "code": "7G",
                   "quarters": [
                     0,
@@ -10555,28 +9633,10 @@ const EXCEL_IMPORT = {
                   ]
                 },
                 {
-                  "code": "PDO",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
                   "code": "PDG",
                   "quarters": [
                     1,
                     1,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "PTZ",
-                  "quarters": [
-                    0,
-                    0,
                     0,
                     0
                   ]
@@ -10618,34 +9678,32 @@ const EXCEL_IMPORT = {
                   "otherRatio": "6/13"
                 }
               ],
+              "file": "Celje mladinke sezona 2026 nov index.xlsx",
+              "sheet": "Krka",
               "fouls": [
                 {
                   "person": "Zala Petek",
                   "code": "PNA",
                   "seven": 0,
-                  "twoMin": 1,
-                  "cell": "H41:I41"
+                  "twoMin": 1
                 },
                 {
                   "person": "Lenja Ripnak",
                   "code": "PNA",
                   "seven": 2,
-                  "twoMin": 0,
-                  "cell": "H49:I49"
+                  "twoMin": 0
                 },
                 {
                   "person": "Zoja Verbovšek",
                   "code": "POA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H59:I59"
+                  "twoMin": 0
                 },
                 {
                   "person": "Zoja Jurak",
                   "code": "POA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H87:I87"
+                  "twoMin": 0
                 }
               ],
               "summaries": {
@@ -10669,7 +9727,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Sarah Pilih Derča": {
-                  "index": 8.7,
+                  "index": 8.899999999999999,
                   "goal": 2,
                   "sevenGoal": 2,
                   "saves": 2,
@@ -10726,7 +9784,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Vita Sečki": {
-                  "index": 4.7,
+                  "index": 4.499999999999999,
                   "goal": 3,
                   "sevenGoal": 0,
                   "saves": 1,
@@ -10745,7 +9803,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Zoja Verbovšek": {
-                  "index": 7.1,
+                  "index": 6.699999999999999,
                   "goal": 5,
                   "sevenGoal": 0,
                   "saves": 0,
@@ -10802,7 +9860,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Zala Kuri": {
-                  "index": 2.9,
+                  "index": 2.4999999999999996,
                   "goal": 1,
                   "sevenGoal": 0,
                   "saves": 0,
@@ -10840,7 +9898,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Lana Švrljuga": {
-                  "index": 1.8999999999999997,
+                  "index": 2.1,
                   "goal": 1,
                   "sevenGoal": 0,
                   "saves": 1,
@@ -10859,13 +9917,13 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Teja Jereb": {
-                  "index": 4.200000000000001,
+                  "index": 5.200000000000001,
                   "goal": 2,
                   "sevenGoal": 0,
                   "saves": 0,
                   "miss": 0,
                   "sevenFailed": 0,
-                  "assist": 1,
+                  "assist": 2,
                   "DA": 1,
                   "DN": 1,
                   "NA": 2,
@@ -10878,7 +9936,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Zoja Jurak": {
-                  "index": 0.5999999999999999,
+                  "index": 0.8,
                   "goal": 0,
                   "sevenGoal": 0,
                   "saves": 1,
@@ -10914,25 +9972,6 @@ const EXCEL_IMPORT = {
                   "PNN": 0,
                   "blame": 0,
                   "sevenDrawn": 0
-                },
-                "Larissa Zukić": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
                 }
               },
               "notes": [
@@ -10945,82 +9984,1136 @@ const EXCEL_IMPORT = {
                   "AG-1"
                 ]
               ],
-              "teamIndex": 74.79999999999998,
-              "reportedTeamIndex": 68.6,
-              "file": "Celje mladinke sezona 2026 nov index.xlsx",
-              "sheet": "Krka"
+              "teamIndex": 75.4,
+              "reportedTeamIndex": 75.4
             },
-            "differences": [
-              {
-                "person": "Lina Kolobarič",
-                "code": "AG",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
+            "old": {
+              "rows": [
+                {
+                  "person": "Zala Petek",
+                  "code": "6G",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PDG",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PTG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9Z",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9G",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PDO",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "7G",
+                  "quarters": [
+                    0,
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "KG",
+                  "quarters": [
+                    2,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PDG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PTG",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "9G",
+                  "quarters": [
+                    1,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PTG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "KZ",
+                  "quarters": [
+                    0,
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "KO",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "9Z",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "9G",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "KG",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "9G",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "7G",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "6Z",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "PTZ",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    0,
+                    2,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lana Švrljuga",
+                  "code": "KO",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lana Švrljuga",
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Zoja Jurak",
+                  "code": "PDO",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Brina Mernik",
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "POA",
+                  "quarters": [
+                    1,
+                    3,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PNN",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "POA",
+                  "quarters": [
+                    4,
+                    0,
+                    4,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PNA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PON",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    0,
+                    3,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PNA",
+                  "quarters": [
+                    2,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PNN",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    4,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Tinkara Korošec",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    2,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Tinkara Korošec",
+                  "code": "PNA",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    3
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lana Švrljuga",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Jurak",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Jurak",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    3,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Jurak",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "AG",
+                  "quarters": [
+                    2,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "AG",
+                  "quarters": [
+                    3,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "A7",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "AZ",
+                  "quarters": [
+                    0,
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "AG",
+                  "quarters": [
+                    1,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "A7",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "AZ",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "AZ",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "NN",
+                  "quarters": [
+                    1,
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Tinkara Korošec",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Jurak",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Jurak",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "DA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lana Švrljuga",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "DN",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                }
+              ],
+              "minutes": {
+                "Zala Petek": 30,
+                "Sarah Pilih Derča": 29,
+                "Lenja Ripnak": 26,
+                "Ajla Mehulić": 30,
+                "Vita Sečki": 31,
+                "Zoja Verbovšek": 53,
+                "Tinkara Korošec": 35,
+                "Lina Kolobarič": 31,
+                "Zala Kuri": 25,
+                "Pia Kljun": 17,
+                "Lana Švrljuga": 14,
+                "Teja Jereb": 19,
+                "Zoja Jurak": 15,
+                "Brina Mernik": 5
+              },
+              "opponents": [
+                {
+                  "code": "9Z",
+                  "quarters": [
+                    0,
+                    3,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "code": "9O",
+                  "quarters": [
+                    5,
+                    4,
+                    3,
+                    6
+                  ]
+                },
+                {
+                  "code": "9G",
+                  "quarters": [
+                    4,
+                    3,
+                    2,
+                    2
+                  ]
+                },
+                {
+                  "code": "6Z",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "6O",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "code": "6G",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "code": "7G",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "KZ",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "KO",
+                  "quarters": [
+                    2,
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "code": "KG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "PDZ",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "PDG",
+                  "quarters": [
+                    1,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "PTO",
+                  "quarters": [
+                    1,
+                    0,
+                    3,
+                    0
+                  ]
+                },
+                {
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                }
+              ],
+              "keepers": [
+                {
+                  "person": "Nika Kuri",
+                  "minutes": 46,
+                  "conceded": 14,
+                  "shots": 35,
+                  "sevenRatio": "3/3",
+                  "otherRatio": "11/32"
+                },
+                {
+                  "person": "Zoja Brglez",
+                  "minutes": 14,
+                  "conceded": 6,
+                  "shots": 13,
+                  "sevenRatio": null,
+                  "otherRatio": "6/13"
+                }
+              ],
+              "file": "Celje mladinke sezona 2026 nov index.xlsx",
+              "sheet": "Krka",
+              "indices": {
+                "Zala Petek": [
+                  6.6,
+                  2.9,
+                  0.0,
+                  0.0
                 ],
-                "new": [
-                  0,
-                  1,
-                  0,
-                  0
+                "Sarah Pilih Derča": [
+                  6.1,
+                  0.0,
+                  4.1,
+                  0.0
+                ],
+                "Lenja Ripnak": [
+                  7.4,
+                  0.0,
+                  1.4,
+                  0.0
+                ],
+                "Ajla Mehulić": [
+                  4.5,
+                  3.8,
+                  2.3,
+                  0.0
+                ],
+                "Vita Sečki": [
+                  0.0,
+                  4.6,
+                  -0.8,
+                  1.4
+                ],
+                "Zoja Verbovšek": [
+                  2.8,
+                  0.4,
+                  -0.4,
+                  5.2
+                ],
+                "Lina Kolobarič": [
+                  0.0,
+                  3.8,
+                  1.4,
+                  4.6
+                ],
+                "Zala Kuri": [
+                  0.0,
+                  1.8,
+                  0.0,
+                  0.8
+                ],
+                "Pia Kljun": [
+                  0.0,
+                  0.0,
+                  3.5,
+                  0.7
+                ],
+                "Lana Švrljuga": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  2.3
+                ],
+                "Teja Jereb": [
+                  0.0,
+                  0.0,
+                  -0.7,
+                  4.9
+                ],
+                "Zoja Jurak": [
+                  0.0,
+                  -1.0,
+                  0.0,
+                  0.2
+                ],
+                "Brina Mernik": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.4
+                ],
+                "Tinkara Korošec": [
+                  0.0,
+                  0.1,
+                  0.8,
+                  0.0
                 ]
               },
-              {
-                "person": "Teja Jereb",
-                "code": "AG",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  1
-                ]
-              },
-              {
-                "person": "Teja Jereb",
-                "code": "AZ",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  1
-                ]
-              },
-              {
-                "person": "Zoja Jurak",
-                "code": "NN",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  0,
-                  1,
-                  0,
-                  0
-                ]
-              }
-            ],
-            "aliases": {
-              "Lana Kolobarič": "Lara Kolobarič",
-              "Alja Mehulič": "Ajla Mehulić",
-              "Ajla Mehulič": "Ajla Mehulić"
-            }
+              "teamIndex": 76.9
+            },
+            "differences": [],
+            "aliases": []
           }
         },
         {
@@ -11034,1253 +11127,7 @@ const EXCEL_IMPORT = {
           "complete": true,
           "events": [],
           "imported": {
-            "version": 1,
-            "old": {
-              "rows": [
-                {
-                  "person": "Zala Petek",
-                  "code": "9O",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A6"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "9G",
-                  "quarters": [
-                    1,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A7"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "KG",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A8"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "6G",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A9"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "PTG",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A10"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "9Z",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A12"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "9G",
-                  "quarters": [
-                    2,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A13"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "7O",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A14"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "7G",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A15"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "9G",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A17"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "KO",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A18"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "PTO",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A19"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "PTG",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A20"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "9G",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A22"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "6G",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A23"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "PDZ",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A24"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "7Z",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A25"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "KG",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A27"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "PTO",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A28"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "9O",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A30"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "9G",
-                  "quarters": [
-                    0,
-                    2,
-                    0,
-                    0
-                  ],
-                  "cell": "A31"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "KO",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A32"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "PDG",
-                  "quarters": [
-                    0,
-                    1,
-                    1,
-                    0
-                  ],
-                  "cell": "A33"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "PTG",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A34"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "7G",
-                  "quarters": [
-                    1,
-                    1,
-                    3,
-                    0
-                  ],
-                  "cell": "A35"
-                },
-                {
-                  "person": "Tinkara Korošec",
-                  "code": "PTG",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A37"
-                },
-                {
-                  "person": "Pia Kljun",
-                  "code": "KO",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    2
-                  ],
-                  "cell": "A39"
-                },
-                {
-                  "person": "Pia Kljun",
-                  "code": "KG",
-                  "quarters": [
-                    0,
-                    0,
-                    2,
-                    0
-                  ],
-                  "cell": "A40"
-                },
-                {
-                  "person": "Pia Kljun",
-                  "code": "6G",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A41"
-                },
-                {
-                  "person": "Larissa Zukić",
-                  "code": "KZ",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A43"
-                },
-                {
-                  "person": "Larissa Zukić",
-                  "code": "KG",
-                  "quarters": [
-                    0,
-                    3,
-                    0,
-                    0
-                  ],
-                  "cell": "A44"
-                },
-                {
-                  "person": "Larissa Zukić",
-                  "code": "PTG",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A45"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "AO",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    2
-                  ],
-                  "cell": "A49"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "AG",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A50"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "AZ",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A52"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "AO",
-                  "quarters": [
-                    2,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A53"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "AG",
-                  "quarters": [
-                    0,
-                    2,
-                    2,
-                    2
-                  ],
-                  "cell": "A54"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "AG",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A56"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "AG",
-                  "quarters": [
-                    2,
-                    1,
-                    2,
-                    1
-                  ],
-                  "cell": "A58"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "A7",
-                  "quarters": [
-                    0,
-                    1,
-                    1,
-                    0
-                  ],
-                  "cell": "A59"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "AO",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A61"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    1,
-                    4,
-                    0
-                  ],
-                  "cell": "A65"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "PNA",
-                  "quarters": [
-                    4,
-                    0,
-                    3,
-                    0
-                  ],
-                  "cell": "A66"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "PNN",
-                  "quarters": [
-                    2,
-                    1,
-                    3,
-                    2
-                  ],
-                  "cell": "A67"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "POA",
-                  "quarters": [
-                    2,
-                    0,
-                    3,
-                    0
-                  ],
-                  "cell": "A69"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "PON",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A70"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    0,
-                    2,
-                    0
-                  ],
-                  "cell": "A71"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "PNN",
-                  "quarters": [
-                    2,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A72"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "POA",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A74"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "PNA",
-                  "quarters": [
-                    2,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A75"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A77"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "PNA",
-                  "quarters": [
-                    4,
-                    2,
-                    1,
-                    1
-                  ],
-                  "cell": "A78"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "PNN",
-                  "quarters": [
-                    3,
-                    1,
-                    2,
-                    2
-                  ],
-                  "cell": "A79"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    2,
-                    0,
-                    0
-                  ],
-                  "cell": "A81"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A82"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    3,
-                    2,
-                    0
-                  ],
-                  "cell": "A84"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    0,
-                    2,
-                    1
-                  ],
-                  "cell": "A85"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "PNN",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    4
-                  ],
-                  "cell": "A86"
-                },
-                {
-                  "person": "Tinkara Korošec",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    4,
-                    0,
-                    0
-                  ],
-                  "cell": "A88"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    1,
-                    2,
-                    1
-                  ],
-                  "cell": "A90"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "PNA",
-                  "quarters": [
-                    1,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A91"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "PNN",
-                  "quarters": [
-                    1,
-                    2,
-                    0,
-                    0
-                  ],
-                  "cell": "A92"
-                },
-                {
-                  "person": "Pia Kljun",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A94"
-                },
-                {
-                  "person": "Pia Kljun",
-                  "code": "PNN",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    2
-                  ],
-                  "cell": "A95"
-                },
-                {
-                  "person": "Larissa Zukić",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    1,
-                    2,
-                    1
-                  ],
-                  "cell": "A97"
-                },
-                {
-                  "person": "Larissa Zukić",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A98"
-                },
-                {
-                  "person": "Larissa Zukić",
-                  "code": "PNN",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A99"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "NA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    2
-                  ],
-                  "cell": "A103"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "NN",
-                  "quarters": [
-                    2,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A104"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "NN",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A106"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "NA",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A108"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "NA",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A110"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "NN",
-                  "quarters": [
-                    1,
-                    0,
-                    1,
-                    2
-                  ],
-                  "cell": "A111"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "NA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A113"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "NA",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    2
-                  ],
-                  "cell": "A115"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "NN",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A116"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "NA",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A118"
-                },
-                {
-                  "person": "Pia Kljun",
-                  "code": "NN",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A120"
-                },
-                {
-                  "person": "Larissa Zukić",
-                  "code": "NN",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A122"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "DA",
-                  "quarters": [
-                    2,
-                    0,
-                    0,
-                    2
-                  ],
-                  "cell": "A126"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "DA",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A128"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "DA",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A130"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "DN",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A131"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "DA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A133"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "DN",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A134"
-                },
-                {
-                  "person": "Pia Kljun",
-                  "code": "DA",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    2
-                  ],
-                  "cell": "A136"
-                },
-                {
-                  "person": "Larissa Zukić",
-                  "code": "DA",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A138"
-                }
-              ],
-              "minutes": {
-                "Zala Petek": 51,
-                "Sarah Pilih Derča": 20,
-                "Lenja Ripnak": 24,
-                "Ajla Mehulić": 29,
-                "Vita Sečki": 15,
-                "Zoja Verbovšek": 60,
-                "Tinkara Korošec": 42,
-                "Lina Kolobarič": 26,
-                "Zala Kuri": 0,
-                "Pia Kljun": 32,
-                "Lana Švrljuga": 0,
-                "Teja Jereb": 0,
-                "Zoja Jurak": 0,
-                "Brina Mernik": 0,
-                "Larissa Zukić": 51
-              },
-              "opponents": [
-                {
-                  "code": "9Z",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "9O",
-                  "quarters": [
-                    1,
-                    1,
-                    1,
-                    0
-                  ]
-                },
-                {
-                  "code": "9G",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                {
-                  "code": "KZ",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "KO",
-                  "quarters": [
-                    2,
-                    1,
-                    1,
-                    2
-                  ]
-                },
-                {
-                  "code": "KG",
-                  "quarters": [
-                    5,
-                    2,
-                    1,
-                    3
-                  ]
-                },
-                {
-                  "code": "6Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "6O",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "6G",
-                  "quarters": [
-                    1,
-                    0,
-                    1,
-                    0
-                  ]
-                },
-                {
-                  "code": "PDZ",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "PDO",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    2
-                  ]
-                },
-                {
-                  "code": "PDG",
-                  "quarters": [
-                    3,
-                    3,
-                    2,
-                    2
-                  ]
-                },
-                {
-                  "code": "PTZ",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "PTO",
-                  "quarters": [
-                    2,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "PTG",
-                  "quarters": [
-                    0,
-                    0,
-                    2,
-                    2
-                  ]
-                },
-                {
-                  "code": "7Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "7O",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "7G",
-                  "quarters": [
-                    0,
-                    1,
-                    3,
-                    1
-                  ]
-                }
-              ],
-              "keepers": [
-                {
-                  "person": "Nika Kuri",
-                  "minutes": 60,
-                  "conceded": 33,
-                  "shots": 48,
-                  "sevenSaves": 0
-                }
-              ],
-              "indices": {
-                "Lina Kolobarič": [
-                  -0.7,
-                  2.8,
-                  0.8,
-                  0.4
-                ],
-                "Zala Petek": [
-                  2.8,
-                  1.4,
-                  1.4,
-                  6.2
-                ],
-                "Zoja Jurak": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Larissa Zukić": [
-                  0.0,
-                  4.6,
-                  0.8,
-                  1.4
-                ],
-                "Lenja Ripnak": [
-                  1.4,
-                  0.0,
-                  0.7,
-                  0.0
-                ],
-                "Zoja Verbovšek": [
-                  3.9,
-                  8.1,
-                  7.1,
-                  -0.4
-                ],
-                "Zala Kuri": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Ajla Mehulić": [
-                  0.9,
-                  4.4,
-                  1.3,
-                  3.7
-                ],
-                "Lana Švrljuga": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Vita Sečki": [
-                  1.0,
-                  1.3,
-                  0.0,
-                  0.0
-                ],
-                "Pia Kljun": [
-                  0.0,
-                  0.2,
-                  4.9,
-                  0.3
-                ],
-                "Sarah Pilih Derča": [
-                  3.7,
-                  0.0,
-                  1.6,
-                  0.0
-                ],
-                "Tinkara Korošec": [
-                  1.4,
-                  1.6,
-                  0.0,
-                  0.0
-                ],
-                "Brina Mernik": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Teja Jereb": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ]
-              },
-              "teamIndex": 69.0,
-              "file": "Celje mladinke sezona 2026 - stari index 2025.xlsx",
-              "sheet": "Olimpija"
-            },
+            "version": 2,
             "new": {
               "rows": [
                 {
@@ -12291,8 +11138,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B5"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -12302,8 +11148,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B6"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -12313,8 +11158,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B7"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -12324,8 +11168,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B8"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -12335,8 +11178,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B9"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -12346,8 +11188,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B10"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -12357,8 +11198,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B11"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -12368,8 +11208,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B12"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -12379,8 +11218,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B13"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -12390,8 +11228,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B14"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -12401,8 +11238,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B15"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -12412,8 +11248,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B16"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -12423,8 +11258,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B17"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -12434,8 +11268,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B18"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -12445,8 +11278,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B19"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -12456,8 +11288,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B20"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -12467,8 +11298,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B21"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -12478,8 +11308,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B22"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -12489,8 +11318,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B23"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -12500,8 +11328,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B24"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -12511,8 +11338,7 @@ const EXCEL_IMPORT = {
                     2,
                     0,
                     0
-                  ],
-                  "cell": "B25"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -12522,8 +11348,7 @@ const EXCEL_IMPORT = {
                     1,
                     3,
                     0
-                  ],
-                  "cell": "B26"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -12533,8 +11358,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B27"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -12544,8 +11368,7 @@ const EXCEL_IMPORT = {
                     1,
                     1,
                     0
-                  ],
-                  "cell": "B28"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -12555,8 +11378,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B29"
+                  ]
                 },
                 {
                   "person": "Tinkara Korošec",
@@ -12566,8 +11388,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B30"
+                  ]
                 },
                 {
                   "person": "Pia Kljun",
@@ -12577,8 +11398,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B31"
+                  ]
                 },
                 {
                   "person": "Pia Kljun",
@@ -12588,8 +11408,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     2
-                  ],
-                  "cell": "B32"
+                  ]
                 },
                 {
                   "person": "Pia Kljun",
@@ -12599,41 +11418,37 @@ const EXCEL_IMPORT = {
                     0,
                     2,
                     0
-                  ],
-                  "cell": "B33"
+                  ]
                 },
                 {
-                  "person": "Larissa Zukič",
+                  "person": "Larissa Zukić",
                   "code": "KZ",
                   "quarters": [
                     0,
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B34"
+                  ]
                 },
                 {
-                  "person": "Larissa Zukič",
+                  "person": "Larissa Zukić",
                   "code": "KG",
                   "quarters": [
                     0,
                     3,
                     0,
                     0
-                  ],
-                  "cell": "B35"
+                  ]
                 },
                 {
-                  "person": "Larissa Zukič",
+                  "person": "Larissa Zukić",
                   "code": "PTG",
                   "quarters": [
                     0,
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B36"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -12643,8 +11458,7 @@ const EXCEL_IMPORT = {
                     1,
                     4,
                     0
-                  ],
-                  "cell": "B39"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -12654,8 +11468,7 @@ const EXCEL_IMPORT = {
                     0,
                     3,
                     0
-                  ],
-                  "cell": "B41"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -12665,8 +11478,7 @@ const EXCEL_IMPORT = {
                     1,
                     3,
                     2
-                  ],
-                  "cell": "B42"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -12676,8 +11488,7 @@ const EXCEL_IMPORT = {
                     0,
                     3,
                     0
-                  ],
-                  "cell": "B43"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -12687,8 +11498,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B44"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -12698,8 +11508,7 @@ const EXCEL_IMPORT = {
                     0,
                     2,
                     0
-                  ],
-                  "cell": "B45"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -12709,8 +11518,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B46"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -12720,8 +11528,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B47"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -12731,8 +11538,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B49"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -12742,8 +11548,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B51"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -12753,8 +11558,7 @@ const EXCEL_IMPORT = {
                     2,
                     1,
                     1
-                  ],
-                  "cell": "B53"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -12764,8 +11568,7 @@ const EXCEL_IMPORT = {
                     1,
                     2,
                     2
-                  ],
-                  "cell": "B54"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -12775,8 +11578,7 @@ const EXCEL_IMPORT = {
                     2,
                     0,
                     0
-                  ],
-                  "cell": "B55"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -12786,8 +11588,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B57"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -12797,8 +11598,7 @@ const EXCEL_IMPORT = {
                     3,
                     2,
                     0
-                  ],
-                  "cell": "B59"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -12808,8 +11608,7 @@ const EXCEL_IMPORT = {
                     0,
                     2,
                     1
-                  ],
-                  "cell": "B61"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -12819,8 +11618,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     4
-                  ],
-                  "cell": "B62"
+                  ]
                 },
                 {
                   "person": "Tinkara Korošec",
@@ -12830,8 +11628,7 @@ const EXCEL_IMPORT = {
                     4,
                     0,
                     0
-                  ],
-                  "cell": "B63"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -12841,8 +11638,7 @@ const EXCEL_IMPORT = {
                     1,
                     2,
                     1
-                  ],
-                  "cell": "B67"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -12852,8 +11648,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B69"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -12863,8 +11658,7 @@ const EXCEL_IMPORT = {
                     2,
                     0,
                     0
-                  ],
-                  "cell": "B70"
+                  ]
                 },
                 {
                   "person": "Pia Kljun",
@@ -12874,8 +11668,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B75"
+                  ]
                 },
                 {
                   "person": "Pia Kljun",
@@ -12885,41 +11678,37 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     2
-                  ],
-                  "cell": "B78"
+                  ]
                 },
                 {
-                  "person": "Larissa Zukič",
+                  "person": "Larissa Zukić",
                   "code": "POA",
                   "quarters": [
                     0,
                     1,
                     2,
                     1
-                  ],
-                  "cell": "B87"
+                  ]
                 },
                 {
-                  "person": "Larissa Zukič",
+                  "person": "Larissa Zukić",
                   "code": "PNA",
                   "quarters": [
                     0,
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B89"
+                  ]
                 },
                 {
-                  "person": "Larissa Zukič",
+                  "person": "Larissa Zukić",
                   "code": "PNN",
                   "quarters": [
                     1,
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B90"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -12929,8 +11718,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     2
-                  ],
-                  "cell": "B93"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -12940,8 +11728,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B94"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -12951,8 +11738,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B95"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -12962,8 +11748,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B96"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -12973,8 +11758,7 @@ const EXCEL_IMPORT = {
                     2,
                     2,
                     2
-                  ],
-                  "cell": "B97"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -12984,8 +11768,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B98"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -12995,8 +11778,7 @@ const EXCEL_IMPORT = {
                     1,
                     2,
                     1
-                  ],
-                  "cell": "B99"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -13006,8 +11788,7 @@ const EXCEL_IMPORT = {
                     1,
                     1,
                     0
-                  ],
-                  "cell": "B100"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -13017,8 +11798,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B101"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -13028,8 +11808,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     2
-                  ],
-                  "cell": "B104"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -13039,8 +11818,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B105"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -13050,8 +11828,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B106"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -13061,30 +11838,27 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B107"
+                  ]
                 },
                 {
-                  "person": "Alja Mehulić",
+                  "person": "Ajla Mehulić",
                   "code": "NA",
                   "quarters": [
                     0,
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B108"
+                  ]
                 },
                 {
-                  "person": "Alja Mehulić",
+                  "person": "Ajla Mehulić",
                   "code": "NN",
                   "quarters": [
                     1,
                     0,
                     1,
                     2
-                  ],
-                  "cell": "B109"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -13094,8 +11868,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B110"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -13105,8 +11878,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     2
-                  ],
-                  "cell": "B111"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -13116,8 +11888,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B112"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -13127,8 +11898,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B113"
+                  ]
                 },
                 {
                   "person": "Pia Kljun",
@@ -13138,19 +11908,17 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B114"
+                  ]
                 },
                 {
-                  "person": "Larissa Zukič",
+                  "person": "Larissa Zukić",
                   "code": "NN",
                   "quarters": [
                     0,
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B115"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -13160,8 +11928,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     2
-                  ],
-                  "cell": "B118"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -13171,8 +11938,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B119"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -13182,8 +11948,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B120"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -13193,8 +11958,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B121"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -13204,8 +11968,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B122"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -13215,8 +11978,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B123"
+                  ]
                 },
                 {
                   "person": "Pia Kljun",
@@ -13226,19 +11988,17 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     2
-                  ],
-                  "cell": "B124"
+                  ]
                 },
                 {
-                  "person": "Larissa Zukič",
+                  "person": "Larissa Zukić",
                   "code": "DA",
                   "quarters": [
                     0,
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B125"
+                  ]
                 }
               ],
               "minutes": {
@@ -13250,12 +12010,7 @@ const EXCEL_IMPORT = {
                 "Zoja Verbovšek": 60,
                 "Tinkara Korošec": 42,
                 "Lina Kolobarič": 26,
-                "Zala Kuri": 0,
                 "Pia Kljun": 32,
-                "Lana Švrljuga": 0,
-                "Teja Jereb": 0,
-                "Zoja Jurak": 0,
-                "Brina Mernik": 0,
                 "Larissa Zukić": 51
               },
               "opponents": [
@@ -13287,15 +12042,6 @@ const EXCEL_IMPORT = {
                   ]
                 },
                 {
-                  "code": "6Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
                   "code": "6O",
                   "quarters": [
                     0,
@@ -13314,39 +12060,12 @@ const EXCEL_IMPORT = {
                   ]
                 },
                 {
-                  "code": "7Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "7O",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
                   "code": "7G",
                   "quarters": [
                     0,
                     1,
                     3,
                     1
-                  ]
-                },
-                {
-                  "code": "KZ",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
                   ]
                 },
                 {
@@ -13392,15 +12111,6 @@ const EXCEL_IMPORT = {
                     3,
                     2,
                     2
-                  ]
-                },
-                {
-                  "code": "PTZ",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
                   ]
                 },
                 {
@@ -13432,109 +12142,97 @@ const EXCEL_IMPORT = {
                   "otherRatio": "28/43"
                 }
               ],
+              "file": "Celje mladinke sezona 2026 nov index.xlsx",
+              "sheet": "Olimpija",
               "fouls": [
                 {
                   "person": "Zala Petek",
                   "code": "POA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H39:I39"
+                  "twoMin": 0
                 },
                 {
                   "person": "Zala Petek",
                   "code": "PNA",
                   "seven": 2,
-                  "twoMin": 0,
-                  "cell": "H41:I41"
+                  "twoMin": 0
                 },
                 {
                   "person": "Sarah Pilih Derča",
                   "code": "POA",
                   "seven": 1,
-                  "twoMin": 3,
-                  "cell": "H43:I43"
+                  "twoMin": 3
                 },
                 {
                   "person": "Sarah Pilih Derča",
                   "code": "PNA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H45:I45"
+                  "twoMin": 0
                 },
                 {
                   "person": "Lenja Ripnak",
                   "code": "POA",
                   "seven": 0,
-                  "twoMin": 1,
-                  "cell": "H47:I47"
+                  "twoMin": 1
                 },
                 {
                   "person": "Ajla Mehulić",
                   "code": "POA",
                   "seven": 0,
-                  "twoMin": 1,
-                  "cell": "H51:I51"
+                  "twoMin": 1
                 },
                 {
                   "person": "Ajla Mehulić",
                   "code": "PNA",
                   "seven": 3,
-                  "twoMin": 0,
-                  "cell": "H53:I53"
+                  "twoMin": 0
                 },
                 {
                   "person": "Vita Sečki",
                   "code": "PNA",
                   "seven": 0,
-                  "twoMin": 1,
-                  "cell": "H57:I57"
+                  "twoMin": 1
                 },
                 {
                   "person": "Zoja Verbovšek",
                   "code": "PNA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H61:I61"
+                  "twoMin": 0
                 },
                 {
                   "person": "Tinkara Korošec",
                   "code": "POA",
                   "seven": 0,
-                  "twoMin": 1,
-                  "cell": "H63:I63"
+                  "twoMin": 1
                 },
                 {
                   "person": "Pia Kljun",
                   "code": "POA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H75:I75"
+                  "twoMin": 0
                 },
                 {
                   "person": "Pia Kljun",
                   "code": "PNN",
                   "seven": 0,
-                  "twoMin": 1,
-                  "cell": "H78:I78"
+                  "twoMin": 1
                 },
                 {
-                  "person": "Larissa Zukič",
+                  "person": "Larissa Zukić",
                   "code": "POA",
                   "seven": 2,
-                  "twoMin": 0,
-                  "cell": "H87:I87"
+                  "twoMin": 0
                 },
                 {
-                  "person": "Larissa Zukič",
+                  "person": "Larissa Zukić",
                   "code": "PNA",
                   "seven": 1,
-                  "twoMin": 1,
-                  "cell": "H89:I89"
+                  "twoMin": 1
                 }
               ],
               "summaries": {
                 "Zala Petek": {
-                  "index": 14.1,
+                  "index": 14.300000000000002,
                   "goal": 6,
                   "sevenGoal": 0,
                   "saves": 1,
@@ -13553,7 +12251,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 2
                 },
                 "Sarah Pilih Derča": {
-                  "index": 4.800000000000001,
+                  "index": 4.6000000000000005,
                   "goal": 2,
                   "sevenGoal": 1,
                   "saves": 0,
@@ -13572,7 +12270,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 1
                 },
                 "Lenja Ripnak": {
-                  "index": 0.5999999999999996,
+                  "index": 1,
                   "goal": 2,
                   "sevenGoal": 0,
                   "saves": 2,
@@ -13591,7 +12289,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Ajla Mehulić": {
-                  "index": 14.200000000000001,
+                  "index": 13.999999999999998,
                   "goal": 3,
                   "sevenGoal": 0,
                   "saves": 0,
@@ -13610,7 +12308,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 3
                 },
                 "Vita Sečki": {
-                  "index": 1.6000000000000005,
+                  "index": 1.8000000000000007,
                   "goal": 1,
                   "sevenGoal": 0,
                   "saves": 1,
@@ -13629,7 +12327,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Zoja Verbovšek": {
-                  "index": 16.7,
+                  "index": 17.1,
                   "goal": 5,
                   "sevenGoal": 5,
                   "saves": 2,
@@ -13685,27 +12383,8 @@ const EXCEL_IMPORT = {
                   "blame": 0,
                   "sevenDrawn": 0
                 },
-                "Zala Kuri": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
                 "Pia Kljun": {
-                  "index": 4.499999999999999,
+                  "index": 5.1,
                   "goal": 3,
                   "sevenGoal": 0,
                   "saves": 3,
@@ -13723,84 +12402,8 @@ const EXCEL_IMPORT = {
                   "blame": 1,
                   "sevenDrawn": 0
                 },
-                "Lana Švrljuga": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
-                "Teja Jereb": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
-                "Zoja Jurak": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
-                "Brina Mernik": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
                 "Larissa Zukić": {
-                  "index": 3.5,
+                  "index": 3.299999999999999,
                   "goal": 4,
                   "sevenGoal": 0,
                   "saves": 0,
@@ -13820,338 +12423,1091 @@ const EXCEL_IMPORT = {
                 }
               },
               "notes": [],
-              "teamIndex": 66.3,
-              "reportedTeamIndex": 62.8,
-              "file": "Celje mladinke sezona 2026 nov index.xlsx",
-              "sheet": "Olimpija"
+              "teamIndex": 67.5,
+              "reportedTeamIndex": 67.5
             },
-            "differences": [
-              {
-                "person": "Ajla Mehulić",
-                "code": "NA",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  1
+            "old": {
+              "rows": [
+                {
+                  "person": "Zala Petek",
+                  "code": "9O",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "9G",
+                  "quarters": [
+                    1,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "6G",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9Z",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9G",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "7O",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "7G",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "9G",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "KO",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PTO",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PTG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "9G",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "6G",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "7Z",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PDZ",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "PTO",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "9O",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "9G",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "7G",
+                  "quarters": [
+                    1,
+                    1,
+                    3,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "KO",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PTG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Tinkara Korošec",
+                  "code": "PTG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "6G",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "KO",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Larissa Zukić",
+                  "code": "KZ",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Larissa Zukić",
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    3,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Larissa Zukić",
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    1,
+                    4,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PNA",
+                  "quarters": [
+                    4,
+                    0,
+                    3,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PNN",
+                  "quarters": [
+                    2,
+                    1,
+                    3,
+                    2
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "POA",
+                  "quarters": [
+                    2,
+                    0,
+                    3,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PNN",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "POA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PNA",
+                  "quarters": [
+                    2,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PNA",
+                  "quarters": [
+                    4,
+                    2,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PNN",
+                  "quarters": [
+                    3,
+                    1,
+                    2,
+                    2
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    3,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    0,
+                    2,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PNN",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    4
+                  ]
+                },
+                {
+                  "person": "Tinkara Korošec",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    4,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    1,
+                    2,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "PNA",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "PNN",
+                  "quarters": [
+                    1,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Larissa Zukić",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    1,
+                    2,
+                    1
+                  ]
+                },
+                {
+                  "person": "Larissa Zukić",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Larissa Zukić",
+                  "code": "PNN",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "AO",
+                  "quarters": [
+                    2,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "AZ",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    2,
+                    2,
+                    2
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "AG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "AG",
+                  "quarters": [
+                    2,
+                    1,
+                    2,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "A7",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "NN",
+                  "quarters": [
+                    2,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "NN",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "NN",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "NN",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "NA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Larissa Zukić",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "DA",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "DA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "DA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "DN",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "DN",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "person": "Larissa Zukić",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                }
+              ],
+              "minutes": {
+                "Zala Petek": 51,
+                "Sarah Pilih Derča": 20,
+                "Lenja Ripnak": 24,
+                "Ajla Mehulić": 29,
+                "Vita Sečki": 15,
+                "Zoja Verbovšek": 60,
+                "Tinkara Korošec": 42,
+                "Lina Kolobarič": 26,
+                "Pia Kljun": 32,
+                "Larissa Zukić": 51
+              },
+              "opponents": [
+                {
+                  "code": "9Z",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "9O",
+                  "quarters": [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "code": "9G",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "6O",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "6G",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "code": "7G",
+                  "quarters": [
+                    0,
+                    1,
+                    3,
+                    1
+                  ]
+                },
+                {
+                  "code": "KO",
+                  "quarters": [
+                    2,
+                    1,
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "code": "KG",
+                  "quarters": [
+                    5,
+                    2,
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "code": "PDZ",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "PDO",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "code": "PDG",
+                  "quarters": [
+                    3,
+                    3,
+                    2,
+                    2
+                  ]
+                },
+                {
+                  "code": "PTO",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    0,
+                    2,
+                    2
+                  ]
+                }
+              ],
+              "keepers": [
+                {
+                  "person": "Nika Kuri",
+                  "minutes": 60,
+                  "conceded": 33,
+                  "shots": 48,
+                  "sevenRatio": "5/5",
+                  "otherRatio": "28/43"
+                }
+              ],
+              "file": "Celje mladinke sezona 2026 nov index.xlsx",
+              "sheet": "Olimpija",
+              "indices": {
+                "Zala Petek": [
+                  2.8,
+                  1.4,
+                  1.4,
+                  6.2
                 ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  0
+                "Sarah Pilih Derča": [
+                  3.7,
+                  0.0,
+                  1.6,
+                  0.0
+                ],
+                "Lenja Ripnak": [
+                  1.4,
+                  0.0,
+                  0.7,
+                  0.0
+                ],
+                "Ajla Mehulić": [
+                  0.9,
+                  4.4,
+                  1.3,
+                  3.7
+                ],
+                "Vita Sečki": [
+                  1.0,
+                  1.3,
+                  0.0,
+                  0.0
+                ],
+                "Zoja Verbovšek": [
+                  3.9,
+                  8.1,
+                  7.1,
+                  -0.4
+                ],
+                "Tinkara Korošec": [
+                  1.4,
+                  1.6,
+                  0.0,
+                  0.0
+                ],
+                "Pia Kljun": [
+                  0.0,
+                  0.2,
+                  4.9,
+                  0.3
+                ],
+                "Larissa Zukić": [
+                  0.0,
+                  4.6,
+                  0.8,
+                  1.4
+                ],
+                "Lina Kolobarič": [
+                  -0.7,
+                  2.8,
+                  0.8,
+                  0.4
                 ]
               },
-              {
-                "person": "Ajla Mehulić",
-                "code": "NN",
-                "old": [
-                  1,
-                  0,
-                  1,
-                  2
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  0
-                ]
-              },
-              {
-                "person": "Alja Mehulić",
-                "code": "NA",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  1
-                ]
-              },
-              {
-                "person": "Alja Mehulić",
-                "code": "NN",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  1,
-                  0,
-                  1,
-                  2
-                ]
-              },
-              {
-                "person": "Larissa Zukić",
-                "code": "DA",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  1
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  0
-                ]
-              },
-              {
-                "person": "Larissa Zukić",
-                "code": "KG",
-                "old": [
-                  0,
-                  3,
-                  0,
-                  0
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  0
-                ]
-              },
-              {
-                "person": "Larissa Zukić",
-                "code": "KZ",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  1
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  0
-                ]
-              },
-              {
-                "person": "Larissa Zukić",
-                "code": "NN",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  1
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  0
-                ]
-              },
-              {
-                "person": "Larissa Zukić",
-                "code": "PNA",
-                "old": [
-                  0,
-                  0,
-                  1,
-                  0
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  0
-                ]
-              },
-              {
-                "person": "Larissa Zukić",
-                "code": "PNN",
-                "old": [
-                  1,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  0
-                ]
-              },
-              {
-                "person": "Larissa Zukić",
-                "code": "POA",
-                "old": [
-                  0,
-                  1,
-                  2,
-                  1
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  0
-                ]
-              },
-              {
-                "person": "Larissa Zukić",
-                "code": "PTG",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  1
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  0
-                ]
-              },
-              {
-                "person": "Larissa Zukič",
-                "code": "DA",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  1
-                ]
-              },
-              {
-                "person": "Larissa Zukič",
-                "code": "KG",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  0,
-                  3,
-                  0,
-                  0
-                ]
-              },
-              {
-                "person": "Larissa Zukič",
-                "code": "KZ",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  1
-                ]
-              },
-              {
-                "person": "Larissa Zukič",
-                "code": "NN",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  1
-                ]
-              },
-              {
-                "person": "Larissa Zukič",
-                "code": "PNA",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  0,
-                  0,
-                  1,
-                  0
-                ]
-              },
-              {
-                "person": "Larissa Zukič",
-                "code": "PNN",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  1,
-                  0,
-                  0,
-                  0
-                ]
-              },
-              {
-                "person": "Larissa Zukič",
-                "code": "POA",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  0,
-                  1,
-                  2,
-                  1
-                ]
-              },
-              {
-                "person": "Larissa Zukič",
-                "code": "PTG",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "new": [
-                  0,
-                  0,
-                  0,
-                  1
-                ]
-              }
-            ],
-            "aliases": {
-              "Lana Kolobarič": "Lara Kolobarič",
-              "Alja Mehulič": "Ajla Mehulić",
-              "Ajla Mehulič": "Ajla Mehulić"
-            }
+              "teamIndex": 69.0
+            },
+            "differences": [],
+            "aliases": []
           }
         },
         {
@@ -14165,1172 +13521,7 @@ const EXCEL_IMPORT = {
           "complete": true,
           "events": [],
           "imported": {
-            "version": 1,
-            "old": {
-              "rows": [
-                {
-                  "person": "Zala Petek",
-                  "code": "6G",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A6"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "PDG",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A7"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "9Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A9"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "9O",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A10"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "9G",
-                  "quarters": [
-                    2,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A11"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "PDO",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A12"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "PDG",
-                  "quarters": [
-                    2,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A13"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "7G",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    2
-                  ],
-                  "cell": "A14"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "PDZ",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A16"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "PDO",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A17"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "PTO",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A18"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "PTG",
-                  "quarters": [
-                    1,
-                    0,
-                    2,
-                    0
-                  ],
-                  "cell": "A19"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "9Z",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A21"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "9O",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A22"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "9G",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A23"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "PDO",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A24"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "PDG",
-                  "quarters": [
-                    1,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A25"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "KZ",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A27"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "KO",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A28"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "9Z",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A30"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "9G",
-                  "quarters": [
-                    0,
-                    1,
-                    1,
-                    0
-                  ],
-                  "cell": "A31"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "KO",
-                  "quarters": [
-                    1,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A32"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "KG",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A33"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "PDG",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A34"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "7Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A35"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "7G",
-                  "quarters": [
-                    0,
-                    2,
-                    1,
-                    0
-                  ],
-                  "cell": "A36"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "9O",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A38"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "PDG",
-                  "quarters": [
-                    0,
-                    2,
-                    0,
-                    0
-                  ],
-                  "cell": "A39"
-                },
-                {
-                  "person": "Zala Kuri",
-                  "code": "6G",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A41"
-                },
-                {
-                  "person": "Teja Jereb",
-                  "code": "PTG",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A43"
-                },
-                {
-                  "person": "Larissa Zukić",
-                  "code": "PTO",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A45"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "AZ",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A49"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "AO",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A50"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "AG",
-                  "quarters": [
-                    1,
-                    1,
-                    3,
-                    0
-                  ],
-                  "cell": "A51"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "A7",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A52"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "AO",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A54"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "AG",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A56"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "AG",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A58"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "AO",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A60"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "A7",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A61"
-                },
-                {
-                  "person": "Teja Jereb",
-                  "code": "AO",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A63"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "POA",
-                  "quarters": [
-                    3,
-                    3,
-                    0,
-                    0
-                  ],
-                  "cell": "A67"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    1,
-                    3,
-                    2
-                  ],
-                  "cell": "A68"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "PNN",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A69"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "POA",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A71"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "PNA",
-                  "quarters": [
-                    2,
-                    0,
-                    1,
-                    1
-                  ],
-                  "cell": "A72"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "PNN",
-                  "quarters": [
-                    2,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A73"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "POA",
-                  "quarters": [
-                    5,
-                    0,
-                    2,
-                    1
-                  ],
-                  "cell": "A75"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "PNA",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A76"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "POA",
-                  "quarters": [
-                    2,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A78"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "PON",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    0
-                  ],
-                  "cell": "A79"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "PNA",
-                  "quarters": [
-                    1,
-                    0,
-                    1,
-                    1
-                  ],
-                  "cell": "A80"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "PNN",
-                  "quarters": [
-                    1,
-                    0,
-                    1,
-                    1
-                  ],
-                  "cell": "A81"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A83"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A85"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A86"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    3,
-                    0,
-                    1
-                  ],
-                  "cell": "A88"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A89"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "PNN",
-                  "quarters": [
-                    0,
-                    2,
-                    0,
-                    1
-                  ],
-                  "cell": "A90"
-                },
-                {
-                  "person": "Zala Kuri",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    0,
-                    3,
-                    1
-                  ],
-                  "cell": "A92"
-                },
-                {
-                  "person": "Zala Kuri",
-                  "code": "PON",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    1
-                  ],
-                  "cell": "A93"
-                },
-                {
-                  "person": "Zala Kuri",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    2
-                  ],
-                  "cell": "A94"
-                },
-                {
-                  "person": "Pia Kljun",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A96"
-                },
-                {
-                  "person": "Teja Jereb",
-                  "code": "POA",
-                  "quarters": [
-                    0,
-                    5,
-                    0,
-                    3
-                  ],
-                  "cell": "A98"
-                },
-                {
-                  "person": "Teja Jereb",
-                  "code": "PON",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A99"
-                },
-                {
-                  "person": "Teja Jereb",
-                  "code": "PNA",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A100"
-                },
-                {
-                  "person": "Teja Jereb",
-                  "code": "PNN",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A101"
-                },
-                {
-                  "person": "Sarah Pilih Derča",
-                  "code": "NA",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A105"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "NA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    0
-                  ],
-                  "cell": "A107"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "NA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A109"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "NN",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A110"
-                },
-                {
-                  "person": "Lina Kolobarič",
-                  "code": "NA",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    1
-                  ],
-                  "cell": "A112"
-                },
-                {
-                  "person": "Zala Kuri",
-                  "code": "NN",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A114"
-                },
-                {
-                  "person": "Zala Petek",
-                  "code": "DN",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    1
-                  ],
-                  "cell": "A118"
-                },
-                {
-                  "person": "Lenja Ripnak",
-                  "code": "DA",
-                  "quarters": [
-                    1,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A120"
-                },
-                {
-                  "person": "Ajla Mehulić",
-                  "code": "DA",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ],
-                  "cell": "A122"
-                },
-                {
-                  "person": "Vita Sečki",
-                  "code": "DA",
-                  "quarters": [
-                    0,
-                    1,
-                    0,
-                    1
-                  ],
-                  "cell": "A124"
-                },
-                {
-                  "person": "Zoja Verbovšek",
-                  "code": "DA",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ],
-                  "cell": "A126"
-                },
-                {
-                  "person": "Teja Jereb",
-                  "code": "DA",
-                  "quarters": [
-                    0,
-                    2,
-                    0,
-                    0
-                  ],
-                  "cell": "A128"
-                }
-              ],
-              "minutes": {
-                "Zala Petek": 51,
-                "Sarah Pilih Derča": 36,
-                "Lenja Ripnak": 37,
-                "Ajla Mehulić": 29,
-                "Vita Sečki": 24,
-                "Zoja Verbovšek": 60,
-                "Tinkara Korošec": 19,
-                "Lina Kolobarič": 24,
-                "Zala Kuri": 15,
-                "Pia Kljun": 7,
-                "Lana Švrljuga": 0,
-                "Teja Jereb": 31,
-                "Zoja Jurak": 0,
-                "Brina Mernik": 0,
-                "Larissa Zukić": 19
-              },
-              "opponents": [
-                {
-                  "code": "9Z",
-                  "quarters": [
-                    1,
-                    0,
-                    1,
-                    0
-                  ]
-                },
-                {
-                  "code": "9O",
-                  "quarters": [
-                    2,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "9G",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ]
-                },
-                {
-                  "code": "KZ",
-                  "quarters": [
-                    1,
-                    0,
-                    1,
-                    0
-                  ]
-                },
-                {
-                  "code": "KO",
-                  "quarters": [
-                    1,
-                    2,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "KG",
-                  "quarters": [
-                    3,
-                    2,
-                    1,
-                    4
-                  ]
-                },
-                {
-                  "code": "6Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "6O",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ]
-                },
-                {
-                  "code": "6G",
-                  "quarters": [
-                    0,
-                    0,
-                    1,
-                    0
-                  ]
-                },
-                {
-                  "code": "PDZ",
-                  "quarters": [
-                    1,
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                {
-                  "code": "PDO",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                {
-                  "code": "PDG",
-                  "quarters": [
-                    0,
-                    2,
-                    0,
-                    2
-                  ]
-                },
-                {
-                  "code": "PTZ",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "PTO",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                {
-                  "code": "PTG",
-                  "quarters": [
-                    0,
-                    1,
-                    1,
-                    0
-                  ]
-                },
-                {
-                  "code": "7Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                {
-                  "code": "7O",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
-                  "code": "7G",
-                  "quarters": [
-                    2,
-                    2,
-                    0,
-                    1
-                  ]
-                }
-              ],
-              "keepers": [
-                {
-                  "person": "Nika Kuri",
-                  "minutes": 54,
-                  "conceded": 19,
-                  "shots": 26,
-                  "sevenSaves": 0
-                },
-                {
-                  "person": "Zoja Brglez",
-                  "minutes": 6,
-                  "conceded": 4,
-                  "shots": 5,
-                  "sevenSaves": 0
-                }
-              ],
-              "indices": {
-                "Lina Kolobarič": [
-                  0.0,
-                  4.8,
-                  0.3,
-                  -0.5
-                ],
-                "Zala Petek": [
-                  5.0,
-                  4.2,
-                  4.7,
-                  0.7
-                ],
-                "Zoja Jurak": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Larissa Zukić": [
-                  0.0,
-                  0.0,
-                  -0.2,
-                  0.0
-                ],
-                "Lenja Ripnak": [
-                  3.5,
-                  0.0,
-                  4.1,
-                  0.4
-                ],
-                "Zoja Verbovšek": [
-                  -0.2,
-                  4.5,
-                  3.3,
-                  -1.1
-                ],
-                "Zala Kuri": [
-                  0.0,
-                  0.0,
-                  2.3,
-                  0.8
-                ],
-                "Ajla Mehulić": [
-                  4.6,
-                  1.4,
-                  0.3,
-                  1.4
-                ],
-                "Lana Švrljuga": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Vita Sečki": [
-                  0.0,
-                  -0.2,
-                  0.0,
-                  1.1
-                ],
-                "Pia Kljun": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Sarah Pilih Derča": [
-                  6.0,
-                  -0.2,
-                  3.1,
-                  0.8
-                ],
-                "Tinkara Korošec": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Brina Mernik": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Teja Jereb": [
-                  0.0,
-                  4.8,
-                  1.0,
-                  1.6
-                ]
-              },
-              "teamIndex": 62.3,
-              "file": "Celje mladinke sezona 2026 - stari index 2025.xlsx",
-              "sheet": "Ajdovščina"
-            },
+            "version": 2,
             "new": {
               "rows": [
                 {
@@ -15341,8 +13532,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B5"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -15352,8 +13542,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B6"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -15363,8 +13552,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B7"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -15374,8 +13562,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B8"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -15385,8 +13572,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B9"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -15396,8 +13582,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B10"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -15407,8 +13592,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B11"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -15418,8 +13602,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     2
-                  ],
-                  "cell": "B12"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -15429,8 +13612,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B13"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -15440,8 +13622,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B14"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -15451,8 +13632,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B15"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -15462,8 +13642,7 @@ const EXCEL_IMPORT = {
                     0,
                     2,
                     0
-                  ],
-                  "cell": "B16"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -15473,8 +13652,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B17"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -15484,8 +13662,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B18"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -15495,8 +13672,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B19"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -15506,8 +13682,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B20"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -15517,8 +13692,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B21"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -15528,8 +13702,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B22"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -15539,8 +13712,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B23"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -15550,8 +13722,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B24"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -15561,8 +13732,7 @@ const EXCEL_IMPORT = {
                     1,
                     1,
                     0
-                  ],
-                  "cell": "B25"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -15572,8 +13742,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B26"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -15583,8 +13752,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B27"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -15594,8 +13762,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B28"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -15605,8 +13772,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B29"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -15616,8 +13782,7 @@ const EXCEL_IMPORT = {
                     2,
                     1,
                     0
-                  ],
-                  "cell": "B30"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -15627,8 +13792,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B31"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -15638,8 +13802,7 @@ const EXCEL_IMPORT = {
                     2,
                     0,
                     0
-                  ],
-                  "cell": "B32"
+                  ]
                 },
                 {
                   "person": "Zala Kuri",
@@ -15649,8 +13812,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B33"
+                  ]
                 },
                 {
                   "person": "Teja Jereb",
@@ -15660,19 +13822,17 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B34"
+                  ]
                 },
                 {
-                  "person": "Larissa Zukič",
+                  "person": "Larissa Zukić",
                   "code": "PTO",
                   "quarters": [
                     0,
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B35"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -15682,8 +13842,7 @@ const EXCEL_IMPORT = {
                     3,
                     0,
                     0
-                  ],
-                  "cell": "B38"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -15693,8 +13852,7 @@ const EXCEL_IMPORT = {
                     1,
                     3,
                     2
-                  ],
-                  "cell": "B40"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -15704,8 +13862,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B41"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -15715,8 +13872,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B42"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -15726,8 +13882,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     1
-                  ],
-                  "cell": "B44"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -15737,8 +13892,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B45"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -15748,8 +13902,7 @@ const EXCEL_IMPORT = {
                     0,
                     2,
                     1
-                  ],
-                  "cell": "B46"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -15759,8 +13912,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B48"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -15770,8 +13922,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B50"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -15781,8 +13932,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B51"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -15792,8 +13942,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     1
-                  ],
-                  "cell": "B52"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -15803,8 +13952,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     1
-                  ],
-                  "cell": "B53"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -15814,8 +13962,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B54"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -15825,8 +13972,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B58"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -15836,8 +13982,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B60"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -15847,8 +13992,7 @@ const EXCEL_IMPORT = {
                     3,
                     0,
                     1
-                  ],
-                  "cell": "B66"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -15858,8 +14002,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B68"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -15869,8 +14012,7 @@ const EXCEL_IMPORT = {
                     2,
                     0,
                     1
-                  ],
-                  "cell": "B69"
+                  ]
                 },
                 {
                   "person": "Zala Kuri",
@@ -15880,8 +14022,7 @@ const EXCEL_IMPORT = {
                     0,
                     3,
                     1
-                  ],
-                  "cell": "B70"
+                  ]
                 },
                 {
                   "person": "Zala Kuri",
@@ -15891,8 +14032,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     1
-                  ],
-                  "cell": "B71"
+                  ]
                 },
                 {
                   "person": "Zala Kuri",
@@ -15902,8 +14042,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     2
-                  ],
-                  "cell": "B72"
+                  ]
                 },
                 {
                   "person": "Pia Kljun",
@@ -15913,8 +14052,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B76"
+                  ]
                 },
                 {
                   "person": "Teja Jereb",
@@ -15924,8 +14062,7 @@ const EXCEL_IMPORT = {
                     5,
                     0,
                     3
-                  ],
-                  "cell": "B82"
+                  ]
                 },
                 {
                   "person": "Teja Jereb",
@@ -15935,8 +14072,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B83"
+                  ]
                 },
                 {
                   "person": "Teja Jereb",
@@ -15946,8 +14082,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B84"
+                  ]
                 },
                 {
                   "person": "Teja Jereb",
@@ -15957,8 +14092,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B85"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -15968,8 +14102,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B92"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -15979,8 +14112,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B93"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -15990,8 +14122,7 @@ const EXCEL_IMPORT = {
                     1,
                     3,
                     0
-                  ],
-                  "cell": "B94"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -16001,8 +14132,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B95"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -16012,8 +14142,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B96"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -16023,8 +14152,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     0
-                  ],
-                  "cell": "B97"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -16034,8 +14162,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B98"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -16045,8 +14172,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B99"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -16056,8 +14182,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B100"
+                  ]
                 },
                 {
                   "person": "Teja Jereb",
@@ -16067,8 +14192,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B101"
+                  ]
                 },
                 {
                   "person": "Sarah Pilih Derča",
@@ -16078,8 +14202,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B104"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -16089,8 +14212,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     0
-                  ],
-                  "cell": "B105"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -16100,8 +14222,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B106"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -16111,8 +14232,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B107"
+                  ]
                 },
                 {
                   "person": "Lina Kolobarič",
@@ -16122,8 +14242,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     1
-                  ],
-                  "cell": "B108"
+                  ]
                 },
                 {
                   "person": "Zala Kuri",
@@ -16133,8 +14252,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B109"
+                  ]
                 },
                 {
                   "person": "Zala Petek",
@@ -16144,8 +14262,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     1
-                  ],
-                  "cell": "B112"
+                  ]
                 },
                 {
                   "person": "Lenja Ripnak",
@@ -16155,8 +14272,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B113"
+                  ]
                 },
                 {
                   "person": "Ajla Mehulić",
@@ -16166,8 +14282,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0
-                  ],
-                  "cell": "B114"
+                  ]
                 },
                 {
                   "person": "Vita Sečki",
@@ -16177,8 +14292,7 @@ const EXCEL_IMPORT = {
                     1,
                     0,
                     1
-                  ],
-                  "cell": "B115"
+                  ]
                 },
                 {
                   "person": "Zoja Verbovšek",
@@ -16188,8 +14302,7 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ],
-                  "cell": "B116"
+                  ]
                 },
                 {
                   "person": "Teja Jereb",
@@ -16199,8 +14312,7 @@ const EXCEL_IMPORT = {
                     2,
                     0,
                     0
-                  ],
-                  "cell": "B117"
+                  ]
                 }
               ],
               "minutes": {
@@ -16214,10 +14326,7 @@ const EXCEL_IMPORT = {
                 "Lina Kolobarič": 24,
                 "Zala Kuri": 15,
                 "Pia Kljun": 7,
-                "Lana Švrljuga": 0,
                 "Teja Jereb": 31,
-                "Zoja Jurak": 0,
-                "Brina Mernik": 0,
                 "Larissa Zukić": 19
               },
               "opponents": [
@@ -16249,15 +14358,6 @@ const EXCEL_IMPORT = {
                   ]
                 },
                 {
-                  "code": "6Z",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ]
-                },
-                {
                   "code": "6O",
                   "quarters": [
                     0,
@@ -16282,15 +14382,6 @@ const EXCEL_IMPORT = {
                     0,
                     0,
                     1
-                  ]
-                },
-                {
-                  "code": "7O",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
                   ]
                 },
                 {
@@ -16354,15 +14445,6 @@ const EXCEL_IMPORT = {
                     2,
                     0,
                     2
-                  ]
-                },
-                {
-                  "code": "PTZ",
-                  "quarters": [
-                    0,
-                    0,
-                    0,
-                    0
                   ]
                 },
                 {
@@ -16402,90 +14484,80 @@ const EXCEL_IMPORT = {
                   "otherRatio": "3/4"
                 }
               ],
+              "file": "Celje mladinke sezona 2026 nov index.xlsx",
+              "sheet": "Ajdovščina",
               "fouls": [
                 {
                   "person": "Zala Petek",
                   "code": "POA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H38:I38"
+                  "twoMin": 0
                 },
                 {
                   "person": "Zala Petek",
                   "code": "PNA",
                   "seven": 3,
-                  "twoMin": 0,
-                  "cell": "H40:I40"
+                  "twoMin": 0
                 },
                 {
                   "person": "Lenja Ripnak",
                   "code": "POA",
                   "seven": 0,
-                  "twoMin": 1,
-                  "cell": "H46:I46"
+                  "twoMin": 1
                 },
                 {
                   "person": "Lenja Ripnak",
                   "code": "PNA",
                   "seven": 1,
-                  "twoMin": 1,
-                  "cell": "H48:I48"
+                  "twoMin": 1
                 },
                 {
                   "person": "Ajla Mehulić",
                   "code": "POA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H50:I50"
+                  "twoMin": 0
                 },
                 {
                   "person": "Vita Sečki",
                   "code": "POA",
                   "seven": 1,
-                  "twoMin": 1,
-                  "cell": "H54:I54"
+                  "twoMin": 1
                 },
                 {
                   "person": "Zoja Verbovšek",
                   "code": "PNA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H60:I60"
+                  "twoMin": 0
                 },
                 {
                   "person": "Lina Kolobarič",
                   "code": "POA",
                   "seven": 2,
-                  "twoMin": 0,
-                  "cell": "H66:I66"
+                  "twoMin": 0
                 },
                 {
                   "person": "Lina Kolobarič",
                   "code": "PNA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H68:I68"
+                  "twoMin": 0
                 },
                 {
                   "person": "Zala Kuri",
                   "code": "POA",
                   "seven": 1,
-                  "twoMin": 0,
-                  "cell": "H70:I70"
+                  "twoMin": 0
                 },
                 {
                   "person": "Teja Jereb",
                   "code": "POA",
                   "seven": 0,
-                  "twoMin": 1,
-                  "cell": "H82:I82"
+                  "twoMin": 1
                 },
                 {
                   "person": "Teja Jereb",
                   "code": "PON",
                   "seven": 0,
-                  "twoMin": 1,
-                  "cell": "H83:I83"
+                  "twoMin": 1
                 }
               ],
               "summaries": {
@@ -16509,7 +14581,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 3
                 },
                 "Sarah Pilih Derča": {
-                  "index": 10.4,
+                  "index": 10.6,
                   "goal": 6,
                   "sevenGoal": 2,
                   "saves": 2,
@@ -16528,7 +14600,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Lenja Ripnak": {
-                  "index": 8.899999999999999,
+                  "index": 9.099999999999998,
                   "goal": 3,
                   "sevenGoal": 0,
                   "saves": 2,
@@ -16547,7 +14619,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 1
                 },
                 "Ajla Mehulić": {
-                  "index": 6.700000000000001,
+                  "index": 6.9,
                   "goal": 4,
                   "sevenGoal": 0,
                   "saves": 2,
@@ -16603,27 +14675,8 @@ const EXCEL_IMPORT = {
                   "blame": 5,
                   "sevenDrawn": 1
                 },
-                "Tinkara Korošec": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
                 "Lina Kolobarič": {
-                  "index": 4.200000000000001,
+                  "index": 4.600000000000001,
                   "goal": 2,
                   "sevenGoal": 0,
                   "saves": 2,
@@ -16679,25 +14732,6 @@ const EXCEL_IMPORT = {
                   "blame": 1,
                   "sevenDrawn": 0
                 },
-                "Lana Švrljuga": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
                 "Teja Jereb": {
                   "index": 7,
                   "goal": 1,
@@ -16717,46 +14751,8 @@ const EXCEL_IMPORT = {
                   "blame": 1,
                   "sevenDrawn": 0
                 },
-                "Zoja Jurak": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
-                "Brina Mernik": {
-                  "index": 0,
-                  "goal": 0,
-                  "sevenGoal": 0,
-                  "saves": 0,
-                  "miss": 0,
-                  "sevenFailed": 0,
-                  "assist": 0,
-                  "DA": 0,
-                  "DN": 0,
-                  "NA": 0,
-                  "NN": 0,
-                  "POA": 0,
-                  "PON": 0,
-                  "PNA": 0,
-                  "PNN": 0,
-                  "blame": 0,
-                  "sevenDrawn": 0
-                },
                 "Larissa Zukić": {
-                  "index": -0.4,
+                  "index": -0.2,
                   "goal": 0,
                   "sevenGoal": 0,
                   "saves": 1,
@@ -16782,50 +14778,3533 @@ const EXCEL_IMPORT = {
                   "AO-1"
                 ]
               ],
-              "teamIndex": 59.300000000000004,
-              "reportedTeamIndex": 52.70000000000001,
-              "file": "Celje mladinke sezona 2026 nov index.xlsx",
-              "sheet": "Ajdovščina"
+              "teamIndex": 60.5,
+              "reportedTeamIndex": 60.5
             },
-            "differences": [
-              {
-                "person": "Larissa Zukić",
-                "code": "PTO",
-                "old": [
-                  0,
-                  0,
-                  1,
-                  0
+            "old": {
+              "rows": [
+                {
+                  "person": "Zala Petek",
+                  "code": "6G",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PDG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9Z",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9O",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9G",
+                  "quarters": [
+                    2,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PDO",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PDG",
+                  "quarters": [
+                    2,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "7G",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PDZ",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PDO",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PTO",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PTG",
+                  "quarters": [
+                    1,
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "9Z",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "9O",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "9G",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PDO",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PDG",
+                  "quarters": [
+                    1,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "KZ",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "KO",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "9Z",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "9G",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "KO",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "7Z",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "7G",
+                  "quarters": [
+                    0,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "9O",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "6G",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Larissa Zukić",
+                  "code": "PTO",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "POA",
+                  "quarters": [
+                    3,
+                    3,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    1,
+                    3,
+                    2
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "POA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PNA",
+                  "quarters": [
+                    2,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PNN",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "POA",
+                  "quarters": [
+                    5,
+                    0,
+                    2,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PNA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "POA",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PON",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PNA",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PNN",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    3,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    0,
+                    3,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    5,
+                    0,
+                    3
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "AZ",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "AG",
+                  "quarters": [
+                    1,
+                    1,
+                    3,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "A7",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "AG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "A7",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lina Kolobarič",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "DN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "DA",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Vita Sečki",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "minutes": {
+                "Zala Petek": 51,
+                "Sarah Pilih Derča": 36,
+                "Lenja Ripnak": 37,
+                "Ajla Mehulić": 29,
+                "Vita Sečki": 24,
+                "Zoja Verbovšek": 60,
+                "Tinkara Korošec": 19,
+                "Lina Kolobarič": 24,
+                "Zala Kuri": 15,
+                "Pia Kljun": 7,
+                "Teja Jereb": 31,
+                "Larissa Zukić": 19
+              },
+              "opponents": [
+                {
+                  "code": "9Z",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "code": "9O",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "9G",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "code": "6O",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "code": "6G",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "code": "7Z",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "7G",
+                  "quarters": [
+                    2,
+                    2,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "KZ",
+                  "quarters": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "code": "KO",
+                  "quarters": [
+                    1,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "KG",
+                  "quarters": [
+                    3,
+                    2,
+                    1,
+                    4
+                  ]
+                },
+                {
+                  "code": "PDZ",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "PDO",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "code": "PTO",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    0
+                  ]
+                }
+              ],
+              "keepers": [
+                {
+                  "person": "Nika Kuri",
+                  "minutes": 54,
+                  "conceded": 19,
+                  "shots": 26,
+                  "sevenRatio": "4/4",
+                  "otherRatio": "15/22"
+                },
+                {
+                  "person": "Zoja Brglez",
+                  "minutes": 6,
+                  "conceded": 4,
+                  "shots": 5,
+                  "sevenRatio": "1/1",
+                  "otherRatio": "3/4"
+                }
+              ],
+              "file": "Celje mladinke sezona 2026 nov index.xlsx",
+              "sheet": "Ajdovščina",
+              "indices": {
+                "Zala Petek": [
+                  5.0,
+                  4.2,
+                  4.7,
+                  0.7
                 ],
-                "new": [
+                "Sarah Pilih Derča": [
+                  6.0,
+                  -0.2,
+                  3.1,
+                  0.8
+                ],
+                "Lenja Ripnak": [
+                  3.5,
+                  0.0,
+                  4.1,
+                  0.4
+                ],
+                "Ajla Mehulić": [
+                  4.6,
+                  1.4,
+                  0.3,
+                  1.4
+                ],
+                "Vita Sečki": [
+                  0.0,
+                  -0.2,
+                  0.0,
+                  1.1
+                ],
+                "Zoja Verbovšek": [
+                  -0.2,
+                  4.5,
+                  3.3,
+                  -1.1
+                ],
+                "Lina Kolobarič": [
+                  0.0,
+                  4.8,
+                  0.3,
+                  -0.5
+                ],
+                "Zala Kuri": [
+                  0.0,
+                  0.0,
+                  2.3,
+                  0.8
+                ],
+                "Teja Jereb": [
+                  0.0,
+                  4.8,
+                  1.0,
+                  1.6
+                ],
+                "Larissa Zukić": [
+                  0.0,
+                  0.0,
+                  -0.2,
+                  0.0
+                ],
+                "Pia Kljun": [
                   0,
                   0,
                   0,
                   0
                 ]
               },
-              {
-                "person": "Larissa Zukič",
-                "code": "PTO",
-                "old": [
-                  0,
-                  0,
-                  0,
-                  0
+              "teamIndex": 62.3
+            },
+            "differences": [],
+            "aliases": []
+          }
+        },
+        {
+          "date": "2026-10-19",
+          "opponent": "Koper",
+          "finalHome": 31,
+          "finalAway": 21,
+          "firstHalfHome": 18,
+          "firstHalfAway": 8,
+          "id": "excel-2026-juniors-2026-10-19",
+          "complete": true,
+          "events": [],
+          "imported": {
+            "version": 2,
+            "new": {
+              "rows": [
+                {
+                  "person": "Zala Petek",
+                  "code": "PDG",
+                  "quarters": [
+                    1,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9G",
+                  "quarters": [
+                    1,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "7G",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "KG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PTO",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PTG",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "9Z",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "9O",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PDO",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "7G",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "PTG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "KO",
+                  "quarters": [
+                    0,
+                    1,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lana Švrljuga",
+                  "code": "7O",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lana Švrljuga",
+                  "code": "7G",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Jurak",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Jurak",
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Brina Mernik",
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Brina Mernik",
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Larissa Zukić",
+                  "code": "KZ",
+                  "quarters": [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Larissa Zukić",
+                  "code": "KO",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Larissa Zukić",
+                  "code": "PTG",
+                  "quarters": [
+                    2,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Tiana Novak",
+                  "code": "7O",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Tiana Novak",
+                  "code": "7G",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "POA",
+                  "quarters": [
+                    1,
+                    3,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "POA",
+                  "quarters": [
+                    3,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PNA",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PNN",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "POA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PNN",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "POA",
+                  "quarters": [
+                    1,
+                    0,
+                    2,
+                    4
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PNA",
+                  "quarters": [
+                    2,
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Tinkara Korošec",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    3,
+                    0,
+                    3
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "POA",
+                  "quarters": [
+                    4,
+                    0,
+                    3,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "PNA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lana Švrljuga",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lana Švrljuga",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lana Švrljuga",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "POA",
+                  "quarters": [
+                    2,
+                    2,
+                    3,
+                    2
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    3,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    0,
+                    2,
+                    3
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Jurak",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Jurak",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "person": "Zoja Jurak",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Brina Mernik",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Larissa Zukić",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    3,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Larissa Zukić",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "AG",
+                  "quarters": [
+                    3,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "AG",
+                  "quarters": [
+                    1,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "AZ",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "AG",
+                  "quarters": [
+                    1,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "A7",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "AZ",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    4
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "A7",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Larissa Zukić",
+                  "code": "AG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "NA",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "NN",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lana Švrljuga",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Jurak",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "DA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "DN",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Tinkara Korošec",
+                  "code": "DN",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "DN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Jurak",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                }
+              ],
+              "minutes": {
+                "Zala Petek": 25,
+                "Sarah Pilih Derča": 30,
+                "Lenja Ripnak": 13,
+                "Ajla Mehulić": 12,
+                "Zoja Verbovšek": 49,
+                "Tinkara Korošec": 30,
+                "Zala Kuri": 26,
+                "Pia Kljun": 32,
+                "Lana Švrljuga": 15,
+                "Teja Jereb": 40,
+                "Zoja Jurak": 23,
+                "Brina Mernik": 15,
+                "Larissa Zukić": 45,
+                "Tiana Novak": 1
+              },
+              "opponents": [
+                {
+                  "code": "9Z",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "code": "9O",
+                  "quarters": [
+                    3,
+                    4,
+                    2,
+                    1
+                  ]
+                },
+                {
+                  "code": "9G",
+                  "quarters": [
+                    2,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "code": "6Z",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "code": "6G",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "code": "7Z",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "7O",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "7G",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "KZ",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "KO",
+                  "quarters": [
+                    4,
+                    0,
+                    2,
+                    1
+                  ]
+                },
+                {
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    1,
+                    4,
+                    2
+                  ]
+                },
+                {
+                  "code": "PDG",
+                  "quarters": [
+                    3,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "PTZ",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                }
+              ],
+              "keepers": [
+                {
+                  "person": "Nika Kuri",
+                  "minutes": 39,
+                  "conceded": 11,
+                  "shots": 24,
+                  "sevenRatio": "0/1",
+                  "otherRatio": "11/23"
+                },
+                {
+                  "person": "Zoja Brglez",
+                  "minutes": 21,
+                  "conceded": 10,
+                  "shots": 15,
+                  "sevenRatio": "1/1",
+                  "otherRatio": "9/14"
+                }
+              ],
+              "file": "Celje mladinke sezona 2026 nov index.xlsx",
+              "sheet": "Koper",
+              "fouls": [
+                {
+                  "person": "Zala Petek",
+                  "code": "POA",
+                  "seven": 1,
+                  "twoMin": 0
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "POA",
+                  "seven": 1,
+                  "twoMin": 0
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PNA",
+                  "seven": 2,
+                  "twoMin": 1
+                },
+                {
+                  "person": "Tinkara Korošec",
+                  "code": "POA",
+                  "seven": 0,
+                  "twoMin": 2
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "PNA",
+                  "seven": 1,
+                  "twoMin": 0
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "POA",
+                  "seven": 1,
+                  "twoMin": 0
+                },
+                {
+                  "person": "Lana Švrljuga",
+                  "code": "PNA",
+                  "seven": 1,
+                  "twoMin": 1
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "PNA",
+                  "seven": 3,
+                  "twoMin": 2
+                },
+                {
+                  "person": "Zoja Jurak",
+                  "code": "PNA",
+                  "seven": 1,
+                  "twoMin": 0
+                }
+              ],
+              "summaries": {
+                "Zala Petek": {
+                  "index": 8.6,
+                  "goal": 2,
+                  "sevenGoal": 0,
+                  "saves": 0,
+                  "miss": 0,
+                  "sevenFailed": 0,
+                  "assist": 4,
+                  "DA": 1,
+                  "DN": 0,
+                  "NA": 0,
+                  "NN": 0,
+                  "POA": 4,
+                  "PON": 0,
+                  "PNA": 0,
+                  "PNN": 0,
+                  "blame": 1,
+                  "sevenDrawn": 0
+                },
+                "Sarah Pilih Derča": {
+                  "index": 8.9,
+                  "goal": 3,
+                  "sevenGoal": 2,
+                  "saves": 0,
+                  "miss": 0,
+                  "sevenFailed": 0,
+                  "assist": 2,
+                  "DA": 0,
+                  "DN": 1,
+                  "NA": 2,
+                  "NN": 0,
+                  "POA": 5,
+                  "PON": 0,
+                  "PNA": 2,
+                  "PNN": 0,
+                  "blame": 1,
+                  "sevenDrawn": 0
+                },
+                "Lenja Ripnak": {
+                  "index": 4.499999999999999,
+                  "goal": 3,
+                  "sevenGoal": 0,
+                  "saves": 1,
+                  "miss": 0,
+                  "sevenFailed": 0,
+                  "assist": 0,
+                  "DA": 0,
+                  "DN": 0,
+                  "NA": 0,
+                  "NN": 0,
+                  "POA": 1,
+                  "PON": 0,
+                  "PNA": 0,
+                  "PNN": 1,
+                  "blame": 0,
+                  "sevenDrawn": 0
+                },
+                "Ajla Mehulić": {
+                  "index": 1.8,
+                  "goal": 0,
+                  "sevenGoal": 0,
+                  "saves": 0,
+                  "miss": 0,
+                  "sevenFailed": 0,
+                  "assist": 2,
+                  "DA": 0,
+                  "DN": 0,
+                  "NA": 1,
+                  "NN": 0,
+                  "POA": 0,
+                  "PON": 0,
+                  "PNA": 1,
+                  "PNN": 0,
+                  "blame": 0,
+                  "sevenDrawn": 0
+                },
+                "Zoja Verbovšek": {
+                  "index": 8.2,
+                  "goal": 0,
+                  "sevenGoal": 2,
+                  "saves": 2,
+                  "miss": 2,
+                  "sevenFailed": 0,
+                  "assist": 5,
+                  "DA": 1,
+                  "DN": 0,
+                  "NA": 1,
+                  "NN": 1,
+                  "POA": 7,
+                  "PON": 1,
+                  "PNA": 4,
+                  "PNN": 2,
+                  "blame": 4,
+                  "sevenDrawn": 2
+                },
+                "Tinkara Korošec": {
+                  "index": 1.6000000000000005,
+                  "goal": 0,
+                  "sevenGoal": 0,
+                  "saves": 0,
+                  "miss": 0,
+                  "sevenFailed": 0,
+                  "assist": 1,
+                  "DA": 0,
+                  "DN": 1,
+                  "NA": 0,
+                  "NN": 0,
+                  "POA": 6,
+                  "PON": 0,
+                  "PNA": 0,
+                  "PNN": 0,
+                  "blame": 4,
+                  "sevenDrawn": 0
+                },
+                "Zala Kuri": {
+                  "index": 5.1000000000000005,
+                  "goal": 1,
+                  "sevenGoal": 0,
+                  "saves": 0,
+                  "miss": 0,
+                  "sevenFailed": 0,
+                  "assist": 0,
+                  "DA": 0,
+                  "DN": 1,
+                  "NA": 0,
+                  "NN": 0,
+                  "POA": 7,
+                  "PON": 1,
+                  "PNA": 1,
+                  "PNN": 1,
+                  "blame": 1,
+                  "sevenDrawn": 1
+                },
+                "Pia Kljun": {
+                  "index": 5.6,
+                  "goal": 4,
+                  "sevenGoal": 0,
+                  "saves": 3,
+                  "miss": 0,
+                  "sevenFailed": 0,
+                  "assist": 0,
+                  "DA": 1,
+                  "DN": 0,
+                  "NA": 1,
+                  "NN": 0,
+                  "POA": 2,
+                  "PON": 0,
+                  "PNA": 0,
+                  "PNN": 0,
+                  "blame": 1,
+                  "sevenDrawn": 0
+                },
+                "Lana Švrljuga": {
+                  "index": 0.7999999999999999,
+                  "goal": 0,
+                  "sevenGoal": 1,
+                  "saves": 0,
+                  "miss": 0,
+                  "sevenFailed": 1,
+                  "assist": 0,
+                  "DA": 0,
+                  "DN": 0,
+                  "NA": 1,
+                  "NN": 0,
+                  "POA": 1,
+                  "PON": 1,
+                  "PNA": 1,
+                  "PNN": 0,
+                  "blame": 1,
+                  "sevenDrawn": 1
+                },
+                "Teja Jereb": {
+                  "index": 20.1,
+                  "goal": 4,
+                  "sevenGoal": 0,
+                  "saves": 0,
+                  "miss": 0,
+                  "sevenFailed": 0,
+                  "assist": 8,
+                  "DA": 2,
+                  "DN": 0,
+                  "NA": 2,
+                  "NN": 0,
+                  "POA": 9,
+                  "PON": 3,
+                  "PNA": 5,
+                  "PNN": 1,
+                  "blame": 3,
+                  "sevenDrawn": 3
+                },
+                "Zoja Jurak": {
+                  "index": 3.8000000000000007,
+                  "goal": 2,
+                  "sevenGoal": 0,
+                  "saves": 0,
+                  "miss": 0,
+                  "sevenFailed": 0,
+                  "assist": 0,
+                  "DA": 1,
+                  "DN": 0,
+                  "NA": 0,
+                  "NN": 2,
+                  "POA": 2,
+                  "PON": 0,
+                  "PNA": 5,
+                  "PNN": 2,
+                  "blame": 2,
+                  "sevenDrawn": 1
+                },
+                "Brina Mernik": {
+                  "index": 4.799999999999999,
+                  "goal": 3,
+                  "sevenGoal": 0,
+                  "saves": 0,
+                  "miss": 0,
+                  "sevenFailed": 0,
+                  "assist": 0,
+                  "DA": 0,
+                  "DN": 0,
+                  "NA": 0,
+                  "NN": 0,
+                  "POA": 0,
+                  "PON": 0,
+                  "PNA": 3,
+                  "PNN": 0,
+                  "blame": 0,
+                  "sevenDrawn": 0
+                },
+                "Larissa Zukić": {
+                  "index": 4.099999999999999,
+                  "goal": 3,
+                  "sevenGoal": 0,
+                  "saves": 1,
+                  "miss": 3,
+                  "sevenFailed": 0,
+                  "assist": 1,
+                  "DA": 0,
+                  "DN": 0,
+                  "NA": 0,
+                  "NN": 0,
+                  "POA": 4,
+                  "PON": 1,
+                  "PNA": 0,
+                  "PNN": 0,
+                  "blame": 3,
+                  "sevenDrawn": 0
+                },
+                "Tiana Novak": {
+                  "index": 0.19999999999999996,
+                  "goal": 0,
+                  "sevenGoal": 1,
+                  "saves": 0,
+                  "miss": 0,
+                  "sevenFailed": 1,
+                  "assist": 0,
+                  "DA": 0,
+                  "DN": 0,
+                  "NA": 0,
+                  "NN": 0,
+                  "POA": 0,
+                  "PON": 0,
+                  "PNA": 0,
+                  "PNN": 0,
+                  "blame": 0,
+                  "sevenDrawn": 0
+                }
+              },
+              "notes": [],
+              "teamIndex": 78.1,
+              "reportedTeamIndex": 78.1
+            },
+            "old": {
+              "rows": [
+                {
+                  "person": "Zala Petek",
+                  "code": "PDG",
+                  "quarters": [
+                    1,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "9G",
+                  "quarters": [
+                    1,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "7G",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "KG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PTO",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PTG",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "9Z",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "9O",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PDO",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "7G",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "PTG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "KO",
+                  "quarters": [
+                    0,
+                    1,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lana Švrljuga",
+                  "code": "7O",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lana Švrljuga",
+                  "code": "7G",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Jurak",
+                  "code": "PDG",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Jurak",
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Brina Mernik",
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Brina Mernik",
+                  "code": "PTG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Larissa Zukić",
+                  "code": "KZ",
+                  "quarters": [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Larissa Zukić",
+                  "code": "KO",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Larissa Zukić",
+                  "code": "PTG",
+                  "quarters": [
+                    2,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Tiana Novak",
+                  "code": "7O",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Tiana Novak",
+                  "code": "7G",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "POA",
+                  "quarters": [
+                    1,
+                    3,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "POA",
+                  "quarters": [
+                    3,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PNA",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "PNN",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "POA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lenja Ripnak",
+                  "code": "PNN",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "POA",
+                  "quarters": [
+                    1,
+                    0,
+                    2,
+                    4
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PNA",
+                  "quarters": [
+                    2,
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Tinkara Korošec",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    3,
+                    0,
+                    3
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "POA",
+                  "quarters": [
+                    4,
+                    0,
+                    3,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "PNA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lana Švrljuga",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lana Švrljuga",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Lana Švrljuga",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "POA",
+                  "quarters": [
+                    2,
+                    2,
+                    3,
+                    2
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    3,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    0,
+                    2,
+                    3
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Jurak",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Jurak",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "person": "Zoja Jurak",
+                  "code": "PNN",
+                  "quarters": [
+                    0,
+                    2,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Brina Mernik",
+                  "code": "PNA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Larissa Zukić",
+                  "code": "POA",
+                  "quarters": [
+                    0,
+                    3,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Larissa Zukić",
+                  "code": "PON",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "AG",
+                  "quarters": [
+                    3,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "AG",
+                  "quarters": [
+                    1,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "AZ",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "AG",
+                  "quarters": [
+                    1,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "A7",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "AZ",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "AO",
+                  "quarters": [
+                    0,
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    4
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "A7",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Larissa Zukić",
+                  "code": "AG",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "NA",
+                  "quarters": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Ajla Mehulić",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "NN",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Lana Švrljuga",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "NA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Jurak",
+                  "code": "NN",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "person": "Zala Petek",
+                  "code": "DA",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Sarah Pilih Derča",
+                  "code": "DN",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zoja Verbovšek",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "person": "Tinkara Korošec",
+                  "code": "DN",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "person": "Zala Kuri",
+                  "code": "DN",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Pia Kljun",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "person": "Teja Jereb",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "person": "Zoja Jurak",
+                  "code": "DA",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                }
+              ],
+              "minutes": {
+                "Zala Petek": 25,
+                "Sarah Pilih Derča": 30,
+                "Lenja Ripnak": 13,
+                "Ajla Mehulić": 12,
+                "Zoja Verbovšek": 49,
+                "Tinkara Korošec": 30,
+                "Zala Kuri": 26,
+                "Pia Kljun": 32,
+                "Lana Švrljuga": 15,
+                "Teja Jereb": 40,
+                "Zoja Jurak": 23,
+                "Brina Mernik": 15,
+                "Larissa Zukić": 45,
+                "Tiana Novak": 1
+              },
+              "opponents": [
+                {
+                  "code": "9Z",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "code": "9O",
+                  "quarters": [
+                    3,
+                    4,
+                    2,
+                    1
+                  ]
+                },
+                {
+                  "code": "9G",
+                  "quarters": [
+                    2,
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "code": "6Z",
+                  "quarters": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "code": "6G",
+                  "quarters": [
+                    0,
+                    1,
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "code": "7Z",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "7O",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "7G",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "KZ",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "code": "KO",
+                  "quarters": [
+                    4,
+                    0,
+                    2,
+                    1
+                  ]
+                },
+                {
+                  "code": "KG",
+                  "quarters": [
+                    0,
+                    1,
+                    4,
+                    2
+                  ]
+                },
+                {
+                  "code": "PDG",
+                  "quarters": [
+                    3,
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "code": "PTZ",
+                  "quarters": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                }
+              ],
+              "keepers": [
+                {
+                  "person": "Nika Kuri",
+                  "minutes": 39,
+                  "conceded": 11,
+                  "shots": 24,
+                  "sevenRatio": "0/1",
+                  "otherRatio": "11/23"
+                },
+                {
+                  "person": "Zoja Brglez",
+                  "minutes": 21,
+                  "conceded": 10,
+                  "shots": 15,
+                  "sevenRatio": "1/1",
+                  "otherRatio": "9/14"
+                }
+              ],
+              "file": "Celje mladinke sezona 2026 nov index.xlsx",
+              "sheet": "Koper",
+              "indices": {
+                "Zala Petek": [
+                  5.5,
+                  3.6,
+                  0.0,
+                  0.0
                 ],
-                "new": [
-                  0,
-                  0,
-                  1,
-                  0
+                "Sarah Pilih Derča": [
+                  4.3,
+                  4.6,
+                  0.0,
+                  0.0
+                ],
+                "Lenja Ripnak": [
+                  4.4,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Zoja Verbovšek": [
+                  1.3,
+                  3.0,
+                  1.7,
+                  1.7
+                ],
+                "Zala Kuri": [
+                  3.0,
+                  0.0,
+                  2.3,
+                  0.0
+                ],
+                "Pia Kljun": [
+                  0.0,
+                  4.8,
+                  1.0,
+                  0.0
+                ],
+                "Lana Švrljuga": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.6
+                ],
+                "Teja Jereb": [
+                  0.8,
+                  3.4,
+                  7.0,
+                  7.2
+                ],
+                "Zoja Jurak": [
+                  0.0,
+                  0.8,
+                  1.4,
+                  0.7
+                ],
+                "Brina Mernik": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  4.2
+                ],
+                "Larissa Zukić": [
+                  3.4,
+                  2.6,
+                  -0.2,
+                  0.0
+                ],
+                "Tiana Novak": [
+                  0.0,
+                  0.0,
+                  0.5,
+                  0.0
+                ],
+                "Tinkara Korošec": [
+                  0.0,
+                  1.9,
+                  0.0,
+                  1.2
+                ],
+                "Ajla Mehulić": [
+                  0.0,
+                  0.0,
+                  1.3,
+                  0.0
                 ]
-              }
-            ],
-            "aliases": {
-              "Lana Kolobarič": "Lara Kolobarič",
-              "Alja Mehulič": "Ajla Mehulić",
-              "Ajla Mehulič": "Ajla Mehulić"
-            }
+              },
+              "teamIndex": 78.0
+            },
+            "differences": [],
+            "aliases": []
           }
         }
       ],
@@ -16840,6 +18319,7 @@ const EXCEL_IMPORT = {
           "Pia Kljun",
           "Sarah Pilih Derča",
           "Teja Jereb",
+          "Tiana Novak",
           "Tinkara Korošec",
           "Vita Sečki",
           "Zala Kuri",
@@ -16932,9 +18412,9 @@ const codeLabel=c=>{
  for(const kind of ['assist','foul','error','gain']){const found=TYPES[kind].find(x=>x[0]===c);if(found)return `${{assist:'Asistenca',foul:'Prekršek',error:'Napaka',gain:'Dobljena žoga'}[kind]} · ${found[1]}`}
  return c;
 };
-function importPanel(){return `<div class="panel" id="excelImportPanel"><div class="panel-head"><h2>Odigrane tekme iz Excelov</h2><span class="tag">3 članice · 3 mladinke</span></div><p>Dodaj šest tekem iz sezone 2026. Tekme, ki že obstajajo za isto ekipo, datum in nasprotnika, se preskočijo. Obstoječi podatki ostanejo shranjeni; pred uvozom se prenese varnostna kopija obeh ekip.</p><div class="toolbar"><button class="btn primary" id="mergeExcel">＋ Dodaj odigrane tekme</button><a class="btn" href="./excel-import.json" download>Prenesi podatke uvoza</a><a class="btn" href="./Celje-posodobitev-GitHub.zip" download>Prenesi posodobitev za GitHub</a><a class="btn" href="./UVOZ-navodila.html" target="_blank" rel="noopener">Navodila in pregled razlik</a></div><div class="hint">Excel vsebuje seštevke po četrtinah, brez minut in zaporedja akcij. Stari in novi vir sta shranjena ločeno znotraj ene tekme. Podatki na tem naslovu so ločeni od podatkov na drugem spletnem naslovu.</div></div>`}
+function importPanel(){const n=t=>EXCEL_IMPORT.teams[t].games.length;return `<div class="panel" id="excelImportPanel"><div class="panel-head"><h2>Odigrane tekme iz Excelov</h2><span class="tag">${n('members')} članice · ${n('juniors')} mladinke</span></div><p>Tekme iz Excelov sezone 2026 (novi indeks) so vgrajene v aplikacijo in se ob odprtju samodejno naložijo na vsaki napravi. Vsaka tekma je shranjena enkrat; popravljena različica zamenja prejšnjo.</p><div class="toolbar"><a class="btn" href="./excel-import.json" download>Prenesi podatke uvoza</a></div><div class="hint">Excel vsebuje seštevke po četrtinah, brez minut in zaporedja akcij.</div></div>`}
 const originalRenderMatches=renderMatches;
-renderMatches=function(){originalRenderMatches();$('#view-matches').insertAdjacentHTML('afterbegin',importPanel());$('#mergeExcel').onclick=()=>importExcelPackage(EXCEL_IMPORT);
+renderMatches=function(){originalRenderMatches();$('#view-matches').insertAdjacentHTML('afterbegin',importPanel());
  const imported=db().games.filter(g=>g.imported).length;
  if(imported)$('#excelImportPanel').insertAdjacentHTML('beforeend',`<p class="muted">V izbrani ekipi je ${imported} uvoženih tekem. V števcu akcij so samo vnosi v živo.</p>`);
 };
@@ -16962,7 +18442,7 @@ renderOverview=function(){if(!db().games.some(g=>g.imported)){originalOverview()
  $$('[data-aggregate-index]').forEach(b=>b.onclick=()=>{const mode=b.dataset.aggregateIndex;$$('[data-aggregate-index]').forEach(x=>x.classList.toggle('active',x===b));$$('.aggregate-index,.aggregate-average,#aggregateTotal').forEach(c=>c.textContent=fmt(c.dataset[mode]))});
 };
 const originalExports=renderExports;
-renderExports=function(){originalExports();$('#view-exports').insertAdjacentHTML('afterbegin',importPanel());$('#mergeExcel').onclick=()=>importExcelPackage(EXCEL_IMPORT);$('#backup').onclick=()=>download(new Blob([JSON.stringify({format:'celje-full-backup',version:2,state},null,2)],{type:'application/json'}),'Celje-obe-ekipi-varnostna-kopija.json');
+renderExports=function(){originalExports();$('#view-exports').insertAdjacentHTML('afterbegin',importPanel());$('#backup').onclick=()=>download(new Blob([JSON.stringify({format:'celje-full-backup',version:2,state},null,2)],{type:'application/json'}),'Celje-obe-ekipi-varnostna-kopija.json');
  $('#view-exports').querySelectorAll('p').forEach(p=>{if(p.textContent.includes('obstoječe podatke izbrane ekipe bo zamenjala'))p.textContent='Prenesi varnostno kopijo obeh ekip. Obnova varnostne kopije zamenja podatke; paket uvoza Excel doda samo manjkajoče tekme.'});
 };
 const originalRestore=restore;
@@ -16995,6 +18475,22 @@ function aggregateWorkbook(mode){
 const originalNewWorkbook=newWorkbook,originalOldWorkbook=oldWorkbook;
 newWorkbook=function(){return db().games.some(g=>g.imported)?aggregateWorkbook('new'):originalNewWorkbook()};
 oldWorkbook=function(){return db().games.some(g=>g.imported)?aggregateWorkbook('old'):originalOldWorkbook()};
+// Vgrajene tekme iz Excelov: ob vsakem zagonu zamenjajo vse prejšnje uvožene tekme, tako da je vsaka tekma natanko enkrat.
+function syncBundledGames(){
+ try{validateExcelPackage(EXCEL_IMPORT)}catch(e){console.error(e);return}
+ let changed=false;
+ for(const t of ['members','juniors']){
+  const d=state.teams[t],incoming=EXCEL_IMPORT.teams[t],ids=new Set(incoming.games.map(g=>g.id)),keys=new Set(incoming.games.map(importIdentity));
+  const keep=d.games.filter(g=>!(g.imported&&(ids.has(g.id)||keys.has(importIdentity(g))||String(g.id).startsWith('excel-'))));
+  const live=new Set(keep.map(importIdentity)),next=[...keep];
+  for(const g of incoming.games)if(!live.has(importIdentity(g)))next.push(structuredClone(g));
+  if(JSON.stringify(next)!==JSON.stringify(d.games)){d.games=next;changed=true}
+  const all=new Set([...d.roster.players,...d.roster.keepers]);
+  for(const type of ['players','keepers'])for(const p of incoming.roster[type])if(!all.has(p)){d.roster[type].push(p);all.add(p);changed=true}
+ }
+ if(changed)save();
+}
+syncBundledGames();
 render();
 
 // Detailed overview for both live records and imported new-source aggregates.
