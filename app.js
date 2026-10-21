@@ -2479,7 +2479,8 @@ const EXCEL_IMPORT = {
             },
             "differences": [],
             "aliases": []
-          }
+          },
+          "venue": "Ajdovščina"
         },
         {
           "date": "2026-09-24",
@@ -3226,6 +3227,16 @@ const EXCEL_IMPORT = {
                   ]
                 },
                 {
+                  "person": "Kaja Krebs",
+                  "code": "NN",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
                   "person": "Zala Petek",
                   "code": "DA",
                   "quarters": [
@@ -3594,14 +3605,14 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Lenja Ripnak": {
-                  "index": 1.4000000000000001,
+                  "index": 0.7,
                   "goal": 0,
                   "sevenGoal": 0,
                   "saves": 2,
                   "miss": 0,
                   "sevenFailed": 0,
                   "assist": 0,
-                  "DA": 1,
+                  "DA": 0,
                   "DN": 0,
                   "NA": 0,
                   "NN": 0,
@@ -3613,17 +3624,17 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 1
                 },
                 "Alja Vrček": {
-                  "index": 7.5,
+                  "index": 7.499999999999999,
                   "goal": 2,
                   "sevenGoal": 0,
                   "saves": 0,
                   "miss": 1,
                   "sevenFailed": 0,
                   "assist": 0,
-                  "DA": 0,
+                  "DA": 1,
                   "DN": 0,
                   "NA": 0,
-                  "NN": 0,
+                  "NN": 1,
                   "POA": 4,
                   "PON": 1,
                   "PNA": 7,
@@ -3632,7 +3643,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 3
                 },
                 "Ajla Mehulić": {
-                  "index": 7.699999999999999,
+                  "index": 8.7,
                   "goal": 2,
                   "sevenGoal": 1,
                   "saves": 0,
@@ -3641,14 +3652,14 @@ const EXCEL_IMPORT = {
                   "assist": 5,
                   "DA": 1,
                   "DN": 0,
-                  "NA": 0,
-                  "NN": 2,
+                  "NA": 1,
+                  "NN": 1,
                   "POA": 0,
                   "PON": 0,
                   "PNA": 6,
                   "PNN": 2,
                   "blame": 3,
-                  "sevenDrawn": 0
+                  "sevenDrawn": 1
                 },
                 "Vita Sečki": {
                   "index": 0.2999999999999998,
@@ -3709,8 +3720,8 @@ const EXCEL_IMPORT = {
                 }
               },
               "notes": [],
-              "teamIndex": 49.6,
-              "reportedTeamIndex": 49.6
+              "teamIndex": 49.9,
+              "reportedTeamIndex": 49.9
             },
             "old": {
               "rows": [
@@ -4445,6 +4456,16 @@ const EXCEL_IMPORT = {
                   ]
                 },
                 {
+                  "person": "Kaja Krebs",
+                  "code": "NN",
+                  "quarters": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
                   "person": "Zala Petek",
                   "code": "DA",
                   "quarters": [
@@ -4741,17 +4762,18 @@ const EXCEL_IMPORT = {
                   3.5
                 ],
                 "Kaja Krebs": [
-                  1.2,
+                  0.5,
                   0.0,
                   0.0,
                   0.0
                 ]
               },
-              "teamIndex": 56.4
+              "teamIndex": 55.7
             },
             "differences": [],
             "aliases": []
-          }
+          },
+          "venue": "Velenje"
         },
         {
           "date": "2026-10-11",
@@ -8601,7 +8623,8 @@ const EXCEL_IMPORT = {
             },
             "differences": [],
             "aliases": []
-          }
+          },
+          "venue": "Ptuj"
         }
       ],
       "roster": {
@@ -9212,7 +9235,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0,
-                    1
+                    0
                   ]
                 },
                 {
@@ -9222,7 +9245,7 @@ const EXCEL_IMPORT = {
                     0,
                     3,
                     0,
-                    0
+                    1
                   ]
                 },
                 {
@@ -9701,7 +9724,7 @@ const EXCEL_IMPORT = {
                 },
                 {
                   "person": "Zoja Jurak",
-                  "code": "POA",
+                  "code": "PNA",
                   "seven": 1,
                   "twoMin": 0
                 }
@@ -9917,17 +9940,17 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Teja Jereb": {
-                  "index": 5.200000000000001,
+                  "index": 3.5,
                   "goal": 2,
                   "sevenGoal": 0,
                   "saves": 0,
                   "miss": 0,
                   "sevenFailed": 0,
                   "assist": 2,
-                  "DA": 1,
+                  "DA": 0,
                   "DN": 1,
-                  "NA": 2,
-                  "NN": 0,
+                  "NA": 1,
+                  "NN": 2,
                   "POA": 1,
                   "PON": 1,
                   "PNA": 0,
@@ -9984,8 +10007,8 @@ const EXCEL_IMPORT = {
                   "AG-1"
                 ]
               ],
-              "teamIndex": 75.4,
-              "reportedTeamIndex": 75.4
+              "teamIndex": 73.7,
+              "reportedTeamIndex": 73.7
             },
             "old": {
               "rows": [
@@ -10556,7 +10579,7 @@ const EXCEL_IMPORT = {
                     0,
                     1,
                     0,
-                    1
+                    0
                   ]
                 },
                 {
@@ -10566,7 +10589,7 @@ const EXCEL_IMPORT = {
                     0,
                     3,
                     0,
-                    0
+                    1
                   ]
                 },
                 {
@@ -11095,7 +11118,7 @@ const EXCEL_IMPORT = {
                   0.0,
                   -1.0,
                   0.0,
-                  0.2
+                  -0.2
                 ],
                 "Brina Mernik": [
                   0.0,
@@ -11110,11 +11133,12 @@ const EXCEL_IMPORT = {
                   0.0
                 ]
               },
-              "teamIndex": 76.9
+              "teamIndex": 76.5
             },
             "differences": [],
             "aliases": []
-          }
+          },
+          "venue": "Krka"
         },
         {
           "date": "2026-09-21",
@@ -15817,7 +15841,8 @@ const EXCEL_IMPORT = {
             },
             "differences": [],
             "aliases": []
-          }
+          },
+          "venue": "Ajdovščina"
         },
         {
           "date": "2026-10-19",
@@ -16494,6 +16519,16 @@ const EXCEL_IMPORT = {
                   ]
                 },
                 {
+                  "person": "Tinkara Korošec",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
                   "person": "Teja Jereb",
                   "code": "AZ",
                   "quarters": [
@@ -16936,7 +16971,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 0
                 },
                 "Sarah Pilih Derča": {
-                  "index": 8.9,
+                  "index": 9,
                   "goal": 3,
                   "sevenGoal": 2,
                   "saves": 0,
@@ -16950,7 +16985,7 @@ const EXCEL_IMPORT = {
                   "POA": 5,
                   "PON": 0,
                   "PNA": 2,
-                  "PNN": 0,
+                  "PNN": 1,
                   "blame": 1,
                   "sevenDrawn": 0
                 },
@@ -17126,7 +17161,7 @@ const EXCEL_IMPORT = {
                   "sevenDrawn": 1
                 },
                 "Brina Mernik": {
-                  "index": 4.799999999999999,
+                  "index": 4.6,
                   "goal": 3,
                   "sevenGoal": 0,
                   "saves": 0,
@@ -17139,7 +17174,7 @@ const EXCEL_IMPORT = {
                   "NN": 0,
                   "POA": 0,
                   "PON": 0,
-                  "PNA": 3,
+                  "PNA": 2,
                   "PNN": 0,
                   "blame": 0,
                   "sevenDrawn": 0
@@ -17184,8 +17219,8 @@ const EXCEL_IMPORT = {
                 }
               },
               "notes": [],
-              "teamIndex": 78.1,
-              "reportedTeamIndex": 78.1
+              "teamIndex": 78.0,
+              "reportedTeamIndex": 78.0
             },
             "old": {
               "rows": [
@@ -17850,6 +17885,16 @@ const EXCEL_IMPORT = {
                   ]
                 },
                 {
+                  "person": "Tinkara Korošec",
+                  "code": "AG",
+                  "quarters": [
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                },
+                {
                   "person": "Teja Jereb",
                   "code": "AZ",
                   "quarters": [
@@ -18290,7 +18335,7 @@ const EXCEL_IMPORT = {
                 ],
                 "Tinkara Korošec": [
                   0.0,
-                  1.9,
+                  2.9,
                   0.0,
                   1.2
                 ],
@@ -18301,7 +18346,7 @@ const EXCEL_IMPORT = {
                   0.0
                 ]
               },
-              "teamIndex": 78.0
+              "teamIndex": 79.0
             },
             "differences": [],
             "aliases": []
