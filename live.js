@@ -342,7 +342,7 @@ function liveStartDialog(){
   const close=()=>overlay.remove();
   overlay.querySelector('[data-close]').onclick=close;overlay.onclick=e=>{if(e.target===overlay)close()};
   const go=()=>{const opp=overlay.querySelector('#lsOpp').value.trim();if(!opp){toast('Vnesi ime nasprotnika.');overlay.querySelector('#lsOpp').focus();return}
-    const home=overlay.querySelector('#lsHome')?.value.trim()||'';if(team==='other'&&!home){toast('Vnesi domačo ekipo.');overlay.querySelector('#lsHome').focus();return}
+    const home=overlay.querySelector('#lsHome')?.value.trim()||(isClubTeam(team)?teamLabel():'');if(team==='other'&&!home){toast('Vnesi domačo ekipo.');overlay.querySelector('#lsHome').focus();return}
     const g={id:id(),date:overlay.querySelector('#lsDate').value||today,opponent:opp,...(home?{home}:{}),finalHome:'',finalAway:'',firstHalfHome:'',firstHalfAway:'',complete:false,events:[]};
     db().games.push(g);save();close();setLivePref(true);liveClear();gameId=g.id;view='game';render()};
   overlay.querySelector('#lsGo').onclick=go;
