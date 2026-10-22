@@ -2,13 +2,17 @@
 // Brez nastavitev v firebase-config.js aplikacija deluje kot prej, samo v tej napravi.
 const CLOUD=window.CELJE_CLOUD||{};
 const cloudOn=!!CLOUD.firebase?.apiKey;
-const CLOUD_TEAMS=['members','juniors','cadets','other'];
+// Vse ekipe v napravi: osnovne štiri in zavihki klubov, ki jih doda skrbnik.
+function cloudTeams(){return Object.keys(state.teams)}
 let cloudUser=null,cloudDb=null,cloudReady=false,cloudTimer=null;
 let cloudSent={},cloudRemote={},cloudRosterSent={};
 
 function cloudAdmin(){return !!cloudUser&&(CLOUD.adminUids||[]).includes(cloudUser.uid)}
 // Urejati sme skrbnik ali tisti, ki je tekmo ustvaril; nova (še neposlana) tekma je od trenutnega uporabnika.
 function cloudOwner(gid){return cloudRemote[gid]?cloudRemote[gid].owner||null:cloudUser?.uid||null}
+// Seznam igralk: osnovne ekipe ureja samo skrbnik, ostale vsak prijavljen (brez skupne baze vsi).
+function cloudCanEditRoster(t){return !cloudOn||(CORE_TEAMS.includes(t)?cloudAdmin():!!cloudUser)}
+function cloudCanManageTeams(){return !cloudOn||cloudAdmin()}
 function cloudCanEdit(g){return !cloudOn||!g||g.imported||cloudAdmin()||(!!cloudUser&&cloudOwner(g.id)===cloudUser.uid)}
 function cloudGameJson(g){const {updatedAt,...rest}=g;return JSON.stringify(rest)}
 function cloudLoadScript(src){return new Promise((res,rej)=>{const s=document.createElement('script');s.src=src;s.onload=res;s.onerror=rej;document.head.appendChild(s)})}
@@ -60,7 +64,7 @@ function cloudSignIn(){
 function cloudPush(){
   if(!cloudOn||!cloudUser||!cloudDb||!cloudReady)return;
   const local=new Map();
-  for(const t of CLOUD_TEAMS)for(const g of state.teams[t].games){if(g.imported)continue;local.set(g.id,{t,g})}
+  for(const t of cloudTeams())for(const g of state.teams[t].games){if(g.imported)continue;local.set(g.id,{t,g})}
   for(const [gid,{t,g}] of local){
     const j=cloudGameJson(g);if(cloudSent[gid]===j||!cloudCanEdit(g))continue;
     cloudSent[gid]=j;g.updatedAt=Date.now();
@@ -71,16 +75,17 @@ function cloudPush(){
   const missing=Object.keys(cloudRemote).filter(gid=>!local.has(gid));
   if(missing.length===1&&cloudAdmin())cloudDb.collection('games').doc(missing[0]).delete().catch(cloudErr);
   else if(missing.length){for(const gid of missing){const d=cloudRemote[gid];state.teams[d.team]?.games.push(Object.assign(JSON.parse(d.json),{updatedAt:d.updatedAt}))}cloudLocalSave();if(!cloudAdmin())toast('Tekme lahko izbriše samo skrbnik.');render()}
-  for(const t of CLOUD_TEAMS){const j=JSON.stringify(state.teams[t].roster);if(cloudRosterSent[t]===j)continue;cloudRosterSent[t]=j;cloudDb.collection('rosters').doc(t).set({json:j,updatedAt:Date.now(),by:cloudUser.uid}).catch(e=>{delete cloudRosterSent[t];cloudErr(e)})}
+  for(const t of cloudTeams()){const j=JSON.stringify(state.teams[t].roster);if(cloudRosterSent[t]===j||!cloudCanEditRoster(t))continue;cloudRosterSent[t]=j;cloudDb.collection('rosters').doc(t).set({json:j,updatedAt:Date.now(),by:cloudUser.uid}).catch(e=>{delete cloudRosterSent[t];cloudErr(e)})}
 }
 
 function cloudOnGames(snap){
   let changed=false;
   snap.docChanges().forEach(ch=>{
     const gid=ch.doc.id,d=ch.doc.data();
-    if(ch.type==='removed'){delete cloudRemote[gid];delete cloudSent[gid];for(const t of CLOUD_TEAMS){const n=state.teams[t].games.length;state.teams[t].games=state.teams[t].games.filter(g=>g.id!==gid);if(n!==state.teams[t].games.length)changed=true}if(gameId===gid){gameId=null;view='matches'}return}
+    if(ch.type==='removed'){delete cloudRemote[gid];delete cloudSent[gid];for(const t of cloudTeams()){const n=state.teams[t].games.length;state.teams[t].games=state.teams[t].games.filter(g=>g.id!==gid);if(n!==state.teams[t].games.length)changed=true}if(gameId===gid){gameId=null;view='matches'}return}
     cloudRemote[gid]=d;
     if(cloudSent[gid]===d.json)return;
+    if(!state.teams[d.team]&&isClubTeam(d.team))state.teams[d.team]={roster:{players:[],keepers:[]},games:[]};
     const list=state.teams[d.team]?.games;if(!list)return;
     const i=list.findIndex(x=>x.id===gid);
     // Prijavljen vnašalec obdrži svojo novejšo, še neposlano različico.
@@ -95,7 +100,7 @@ function cloudOnGames(snap){
 }
 function cloudOnRosters(snap){
   let changed=false;
-  snap.docChanges().forEach(ch=>{if(ch.type==='removed')return;const t=ch.doc.id,d=ch.doc.data();if(!state.teams[t]||cloudRosterSent[t]===d.json)return;cloudRosterSent[t]=d.json;state.teams[t].roster=JSON.parse(d.json);changed=true});
+  snap.docChanges().forEach(ch=>{if(ch.type==='removed')return;const t=ch.doc.id,d=ch.doc.data();if(!state.teams[t]&&isClubTeam(t))state.teams[t]={roster:{players:[],keepers:[]},games:[]};if(!state.teams[t]||cloudRosterSent[t]===d.json)return;cloudRosterSent[t]=d.json;state.teams[t].roster=JSON.parse(d.json);changed=true});
   if(changed){cloudLocalSave();render()}
 }
 
@@ -103,7 +108,7 @@ function cloudOnRosters(snap){
 function cloudShareUrl(gid){return `${location.origin}${location.pathname}#tekma=${gid}`}
 function cloudOpenHash(){
   const m=location.hash.match(/tekma=([\w-]+)/);if(!m)return;
-  for(const t of CLOUD_TEAMS)if(state.teams[t].games.some(g=>g.id===m[1])){team=t;$$('[data-team]').forEach(b=>b.classList.toggle('active',b.dataset.team===t));gameId=m[1];view='game';render();return}
+  for(const t of cloudTeams())if(state.teams[t].games.some(g=>g.id===m[1])){team=t;$$('[data-team]').forEach(b=>b.classList.toggle('active',b.dataset.team===t));gameId=m[1];view='game';render();return}
 }
 async function cloudCopy(gid){const url=cloudShareUrl(gid);try{await navigator.clipboard.writeText(url);toast('Povezava do tekme je kopirana.')}catch{prompt('Kopiraj povezavo do tekme:',url)}}
 
@@ -119,7 +124,7 @@ renderGame=function(){
   if(cloudOn&&g&&!g.imported&&$('#backGames')){$('#backGames').insertAdjacentHTML('afterend','<button class="btn small" id="shareGame">Kopiraj povezavo</button>');$('#shareGame').onclick=()=>cloudCopy(g.id)}
 };
 const cloudRender=render;
-render=function(){cloudUi();cloudRender()};
+render=function(){cloudUi();renderTeamSwitch();cloudRender()};
 const cloudRenderMatches=renderMatches;
 renderMatches=function(){
   cloudRenderMatches();
@@ -156,7 +161,49 @@ async function cloudInit(){
     firebase.auth().onAuthStateChanged(u=>{cloudUser=u;cloudUi();cloudPush();render()});
     cloudDb.collection('games').onSnapshot(cloudOnGames,e=>{console.error(e);cloudStatus('Skupna baza ni dosegljiva – shranjeno v napravi')});
     cloudDb.collection('rosters').onSnapshot(cloudOnRosters,e=>console.error(e));
+    cloudDb.collection('config').doc('teams').onSnapshot(cloudOnTeams,e=>console.error(e));
   }catch(e){console.error(e);cloudStatus('Skupna baza ni dosegljiva – shranjeno v napravi')}
 }
+// Zavihki klubov: seznam je v skupni bazi (config/teams), ureja ga samo skrbnik.
+function cloudOnTeams(doc){
+  let list=[];try{list=JSON.parse(doc.data()?.json||'[]')}catch{}
+  if(JSON.stringify(list)===JSON.stringify(state.customTeams||[]))return;
+  applyCustomTeams(list);cloudLocalSave();render();
+}
+function cloudSaveTeams(list){
+  applyCustomTeams(list);save();
+  if(cloudOn&&cloudDb&&cloudAdmin())cloudDb.collection('config').doc('teams').set({json:JSON.stringify(list),updatedAt:Date.now(),by:cloudUser.uid}).catch(cloudErr);
+}
+function teamAddDialog(){
+  const label=(prompt('Ime novega zavihka (npr. ime kluba):')||'').trim();if(!label)return;
+  if(Object.values(TEAM_LABELS).some(l=>l.toLowerCase()===label.toLowerCase())){toast('Zavihek s tem imenom že obstaja.');return}
+  const slug=label.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,24)||'klub';
+  const tid=`club-${slug}-${Math.random().toString(36).slice(2,6)}`;
+  cloudSaveTeams([...(state.customTeams||[]),{id:tid,label}]);team=tid;gameId=null;view='matches';render();toast(`Zavihek ${label} je dodan.`);
+}
+let teamSwitchKey='';
+function renderTeamSwitch(){
+  const box=$('.team-switch');if(!box)return;
+  const teams=[...Object.keys(SEEDS),...(state.customTeams||[]).map(x=>x.id)].filter(t=>state.teams[t]),add=cloudCanManageTeams();
+  const key=JSON.stringify([teams.map(t=>TEAM_LABELS[t]||t),team,add]);if(key===teamSwitchKey)return;teamSwitchKey=key;
+  box.innerHTML=teams.map(t=>`<button data-team="${esc(t)}" class="${t===team?'active':''}">${esc(TEAM_LABELS[t]||t)}</button>`).join('')+(add?'<button data-team-add title="Dodaj zavihek za nov klub">＋ Klub</button>':'');
+  box.querySelectorAll('[data-team]').forEach(b=>b.onclick=()=>{team=b.dataset.team;gameId=null;view='matches';render()});
+  box.querySelector('[data-team-add]')?.addEventListener('click',teamAddDialog);
+}
+const cloudRenderRoster=renderRoster;
+renderRoster=function(){
+  cloudRenderRoster();
+  const root=$('#view-roster');
+  if(!cloudCanEditRoster(team)){
+    root.querySelectorAll('#addPlayerForm,#addKeeperForm,[data-remove-player],[data-remove-keeper]').forEach(x=>x.remove());
+    root.querySelector('.head')?.insertAdjacentHTML('afterend',`<div class="hint" style="margin:0 0 16px">${CORE_TEAMS.includes(team)?'Seznam igralk te ekipe ureja samo skrbnik.':'Za dodajanje in odstranjevanje igralk se prijavi.'}</div>`);
+  }
+  if(isClubTeam(team)&&cloudCanManageTeams()){
+    const empty=!db().games.length;
+    root.insertAdjacentHTML('beforeend',`<div class="panel"><div class="panel-head"><h2>Zavihek kluba</h2><span class="tag">skrbnik</span></div><div class="toolbar"><button class="btn" id="teamRename">Preimenuj zavihek</button><button class="btn danger" id="teamRemove" ${empty?'':'disabled'}>Odstrani zavihek</button></div>${empty?'':'<div class="hint">Zavihek lahko odstraniš, ko v njem ni več tekem.</div>'}</div>`);
+    $('#teamRename').onclick=()=>{const label=(prompt('Novo ime zavihka:',teamLabel())||'').trim();if(!label||label===teamLabel())return;cloudSaveTeams(state.customTeams.map(x=>x.id===team?{...x,label}:x));render()};
+    $('#teamRemove').onclick=()=>{if(!empty||!confirm(`Odstranim zavihek ${teamLabel()}?`))return;const gone=team;team='members';cloudSaveTeams(state.customTeams.filter(x=>x.id!==gone));render();toast('Zavihek odstranjen.')};
+  }
+};
 addEventListener('hashchange',cloudOpenHash);
 cloudInit();
