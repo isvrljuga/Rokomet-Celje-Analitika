@@ -20,7 +20,7 @@ function xpData(g){
   const rows=new Map(),opp=new Map(),fouls=new Map(),excl={},minutes={},part={},keepers=new Map();
   const add=(map,key,q,n=1,base={})=>{let r=map.get(key);if(!r)map.set(key,r={...base,q:[0,0,0,0]});r.q[q]+=n};
   const foul=(p,code)=>{const k=p+'\u0001'+code;let f=fouls.get(k);if(!f)fouls.set(k,f={person:p,code,seven:0,two:0});return f};
-  let exclMin=0;
+  let exclMin=0,benchExcl=0;
   if(g.imported){
     const s=g.imported.new;
     for(const r of s.rows)r.quarters.forEach((n,q)=>n&&add(rows,r.person+'\u0001'+r.code,q,n,{person:r.person,code:r.code}));
@@ -51,6 +51,8 @@ function xpData(g){
       }
     }
     for(const e of xpExclusions(g)){excl[e.person]=(excl[e.person]||0)+1;exclMin+=e.duration==='4'?4:2}
+    // Izključitev klopi zmanjša možni čas ekipe, igralki, ki je šla ven, pa se ne pripiše.
+    for(const e of g.events)if(e.type==='exclusion'&&e.forTeam==='celje'&&e.forPersonType==='bench'){benchExcl++;exclMin+=e.duration==='4'?4:2}
     for(const k of keepers.values())k.min=minutes[k.person]||0;
     for(const p of db().roster.keepers)if(minutes[p]&&!keepers.has(p))keepers.set(p,{person:p,min:minutes[p],shots:0,goals:0,sg:0,st:0,og:0,ot:0});
   }
@@ -60,7 +62,7 @@ function xpData(g){
   if(g.imported){for(const [p,s]of Object.entries(g.imported.new.summaries||{}))if(s&&Object.values(s).some(v=>Number(v)))seen.add(p)}
   else{for(const e of g.events)if(e.type==='blame'&&e.person)seen.add(e.person)}
   const players=[...roster.filter(p=>seen.has(p)),...[...seen].filter(p=>p&&!roster.includes(p))];
-  return {g,rows:rowList,opp:oppList,fouls:foulList,excl,exclMin,minutes,part,keepers:[...keepers.values()],players,keeperSet,potential:Math.max(0,360-exclMin)/6};
+  return {g,rows:rowList,opp:oppList,fouls:foulList,excl,benchExcl,exclMin,minutes,part,keepers:[...keepers.values()],players,keeperSet,potential:Math.max(0,360-exclMin)/6};
 }
 
 const xpQ=(list,pred)=>[0,1,2,3].map(q=>xpSum(list.filter(pred).map(r=>r.q[q])));
@@ -90,6 +92,7 @@ function xpFouls(d){
     const mine=d.fouls.filter(x=>x.person===p),v=[xpSum(mine.filter(x=>['POA','PON'].includes(x.code)).map(x=>x.seven)),xpSum(mine.filter(x=>['PNA','PNN'].includes(x.code)).map(x=>x.seven)),d.excl[p]||0,xpSum(mine.filter(x=>['PNA','PNN'].includes(x.code)).map(x=>x.two))];
     if(xpSum(v)){out.push([p,...v]);v.forEach((n,i)=>tot[i]+=n)}
   }
+  if(d.benchExcl){out.push(['Klop',0,0,d.benchExcl,0]);tot[2]+=d.benchExcl}
   out.push(['Skupno',...tot]);
   return out;
 }

@@ -53,7 +53,7 @@ function displayType(e){
   if(e.type==='foul')return `Prekršek · ${TYPES.foul.find(x=>x[0]===e.code)?.[1]}${e.seven?' · 7 m':''}${e.twoMin?' · 2 min':''}`;
   if(e.type==='error')return `Napaka · ${TYPES.error.find(x=>x[0]===e.code)?.[1]}`;
   if(e.type==='gain')return `Dobljena žoga · ${TYPES.gain.find(x=>x[0]===e.code)?.[1]}`;
-  if(e.type==='exclusion')return `Izključitev · ${e.duration||2} min · ${e.forTeam==='celje'?'Celje':'nasprotnik'} · ${e.person}`;
+  if(e.type==='exclusion')return `Izključitev · ${e.duration||2} min · ${e.forTeam==='celje'?'Celje':'nasprotnik'} · ${e.person}${e.servedBy?` (ven ${e.servedBy})`:''}`;
   if(e.type==='time')return `Igralni čas · ${e.mode==='full'?'v napadu in obrambi':e.mode==='attack'?'samo napad':'samo obramba'} · ${Number(e.end)-Number(e.start)} min bruto`;
   return e.type;
 }
@@ -18560,12 +18560,19 @@ function drawnTwoCount(person,games){
   ? (g.imported.new.fouls||[]).filter(f=>f.person===person&&['PNA','PNN'].includes(f.code)).reduce((n,f)=>n+Number(f.twoMin||0),0)
   : g.events.filter(e=>e.person===person&&e.type==='foul'&&e.twoMin&&['PNA','PNN'].includes(e.code)).length),0);
 }
-playerStats=function(person,games=db().games){const stats=overviewPlayerStats(person,games);stats.count.sevenDrawn=drawnSevenCount(person,games);stats.count.twoDrawn=drawnTwoCount(person,games);return stats};
+function ownExclusionCount(person,games){
+ return games.reduce((total,g)=>{
+  if(g.imported)return total+(g.imported.new.fouls||[]).filter(f=>f.person===person&&['POA','PON'].includes(f.code)).reduce((n,f)=>n+Number(f.twoMin||0),0);
+  const ex=g.events.filter(e=>e.type==='exclusion'&&e.forTeam==='celje'&&e.forPersonType!=='bench'&&e.person===person);
+  return total+ex.length+g.events.filter(e=>e.type==='foul'&&e.person===person&&e.twoMin&&['POA','PON'].includes(e.code)&&!ex.some(x=>x.half===e.half&&Math.abs(x.minute-e.minute)<=1)).length;
+ },0);
+}
+playerStats=function(person,games=db().games){const stats=overviewPlayerStats(person,games);stats.count.sevenDrawn=drawnSevenCount(person,games);stats.count.twoDrawn=drawnTwoCount(person,games);stats.count.twoOwn=ownExclusionCount(person,games);return stats};
 function overviewElementRows(){
  const names=[...new Set([...db().roster.players,...db().roster.keepers,...db().games.flatMap(g=>g.imported?[...Object.keys(g.imported.new.summaries),...g.imported.new.rows.map(r=>r.person)]:g.events.filter(e=>e.person&&e.forPersonType!=='bench').map(e=>e.person))])];
- return names.map(person=>{const c=playerStats(person).count;return {person,POA:c.POA||0,PON:c.PON||0,PNA:c.PNA||0,PNN:c.PNN||0,defenseFouls:(c.POA||0)+(c.PON||0),attackFouls:(c.PNA||0)+(c.PNN||0),NA:c.NA||0,NN:c.NN||0,errors:(c.NA||0)+(c.NN||0),DA:c.DA||0,DN:c.DN||0,gains:(c.DA||0)+(c.DN||0),sevenDrawn:c.sevenDrawn||0,twoDrawn:c.twoDrawn||0}});
+ return names.map(person=>{const c=playerStats(person).count;return {person,POA:c.POA||0,PON:c.PON||0,PNA:c.PNA||0,PNN:c.PNN||0,defenseFouls:(c.POA||0)+(c.PON||0),attackFouls:(c.PNA||0)+(c.PNN||0),NA:c.NA||0,NN:c.NN||0,errors:(c.NA||0)+(c.NN||0),DA:c.DA||0,DN:c.DN||0,gains:(c.DA||0)+(c.DN||0),sevenDrawn:c.sevenDrawn||0,twoDrawn:c.twoDrawn||0,twoOwn:c.twoOwn||0}});
 }
-const overviewColumns=[['POA','Obr. akt.','Prekrški v obrambi – aktivni'],['PON','Obr. neakt.','Prekrški v obrambi – neaktivni'],['PNA','Prid. akt.','Pridobljeni prekrški (prekrški nasprotnic) – aktivni'],['PNN','Prid. neakt.','Pridobljeni prekrški (prekrški nasprotnic) – neaktivni'],['defenseFouls','Obrambni skupaj','Obrambni prekrški skupaj'],['attackFouls','Pridobljeni skupaj','Pridobljeni prekrški (prekrški nasprotnic) skupaj'],['NA','Napake akt.','Aktivne napake'],['NN','Napake neakt.','Neaktivne napake'],['errors','Napake skupaj','Vse napake'],['DA','Dobljene akt.','Aktivno dobljene žoge'],['DN','Dobljene neakt.','Neaktivno dobljene žoge'],['gains','Dobljene skupaj','Vse dobljene žoge'],['sevenDrawn','Dobljeni 7 m','Pridobljene sedemmetrovke'],['twoDrawn','Izborjene 2 min','Izborjene izključitve nasprotnic (brez uteži v indeksu)']];
+const overviewColumns=[['POA','Obr. akt.','Prekrški v obrambi – aktivni'],['PON','Obr. neakt.','Prekrški v obrambi – neaktivni'],['PNA','Prid. akt.','Pridobljeni prekrški (prekrški nasprotnic) – aktivni'],['PNN','Prid. neakt.','Pridobljeni prekrški (prekrški nasprotnic) – neaktivni'],['defenseFouls','Obrambni skupaj','Obrambni prekrški skupaj'],['attackFouls','Pridobljeni skupaj','Pridobljeni prekrški (prekrški nasprotnic) skupaj'],['NA','Napake akt.','Aktivne napake'],['NN','Napake neakt.','Neaktivne napake'],['errors','Napake skupaj','Vse napake'],['DA','Dobljene akt.','Aktivno dobljene žoge'],['DN','Dobljene neakt.','Neaktivno dobljene žoge'],['gains','Dobljene skupaj','Vse dobljene žoge'],['sevenDrawn','Dobljeni 7 m','Pridobljene sedemmetrovke'],['twoDrawn','Izborjene 2 min','Izborjene izključitve nasprotnic (brez uteži v indeksu)'],['twoOwn','Izključitve 2 min','Izključitve igralke (s prekrškom ali brez), brez izključitev klopi']];
 const overviewRender=renderOverview;
 renderOverview=function(){
  overviewRender();const rows=overviewElementRows(),totals=Object.fromEntries(overviewColumns.map(([key])=>[key,rows.reduce((sum,row)=>sum+row[key],0)]));
