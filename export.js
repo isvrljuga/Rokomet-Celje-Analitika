@@ -7,7 +7,9 @@ const XP_SHOT_CODES=XP_POS.flatMap(p=>['Z','O','G'].map(r=>p+r));
 const XP_GROUPS={assist:['AZ','AO','AG','A7'],foul:['POA','PON','PNA','PNN'],error:['NA','NN'],gain:['DA','DN']};
 const xpSum=a=>a.reduce((n,x)=>n+(Number(x)||0),0);
 const xpR=x=>Math.round(x*100)/100;
-const xpPct=(a,b)=>b?xpR(a/b*100):'';
+// Odstotki gredo v Excel kot delež z obliko 0,0 %.
+const xpP=x=>Number.isFinite(x)?{v:Math.round(x*10000)/10000,pct:1}:'';
+const xpPct=(a,b)=>b?xpP(a/b):'';
 const xpRatio=r=>{const m=String(r||'').match(/(\d+)\s*\/\s*(\d+)/);return m?[Number(m[1]),Number(m[2])]:[0,0]};
 
 function xpExclusions(g){
@@ -147,7 +149,7 @@ const XP_INDEX_HEAD=['Index','Goli','7M','Obrambe','Zgrešeni','Obrambe/zg 7M','
 function xpTime(d,idx){
   const out=[['Igralni čas'],[`Možni čas igralke v polju: (360 − ${xpR(d.exclMin)} min izključitev) / 6 = ${xpR(d.potential)} min; vratarke 60 min. Minute samo v napadu ali samo v obrambi štejejo pol.`],
     ['Igralka','Čas (uteženo)','Samo napad (min)','Samo obramba (min)','% časa','Index','Index na čas']];
-  for(const r of idx){if(!r.m&&!r.s.indexNew)continue;const pt=d.part[r.p];out.push([r.p,xpR(r.m),pt?xpR(pt.attack):'',pt?xpR(pt.defense):'',r.share?xpR(r.share*100):'',xpR(r.s.indexNew),r.share?xpR(r.s.indexNew/r.share):''])}
+  for(const r of idx){if(!r.m&&!r.s.indexNew)continue;const pt=d.part[r.p];out.push([r.p,xpR(r.m),pt?xpR(pt.attack):'',pt?xpR(pt.defense):'',r.share?xpP(r.share):'',xpR(r.s.indexNew),r.share?xpR(r.s.indexNew/r.share):''])}
   return out;
 }
 
@@ -164,7 +166,7 @@ function xpGameSheet(g){
   block(xpKeepers(d));
   block(xpTime(d,idx));
   rows.push(['Index igralk',...XP_INDEX_HEAD,'Igralni čas','% časa','Index na čas']);
-  for(const r of idx)rows.push([r.p,...r.vals,xpR(r.m),r.share?xpR(r.share*100):'',r.share?xpR(r.s.indexNew/r.share):'']);
+  for(const r of idx)rows.push([r.p,...r.vals,xpR(r.m),r.share?xpP(r.share):'',r.share?xpR(r.s.indexNew/r.share):'']);
   rows.push(['Skupno',...XP_INDEX_HEAD.map((_,i)=>xpR(xpSum(idx.map(r=>r.vals[i])))),xpR(xpSum(idx.map(r=>r.m)))]);
   return {d,idx,rows};
 }
@@ -182,9 +184,9 @@ function matchWorkbook(){
   const players=[...new Set([...db().roster.players,...db().roster.keepers].filter(p=>tot.has(p)).concat([...tot.keys()]))];
   const sum=[['Skupno · '+teamLabel()+' · '+games.length+' tekem'],[`Možni čas igralke v polju za vse tekme: ${xpR(potTotal)} min (vsota (360 − izključitve) / 6 po tekmah); vratarke 60 min na tekmo.`],
     ['Index igralk',...XP_INDEX_HEAD,'Igralni čas','% časa','Index na čas']];
-  for(const p of players){const t=tot.get(p),pot=t.keeper?60*games.length:potTotal,share=pot?t.m/pot:0;sum.push([p,...t.vals.map(xpR),xpR(t.m),share?xpR(share*100):'',share?xpR(t.vals[0]/share):''])}
+  for(const p of players){const t=tot.get(p),pot=t.keeper?60*games.length:potTotal,share=pot?t.m/pot:0;sum.push([p,...t.vals.map(xpR),xpR(t.m),share?xpP(share):'',share?xpR(t.vals[0]/share):''])}
   sum.push(['Skupno',...XP_INDEX_HEAD.map((_,i)=>xpR(xpSum(players.map(p=>tot.get(p).vals[i])))),xpR(xpSum(players.map(p=>tot.get(p).m)))]);
-  for(const b of built){sum.push([],[`${b.g.date} · ${b.g.opponent}`],['Index igralk',...XP_INDEX_HEAD,'Igralni čas','% časa','Index na čas']);for(const r of b.idx)sum.push([r.p,...r.vals,xpR(r.m),r.share?xpR(r.share*100):'',r.share?xpR(r.s.indexNew/r.share):''])}
+  for(const b of built){sum.push([],[`${b.g.date} · ${b.g.opponent}`],['Index igralk',...XP_INDEX_HEAD,'Igralni čas','% časa','Index na čas']);for(const r of b.idx)sum.push([r.p,...r.vals,xpR(r.m),r.share?xpP(r.share):'',r.share?xpR(r.s.indexNew/r.share):''])}
   // Skupno ekipa: streli in golmanke za vse tekme skupaj, nato po tekmah.
   const merged={g:null,rows:built.flatMap(b=>b.d.rows),opp:built.flatMap(b=>b.d.opp),keepers:[]};
   const km=new Map();for(const b of built)for(const k of b.d.keepers){const t=km.get(k.person)||{person:k.person,min:0,shots:0,goals:0,sg:0,st:0,og:0,ot:0};for(const f of ['min','shots','goals','sg','st','og','ot'])t[f]+=k[f];km.set(k.person,t)}
@@ -213,3 +215,53 @@ renderOverview=function(){
   $$('[data-index],[data-aggregate-index]').forEach(b=>b.addEventListener('click',()=>upd((b.dataset.index||b.dataset.aggregateIndex)==='old'?'old':'new')));
 };
 if(view==='overview')render();
+
+// Izvoz posamezne tekme: zavihek tekme kot v skupnem izvozu in zavihek »Akcije« z vsemi zapisi (s filtri).
+const XP_ACT_HEAD=['Polčas','Minuta','Četrtina','Ekipa','Igralka','Akcija','Tip akcije','Izid','Koda','Vratarka','7 m','2 min','Igralni čas (min)','Opomba','Število'];
+const XP_POS_LABEL={'9':'9 metrov','6':'6 metrov','7':'7 metrov',K:'Krilo',PD:'Prodor',PT:'Protinapad'},XP_RES_LABEL={Z:'Zgrešeni',O:'Obramba',G:'Gol'};
+const xpLab=(kind,code)=>TYPES[kind]?.find(x=>x[0]===code)?.[1]||code||'';
+function xpCodeParts(code){
+  const m=String(code).match(/^(9|6|7|K|PD|PT)([ZOG])$/);
+  if(m)return ['Strel',XP_POS_LABEL[m[1]],XP_RES_LABEL[m[2]]];
+  for(const [kind,label] of [['assist','Asistenca'],['foul','Prekršek'],['error','Napaka'],['gain','Dobljena žoga']])if(TYPES[kind].some(x=>x[0]===code))return [label,xpLab(kind,code),''];
+  return [code,'',''];
+}
+function xpActionRows(g){
+  const rows=[XP_ACT_HEAD];
+  if(g.imported){
+    const s=g.imported.new;
+    // Uvožene tekme imajo samo seštevke po četrtinah: ena vrstica na igralko, kodo in četrtino.
+    for(const r of s.rows)r.quarters.forEach((n,q)=>{if(!n)return;const [a,t,iz]=xpCodeParts(r.code);rows.push([q<2?1:2,'',qName(q),'Celje',r.person,a,t,iz,r.code,'','','','','',n])});
+    for(const r of s.opponents)r.quarters.forEach((n,q)=>{if(!n)return;const [,t,iz]=xpCodeParts(r.code);rows.push([q<2?1:2,'',qName(q),'Nasprotnik','','Strel nasprotnic',t,iz,r.code,'','','','','',n])});
+    const order=r=>XP_Q.indexOf(String(r[2]).replace('–','-'));rows.splice(1,rows.length,...rows.slice(1).sort((x,y)=>order(x)-order(y)));
+    for(const f of s.fouls||[])rows.push(['','','','Celje',f.person,'Prekršek',xpLab('foul',f.code),'',f.code,'',f.seven||'',f.twoMin||'','','7 m in 2 min za celo tekmo',0]);
+    return rows;
+  }
+  const at=e=>(e.half==='2'?30:0)+Number(e.type==='time'?e.start:e.minute)||0;
+  for(const e of [...g.events].sort((a,b)=>at(a)-at(b))){
+    const h=Number(e.half)||'',min=e.type==='time'?Number(e.start):Number(e.minute),q=qName(evQ(e)),opp=(e.type==='shot'&&e.side==='opponent')||(e.type==='exclusion'&&e.forTeam==='opponent');
+    const base=[h,Number.isFinite(min)?min:'',q,opp?'Nasprotnik':'Celje'];
+    if(e.type==='shot'){const code=(XP_SHOT[e.shot]||e.shot)+(XP_RES[e.result]||'');rows.push([...base,opp?'':e.person,opp?'Strel nasprotnic':'Strel',xpLab('shot',e.shot),xpLab('result',e.result),code,e.keeper||'','','','','',1]);continue}
+    if(e.type==='time'){const raw=Math.max(0,Number(e.end)-Number(e.start));rows.push([...base,e.person,'Igralni čas',e.mode==='attack'?'Samo napad':e.mode==='defense'?'Samo obramba':'Napad in obramba','','','','','',xpR(raw*(e.mode==='full'||!e.mode?1:.5)),`${e.start}–${e.end}`,1]);continue}
+    if(e.type==='exclusion'){rows.push([...base,e.forPersonType==='bench'?(opp?'Klop nasprotnic':'Klop'):e.person,'Izključitev',e.duration==='red'?'Rdeči karton':`${e.duration||2} min`,'','','','','','',e.servedBy?`ven ${e.servedBy}`:'',1]);continue}
+    if(e.type==='blame'){rows.push([...base,e.person,'Krivda','','','','','','','','',1]);continue}
+    const kind=e.type,label={assist:'Asistenca',foul:'Prekršek',error:'Napaka',gain:'Dobljena žoga'}[kind]||kind;
+    rows.push([...base,e.person,label,xpLab(kind,e.code),'',e.code||'','',e.seven?1:'',e.twoMin?1:'','','',1]);
+  }
+  return rows;
+}
+function gameWorkbook(g){
+  const {rows}=xpGameSheet(g),name=xpSheetName(g.opponent,new Set(['akcije']));
+  return [{name,rows},{name:'Akcije',rows:xpActionRows(g),filter:true}];
+}
+function exportGame(g){
+  try{const file=`Celje_${teamLabel()}_${g.date}_${g.opponent}`.normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^\w.-]+/g,'_');download(xlsx(gameWorkbook(g)),`${file}.xlsx`);toast('Izvoz tekme je pripravljen.')}
+  catch(e){console.error(e);toast('Izvoz tekme ni uspel.')}
+}
+const xpRenderGame=renderGame;
+renderGame=function(){
+  xpRenderGame();const g=game(),anchor=$('#backGames')||$('#backImported');
+  if(!g||!anchor||$('#exportGame'))return;
+  anchor.insertAdjacentHTML('afterend','<button class="btn small" id="exportGame">⇩ Izvozi tekmo · XLSX</button>');
+  $('#exportGame').onclick=()=>exportGame(g);
+};
