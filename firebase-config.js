@@ -10,5 +10,5 @@ window.CELJE_CLOUD=window.CELJE_CLOUD||{
   firebase:{apiKey:'AIzaSyCAbxIDxdS-GVi7vwqKC7Ksirs6s_m_vqI',authDomain:'rokomet-celje.firebaseapp.com',projectId:'rokomet-celje',storageBucket:'rokomet-celje.firebasestorage.app',messagingSenderId:'15782311672',appId:'1:15782311672:web:d90401f24508aab23f2d0d'},
   adminUids:['mGyEsmEYYQYvgIVbFYFbReSeDRd2'],
   // Naslov posrednika za klepet (Cloudflare Worker, glej chat-worker/NAVODILA.md); prazno = klepet je izklopljen.
-  chatUrl:''
+  chatUrl:'https://celje-klepet.isvrljuga.workers.dev'
 };
