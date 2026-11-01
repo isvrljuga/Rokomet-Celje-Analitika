@@ -231,8 +231,9 @@ function liveRecalc(g){
   const at=e=>(e.half==='2'?30:0)+(e.type==='time'?Number(e.end):Number(e.minute)||0);
   g.events=g.events.filter(e=>e.type!=='time').concat(rebuilt).map((e,i)=>[e,i]).sort((a,b)=>at(a[0])-at(b[0])||a[1]-b[1]).map(x=>x[0]);
   const played=ended?60:Math.min(30,(L.secs['1']||0)/60)+(L.half==='2'?Math.min(30,sec/60):0);
-  const mins={};for(const e of rebuilt)mins[e.person]=(mins[e.person]||0)+(e.end-e.start);
-  for(const p of Object.keys(L.court)){const c=L.court[p];mins[p]=(mins[p]||0)+Math.max(0,(c.half===L.half?sec/60:30)-c.start)}
+  // Minute samo v napadu ali samo v obrambi štejejo pol (kot v pregledu in izvozu).
+  const wt=m=>m==='attack'||m==='defense'?.5:1,mins={};for(const e of rebuilt)mins[e.person]=(mins[e.person]||0)+(e.end-e.start)*wt(e.mode);
+  for(const p of Object.keys(L.court)){const c=L.court[p];mins[p]=(mins[p]||0)+Math.max(0,(c.half===L.half?sec/60:30)-c.start)*wt(c.mode)}
   const exclMin=exclusions.concat(benchEx).reduce((n,e)=>n+(e.duration==='4'?4:2),0);
   const sum=f=>Object.entries(mins).filter(([p])=>f(p)).reduce((n,[,m])=>n+m,0);
   const goalsAgainst=g.events.filter(e=>e.type==='shot'&&e.side==='opponent'&&e.result==='goal').length,blames=g.events.filter(e=>e.type==='blame').length;
@@ -250,7 +251,7 @@ function liveRecalcDialog(g){
     ${row('Vratarke',r.keeper,r.expKeeper)}${row('Igralke v polju',r.field,r.expField,`6 × ${f(r.played)} min − ${f(r.exclMin)} min izključitev`)}</tbody></table></div>
     ${r.goalsAgainst>r.blames?`<div class="hint">Prejetih golov: ${r.goalsAgainst}, zapisanih krivd: ${r.blames}. Krivdo lahko dodaš pri igralki (akcija Krivda).</div>`:''}
     ${ok(r.field,r.expField)&&ok(r.keeper,r.expKeeper)?'':'<div class="hint">Razlika pomeni, da kakšna menjava ni bila vpisana. Popravi jo v Menjave (ali v Zapisniku izbriši napačen vnos igralnega časa) in znova preračunaj.</div>'}
-    <div class="tablescroll" style="margin-top:12px"><table class="table"><thead><tr><th>Igralka</th><th>Minute</th></tr></thead><tbody>${players.map(([p,m])=>`<tr><td>${esc(p)}${keepers.has(p)?' · vrat.':''}</td><td>${f(m)}</td></tr>`).join('')||'<tr><td colspan="2">Ni zapisanega igralnega časa.</td></tr>'}</tbody></table></div></div>`;
+    <div class="tablescroll" style="margin-top:12px"><table class="table"><thead><tr><th>Igralka</th><th title="Minute samo v napadu ali samo v obrambi štejejo pol">Minute</th></tr></thead><tbody>${players.map(([p,m])=>`<tr><td>${esc(p)}${keepers.has(p)?' · vrat.':''}</td><td>${f(m)}</td></tr>`).join('')||'<tr><td colspan="2">Ni zapisanega igralnega časa.</td></tr>'}</tbody></table></div></div>`;
   document.body.appendChild(overlay);overlay.querySelector('[data-close]').onclick=()=>overlay.remove();overlay.onclick=e=>{if(e.target===overlay)overlay.remove()};
   renderGame();
 }
