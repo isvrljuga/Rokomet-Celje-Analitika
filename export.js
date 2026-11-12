@@ -239,7 +239,7 @@ function xpActionRows(g){
   }
   const at=e=>(e.half==='2'?30:0)+Number(e.type==='time'?e.start:e.minute)||0;
   for(const e of [...g.events].sort((a,b)=>at(a)-at(b))){
-    const h=Number(e.half)||'',min=e.type==='time'?Number(e.start):Number(e.minute),q=qName(evQ(e)),opp=(e.type==='shot'&&e.side==='opponent')||(e.type==='exclusion'&&e.forTeam==='opponent');
+    const h=Number(e.half)||'',min=e.type==='time'?Number(e.start):hbMin(e.minute),q=qName(evQ(e)),opp=(e.type==='shot'&&e.side==='opponent')||(e.type==='exclusion'&&e.forTeam==='opponent');
     const base=[h,Number.isFinite(min)?min:'',q,opp?'Nasprotnik':'Celje'];
     if(e.type==='shot'){const code=(XP_SHOT[e.shot]||e.shot)+(XP_RES[e.result]||'');rows.push([...base,opp?'':e.person,opp?'Strel nasprotnic':'Strel',xpLab('shot',e.shot),xpLab('result',e.result),code,e.keeper||'','','','','',1]);continue}
     if(e.type==='time'){const raw=Math.max(0,Number(e.end)-Number(e.start));rows.push([...base,e.person,'Igralni čas',e.mode==='attack'?'Samo napad':e.mode==='defense'?'Samo obramba':'Napad in obramba','','','','','',xpR(raw*(e.mode==='full'||!e.mode?1:.5)),`${e.start}–${e.end}`,1]);continue}
