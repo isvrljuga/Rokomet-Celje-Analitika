@@ -144,7 +144,7 @@ function renderLive(g){
   const step=!S.person?1:!S.kind?2:3;
   const lineup=liveNeedsLineup(g,L),scr=lineup?'lineup':L.screen==='subs'?'subs':'entry';
   const ex=liveExcl(L),exDone=ex.some(x=>liveLeft(L,x)<=0);
-  const log=g.events.slice(-4).reverse().map((e,i)=>`<div class="lv-ev ${i?'more':''} ${e.type==='shot'&&e.result==='goal'?(e.side==='celje'?'good':'bad'):''}"><small>${e.half}. P · ${e.type==='time'?`${liveNum(e.start)}–${liveNum(e.end)}`:e.minute}'</small><b>${esc(liveWho(e))}</b><span>${esc(liveDesc(e))}</span></div>`).join('')||'<div class="lv-ev"><small>Ni še akcij</small><span>Prva akcija se prikaže tukaj.</span></div>';
+  const log=g.events.slice(-4).reverse().map((e,i)=>`<div class="lv-ev ${i?'more':''} ${e.type==='shot'&&e.result==='goal'?(e.side==='celje'?'good':'bad'):''}"><small>${e.half}. P · ${e.type==='time'?`${liveNum(e.start)}–${liveNum(e.end)}`:hbMin(e.minute)}'</small><b>${esc(liveWho(e))}</b><span>${esc(liveDesc(e))}</span></div>`).join('')||'<div class="lv-ev"><small>Ni še akcij</small><span>Prva akcija se prikaže tukaj.</span></div>';
   const m=Math.floor(sec/60);
   $('#view-game').innerHTML=`<div class="lv step-${step} scr-${scr}" id="live">
   <header class="lv-top">
@@ -200,7 +200,7 @@ function renderLive(g){
 function liveBlameHtml(L){
   const keepers=new Set(db().roster.keepers);let names=Object.keys(L.court).filter(p=>!keepers.has(p));
   if(!names.length)names=db().roster.players;
-  return `<div class="lv-blame" role="group" aria-label="Krivda za prejeti gol"><b>Prejet gol (${liveBlameAsk.half}. P ${liveBlameAsk.minute}') – krivda naše igralke?</b><div class="lv-blamebtns">${names.map(p=>`<button class="lv-chip" data-blame="${esc(p)}">${esc(shortName(p))}</button>`).join('')}<button class="lv-chip" data-lv="blameNone">Brez krivde</button></div></div>`;
+  return `<div class="lv-blame" role="group" aria-label="Krivda za prejeti gol"><b>Prejet gol (${liveBlameAsk.half}. P ${hbMin(liveBlameAsk.minute)}') – krivda naše igralke?</b><div class="lv-blamebtns">${names.map(p=>`<button class="lv-chip" data-blame="${esc(p)}">${esc(shortName(p))}</button>`).join('')}<button class="lv-chip" data-lv="blameNone">Brez krivde</button></div></div>`;
 }
 
 // Preračun tekme iz zapisanih akcij: zaključi odprte vnose igralnega časa, odpravi prekrivanja,
