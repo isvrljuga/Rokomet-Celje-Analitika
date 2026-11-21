@@ -1,4 +1,4 @@
-const CACHE='celje-rokomet-v31-gumbi';
+const CACHE='celje-rokomet-v32-streli';
 const PREFIX='celje-rokomet-';
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(['./','./index.html','./app.js','./live.js','./export.js','./firebase-config.js','./cloud.js','./chat.js','./dashboard.js','./analiza.js','./icon.svg','./manifest.webmanifest'])).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith(PREFIX)&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
