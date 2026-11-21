@@ -122,13 +122,15 @@ function anHBars(items,{min,max,fmt=v=>anSigned(v),label='graf',colors=[DB_CELJE
 }
 
 // Delež zadetkov po pozicijah: Celje, nasprotnice in črta benchmarka.
-function anPosChart(rows){
-  const H=230,m={t:12,r:10,b:28,l:40},y=v=>m.t+(H-m.t-m.b)*(100-v)/100,bw=(AN_W-m.l-m.r)/rows.length;
-  let s='';for(const t of [0,20,40,60,80,100])s+=`<line class="an-grid" x1="${m.l}" x2="${AN_W-m.r}" y1="${y(t)}" y2="${y(t)}"/>${anText(m.l-6,y(t)+4,`${t} %`,'end')}`;
+// Stolpci po pozicijah: Celje, nasprotnice in črta benchmarka. Privzeto delež zadetkov, z o lahko tudi delež strelov.
+function anPosChart(rows,o={}){
+  const c=o.c||'pct',op=o.o||'opp_pct',b=o.b||'bench',tipC=o.tipC||(r=>`${r.goals}/${r.shots}`),tipO=o.tipO||(r=>`${r.opp_goals}/${r.opp_shots}`),what=o.what||'Delež zadetkov';
+  const top=o.max||100,ticks=anTicks(0,top,5),H=230,m={t:12,r:10,b:28,l:40},y=v=>m.t+(H-m.t-m.b)*(top-Math.min(v,top))/top,bw=(AN_W-m.l-m.r)/rows.length;
+  let s='';for(const t of ticks)s+=`<line class="an-grid" x1="${m.l}" x2="${AN_W-m.r}" y1="${y(t)}" y2="${y(t)}"/>${anText(m.l-6,y(t)+4,`${dbF(t)} %`,'end')}`;
   rows.forEach((r,i)=>{const x0=m.l+i*bw+bw*.14,w=bw*.34;
-    [[r.pct,DB_CELJE,`Celje ${anPctS(r.pct)} (${r.goals}/${r.shots})`],[r.opp_pct,DB_OPP,`Nasprotnice ${anPctS(r.opp_pct)} (${r.opp_goals}/${r.opp_shots})`]].forEach(([v,c,t],k)=>{if(v!=null)s+=`<rect x="${anR(x0+k*(w+bw*.04))}" y="${anR(y(v))}" width="${anR(w)}" height="${anR(y(0)-y(v))}" rx="2" fill="${c}"><title>${esc(r.label)} · ${t} · benchmark ${anPctS(r.bench)}</title></rect>`});
-    s+=`<line x1="${anR(x0-4)}" x2="${anR(x0+2*w+bw*.04+4)}" y1="${y(r.bench)}" y2="${y(r.bench)}" stroke="#8b9590" stroke-width="3"/>`+anText(m.l+i*bw+bw/2,H-8,r.label,'middle')});
-  return anSvg(H,s,'Delež zadetkov po pozicijah ob benchmarku');
+    [[r[c],DB_CELJE,`Celje ${anPctS(r[c])} (${tipC(r)})`],[r[op],DB_OPP,`Nasprotnice ${anPctS(r[op])} (${tipO(r)})`]].forEach(([v,col,tt],k)=>{if(v!=null)s+=`<rect x="${anR(x0+k*(w+bw*.04))}" y="${anR(y(v))}" width="${anR(w)}" height="${anR(y(0)-y(v))}" rx="2" fill="${col}"><title>${esc(r.label)} · ${tt} · benchmark ${anPctS(r[b])}</title></rect>`});
+    s+=`<line x1="${anR(x0-4)}" x2="${anR(x0+2*w+bw*.04+4)}" y1="${y(r[b])}" y2="${y(r[b])}" stroke="#8b9590" stroke-width="3"/>`+anText(m.l+i*bw+bw/2,H-8,r.label,'middle')});
+  return anSvg(H,s,`${what} po pozicijah ob benchmarku`);
 }
 
 function anPearson(rows,k){
@@ -153,6 +155,9 @@ function renderGameDash(){
   const net=anR(S('goals_shots')-S('xg')+S('xga')-S('goals_against_shots'));
   // Pozicije čez vse tekme.
   const pos=AN_POS.map(([p,label])=>{const t=k=>dbSum(rows.map(r=>r.pos[p][k]));return {p,label,shots:t('shots'),goals:t('goals'),pct:anPctN(t('goals'),t('shots')),bench:anR(100*bench[p].goal),att:anR(t('goals')-t('xg')),opp_shots:t('oshots'),opp_goals:t('ogoals'),opp_pct:anPctN(t('ogoals'),t('oshots')),opp:anR(t('xga')-t('ogoals')),save:anPctN(t('osaves'),t('oshots')),bsave:anR(100*bench[p].save)}});
+  // Delež strelov s posamezne pozicije glede na vse strele (Celje, nasprotnice, benchmark).
+  {const bs=AN_BENCH_RAW[anBenchKey()].goal,bt=dbSum(AN_POS.map(([p])=>bs[p][1])),ct=dbSum(pos.map(r=>r.shots)),ot=dbSum(pos.map(r=>r.opp_shots));
+   for(const r of pos){r.share=anPctN(r.shots,ct);r.opp_share=anPctN(r.opp_shots,ot);r.bench_share=anR(100*bs[r.p][1]/bt);r.share_d=r.share==null?null:anR(r.share-r.bench_share);r.opp_share_d=r.opp_share==null?null:anR(r.opp_share-r.bench_share)}}
   const corr=AN_FACTORS.map(([k,label])=>({k,label,r:anPearson(rows,k)})).filter(x=>x.r!=null).sort((a,b)=>Math.abs(b.r)-Math.abs(a.r));
   if(!corr.some(c=>c.k===anFactor))anFactor=corr[0]?.k||null;
   const fLabel=(AN_FACTORS.find(f=>f[0]===anFactor)||[])[1]||'';
@@ -183,6 +188,13 @@ function renderGameDash(){
     <div class="tablescroll"><table class="table db-table"><thead><tr><th>Tekma</th><th>Izid</th><th>Goli</th><th>xG</th><th>Napad ±</th><th>Prejeti</th><th>xG nasp.</th><th>Obramba ±</th><th>Obrambe</th><th>Pričak. obr.</th><th>Skupaj ±</th></tr></thead><tbody>${byNet.map(r=>`<tr class="db-click ${r.id===anGameId?'sel':''}" data-an-game="${esc(r.id)}"><td>${esc(r.label)}</td><td><span class="an-pill ${r.result}">${r.gf}:${r.ga}</span></td><td>${r.goals_shots}</td><td>${dbF(r.xg)}</td><td class="${anTone(r.att_diff)}">${anSigned(r.att_diff)}</td><td>${r.goals_against_shots}</td><td>${dbF(r.xga)}</td><td class="${anTone(r.def_diff)}">${anSigned(r.def_diff)}</td><td>${r.saves}</td><td>${dbF(r.xsaves)}</td><td class="${anTone(r.net)}"><b>${anSigned(r.net)}</b></td></tr>`).join('')}</tbody></table></div>
     <p class="muted db-note">Razvrščeno od najbolj do najmanj uspešne tekme glede na pričakovanja. Benchmark ne upošteva moči nasprotnika.</p></div>
 
+  <div class="panel"><div class="panel-head"><h2>Od kod streljamo: delež strelov po pozicijah</h2><span class="tag">benchmark: ${benchName}</span></div>
+    <p class="muted db-note">Kolikšen del vseh strelov pride s posamezne pozicije, za Celje in za nasprotnice, ob deležu v benchmarku (siva črta).</p>
+    <div class="db-legend"><span><i style="background:${DB_CELJE}"></i>Celje</span><span><i style="background:${DB_OPP}"></i>Nasprotnice</span><span><i style="background:#8b9590"></i>benchmark</span></div>
+    ${anAt(full,()=>anPosChart(pos,{c:'share',o:'opp_share',b:'bench_share',max:Math.ceil(Math.max(40,...pos.flatMap(r=>[r.share||0,r.opp_share||0,r.bench_share]))/10)*10,what:'Delež strelov',tipC:r=>`${r.shots} strelov`,tipO:r=>`${r.opp_shots} strelov`}))}
+    <div class="tablescroll"><table class="table db-table"><thead><tr><th>Pozicija</th><th>Streli Celja</th><th>Delež Celje</th><th>Benchmark</th><th>Razlika Celje</th><th>Streli nasp.</th><th>Delež nasp.</th><th>Razlika nasp.</th></tr></thead><tbody>${pos.map(r=>`<tr><td>${r.label}</td><td>${r.shots}</td><td>${anPctS(r.share)}</td><td>${anPctS(r.bench_share)}</td><td>${r.share_d==null?'—':`${anSigned(r.share_d)} t. o.`}</td><td>${r.opp_shots}</td><td>${anPctS(r.opp_share)}</td><td>${r.opp_share_d==null?'—':`${anSigned(r.opp_share_d)} t. o.`}</td></tr>`).join('')}<tr><td><b>Skupaj</b></td><td><b>${dbSum(pos.map(r=>r.shots))}</b></td><td>100 %</td><td>100 %</td><td></td><td><b>${dbSum(pos.map(r=>r.opp_shots))}</b></td><td>100 %</td><td></td></tr></tbody></table></div>
+    <p class="muted db-note">Razlika je v odstotnih točkah (t. o.): plus pomeni, da se s te pozicije strelja več kot v benchmarku. Pri nasprotnicah pokaže, kam jih obramba Celja usmerja.</p></div>
+
   <div class="panel"><h2>Uspešnost po pozicijah ob benchmarku</h2><div class="db-legend"><span><i style="background:${DB_CELJE}"></i>Celje</span><span><i style="background:${DB_OPP}"></i>Nasprotnice</span><span><i style="background:#8b9590"></i>benchmark</span></div>
     ${anAt(full,()=>anPosChart(pos))}
     <div class="tablescroll"><table class="table db-table"><thead><tr><th>Pozicija</th><th>Streli Celja</th><th>Goli</th><th>Delež</th><th>Benchmark</th><th>Goli − xG</th><th>Streli nasp.</th><th>Delež nasp.</th><th>xG − prejeti</th><th>Obrambe golm.</th><th>Benchmark obr.</th></tr></thead><tbody>${pos.map(r=>`<tr><td>${r.label}</td><td>${r.shots}</td><td>${r.goals}</td><td>${anPctS(r.pct)}</td><td>${anPctS(r.bench)}</td><td class="${anTone(r.att)}">${anSigned(r.att)}</td><td>${r.opp_shots}</td><td>${anPctS(r.opp_pct)}</td><td class="${anTone(r.opp)}">${anSigned(r.opp)}</td><td>${anPctS(r.save)}</td><td>${anPctS(r.bsave)}</td></tr>`).join('')}</tbody></table></div>
@@ -200,6 +212,7 @@ function renderGameDash(){
     <dt>Pričakovani goli (xG)</dt><dd>Streli s pozicije × delež zadetkov s te pozicije v benchmarku. Pričakovane obrambe: streli nasprotnic × delež obramb golmank v benchmarku.</dd>
     <dt>Skupaj ±</dt><dd>(goli − xG) + (xG nasprotnic − prejeti). Pozitivno pomeni boljšo tekmo, kot bi napovedali streli.</dd>
     <dt>Benchmark</dt><dd>All Teams Overview. Članice in ostale ekipe: slika za članice. Mladinke in kadetinje: seštevek dveh slik za mladinke. Protinapad = Fast Break, prodor = Break Through.</dd>
+    <dt>Delež strelov</dt><dd>Streli s pozicije / vsi streli s šestih pozicij. Benchmark: enako iz števila strelov na slikah All Teams Overview.</dd>
     <dt>Korelacija</dt><dd>Pearsonov koeficient med dejavnikom in razliko v golih. Ne pove, kaj je vzrok.</dd>
     <dt>Goli</dt><dd>Izid in razlika sta iz končnega rezultata tekme; goli iz strelov (pri xG) so seštevek zapisanih strelov.</dd>
   </dl></details>`;
