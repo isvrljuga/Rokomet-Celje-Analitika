@@ -1,0 +1,60 @@
+# Vsak ponedeljek prenese nove statistike tekem EHF Lige prvakinj, preračuna benchmark
+# (ehf-benchmark.json, ki ga bere zavihek Analiza tekem) in ga shrani v main.
+# Ročni zagon: GitHub → Actions → "EHF benchmark" → Run workflow.
+name: EHF benchmark
+
+on:
+  schedule:
+    - cron: '17 4 * * 1'   # ponedeljek ob 4:17 UTC (5:17 oz. 6:17 po slovenskem času)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ehf-benchmark
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Namesti pdftotext
+        run: sudo apt-get update -q && sudo apt-get install -y -q poppler-utils
+
+      # Že prenesene PDF-je hrani med zagoni, da se prenesejo le nove tekme.
+      - name: Predpomnilnik PDF-jev
+        uses: actions/cache@v4
+        with:
+          path: ehf-pdf
+          key: ehf-pdf-${{ github.run_id }}
+          restore-keys: ehf-pdf-
+
+      - name: Prenos PDF-jev
+        run: python3 tools/ehf_pdf.py --mapa ehf-pdf
+
+      - name: Izračun benchmarka
+        run: python3 tools/ehf_stat.py ehf-pdf ehf-benchmark.json
+
+      - name: Shrani v repozitorij
+        run: |
+          if git diff --quiet -- ehf-benchmark.json; then
+            echo "Ni novih tekem."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ehf-benchmark.json
+          git commit -m "EHF benchmark: posodobitev $(date -u +%Y-%m-%d)"
+          git push
+
+      # Vsi PDF-ji (statistike in zapisniki) za prenos z GitHuba, 30 dni.
+      - name: PDF-ji za prenos
+        uses: actions/upload-artifact@v4
+        with:
+          name: ehf-liga-prvakinj-pdf
+          path: ehf-pdf
+          retention-days: 30

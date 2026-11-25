@@ -34,11 +34,16 @@ function anGameRow(g,bench){
     xg+=x.xg;xga+=x.xga;xsaves+=x.xsaves;pos[p]=x;
   }
   const att=sf+errors,oatt=sa+gains,result=sc.h>sc.a?'zmaga':sc.h<sc.a?'poraz':'remi';
+  // Za primerjavo z Ligo prvakinj: 7 m, izključitve, ukradene žoge, asistence za gol, izid strelov.
+  const is7=r=>/^7[ZOG]$/.test(r.code),oppTwo=g.imported?dbSum(d.fouls.filter(f=>f.code==='PNA'||f.code==='PNN').map(f=>f.two)):dbSum(g.events.filter(e=>e.type==='exclusion'&&e.forTeam==='opponent').map(e=>e.duration==='4'?2:1));
+  const ehf={g7_shots:tot(d.rows,is7),g7_goals:tot(d.rows,r=>is7(r)&&r.code.endsWith('G')),opp_g7_shots:tot(d.opp,is7),opp_g7_goals:tot(d.opp,r=>is7(r)&&r.code.endsWith('G')),
+    two_own:d.exclMin/2,two_opp:oppTwo,steals:tot(d.rows,r=>r.code==='DA'),assists_goal:tot(d.rows,r=>r.code==='AG'),
+    saved_by_opp:tot(d.rows,r=>anShot(r.code)&&r.code.endsWith('O')),missed:tot(d.rows,r=>anShot(r.code)&&r.code.endsWith('Z')),opp_missed:tot(d.opp,r=>anShot(r.code)&&r.code.endsWith('Z'))};
   return {g,id:g.id,label:`${dbDate(g.date)} ${g.opponent}`,opponent:g.opponent,live:!g.imported,gf:sc.h,ga:sc.a,diff:sc.h-sc.a,result,
     shots_for:sf,shots_against:sa,goals_shots:gf,goals_against_shots:ga,saves,errors,gains,assists,qf,qa,excl_min:d.exclMin,
     team_index:anR(dbSum(d.players.map(p=>playerStats(p,[g]).indexNew))),
     shot_pct:anPctN(gf,sf),opp_shot_pct:anPctN(ga,sa),save_pct:anPctN(saves,saves+ga),attack_eff:anPctN(gf,att),defense_eff:oatt?anR(100-100*ga/oatt):null,
-    pos,xg:anR(xg),xga:anR(xga),xsaves:anR(xsaves),att_diff:anR(gf-xg),def_diff:anR(xga-ga),save_diff:anR(saves-xsaves),net:anR(gf-xg+xga-ga)};
+    pos,ehf,xg:anR(xg),xga:anR(xga),xsaves:anR(xsaves),att_diff:anR(gf-xg),def_diff:anR(xga-ga),save_diff:anR(saves-xsaves),net:anR(gf-xg+xga-ga)};
 }
 
 // Točke poteka: pri vnosih v živo vsak gol, pri uvoženih tekmah konec vsake četrtine.
@@ -139,8 +144,52 @@ function anPearson(rows,k){
   return sx&&sy?anR(sxy/(sx*sy),2):null;
 }
 
+// ---------- Liga prvakinj (EHF) ----------
+// ehf-benchmark.json pripravi tools/ehf_stat.py (na GitHubu se samodejno posodobi vsak ponedeljek).
+let AN_EHF=null,anEhfTried=false;
+function anLoadEhf(){if(anEhfTried)return;anEhfTried=true;fetch('ehf-benchmark.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>{if(d&&d.benchmark){AN_EHF=d;if(view==='adash'&&!gameId)renderGameDash()}}).catch(()=>{})}
+function anEhfPanel(rows,pos){
+  if(!AN_EHF)return `<div class="panel"><h2>Primerjava z Ligo prvakinj (EHF)</h2><p class="muted">Podatki Lige prvakinj se nalagajo …</p></div>`;
+  const B=AN_EHF.benchmark,pg=B.per_game,n=rows.length,S=k=>dbSum(rows.map(r=>r[k])),E=k=>dbSum(rows.map(r=>r.ehf[k]));
+  const avg=v=>anR(v/n),pct=(a,b)=>b?anR(100*a/b):null,out=B.shot_outcomes||{};
+  const gf=S('goals_shots'),ga=S('goals_against_shots'),sf=S('shots_for'),sa=S('shots_against');
+  // [oznaka, Celje, nasprotnice, Liga prvakinj, enota, višje je boljše za Celje?]
+  const R=[
+    ['Goli na tekmo',avg(S('gf')),avg(S('ga')),pg.goals,'',true],
+    ['Streli na tekmo',avg(sf),avg(sa),pg.shots,'',null],
+    ['Uspešnost strelov',pct(gf,sf),pct(ga,sa),B.pct.shot,'%',true],
+    ['Uspešnost napada (goli / (streli + izgubljene žoge))',pct(gf,sf+S('errors')),pct(ga,sa+S('gains')),B.pct.attack_est,'%',true],
+    ['Streli v okvir',pct(gf+E('saved_by_opp'),sf),pct(ga+S('saves'),sa),B.pct.on_target,'%',true],
+    ['Obrambe golmank (od strelov v okvir)',pct(S('saves'),S('saves')+ga),pct(E('saved_by_opp'),E('saved_by_opp')+gf),B.pct.gk_save,'%',true],
+    ['Izgubljene žoge / tehnične napake na tekmo',avg(S('errors')),avg(S('gains')),pg.turnovers,'',false],
+    ['Ukradene žoge na tekmo (aktivno dobljene DA)',avg(E('steals')),null,pg.steals,'',true],
+    ['Asistence za gol na tekmo',avg(E('assists_goal')),null,pg.assists,'',true],
+    ['7 m – streli na tekmo',avg(E('g7_shots')),avg(E('opp_g7_shots')),pg.g7_shots,'',true],
+    ['7 m – uspešnost',pct(E('g7_goals'),E('g7_shots')),pct(E('opp_g7_goals'),E('opp_g7_shots')),B.pct.g7,'%',true],
+    ['Izključitve 2 min na tekmo',avg(E('two_own')),avg(E('two_opp')),pg.two_min,'',false],
+  ];
+  const fmtV=(v,u)=>v==null?'—':u==='%'?anPctS(v):dbF(v);
+  const diff=(c,l,u,up)=>{if(c==null||l==null)return '';const d=anR(c-l);const cls=up==null?'':(up?d:-d)>0.05?'an-pos':(up?d:-d)<-0.05?'an-neg':'';return `<span class="${cls}">${anSigned(d)}${u==='%'?' t. o.':''}</span>`};
+  // Pozicije: EHF letos ne loči prodorov in protinapadov, zato jih pri Celju prištejemo k 6 m.
+  const grp=[['7M','7 m',['7']],['6M','6 m (s prodori in protinapadi)',['6','PD','PT']],['9M','9 m',['9']],['Wing','Krilo',['K']]];
+  const ps=p=>dbSum(p.map(k=>pos.find(x=>x.p===k).shots)),pg_=p=>dbSum(p.map(k=>pos.find(x=>x.p===k).goals)),os=p=>dbSum(p.map(k=>pos.find(x=>x.p===k).opp_shots)),og=p=>dbSum(p.map(k=>pos.find(x=>x.p===k).opp_goals));
+  const cT=dbSum(grp.map(x=>ps(x[2]))),oT=dbSum(grp.map(x=>os(x[2])));
+  const sv=p=>dbSum(rows.map(r=>dbSum(p.map(k=>r.pos[k].osaves))));
+  const ehfOnly=[['Goli v premoči',pg.powerplay_goals],['Goli v podštevilnosti',pg.shorthanded_goals],['Najdaljša serija golov',pg.best_run],['Blokirani streli (bloki igralk)',pg.blocks],['Rumeni kartoni',pg.yellow],['Rdeči kartoni',pg.red],['Time-outi',pg.timeouts]];
+  return `<div class="panel"><div class="panel-head"><h2>Primerjava z Ligo prvakinj (EHF)</h2><span class="tag">${esc(AN_EHF.matches)} tekem · stanje ${esc(dbDate(AN_EHF.last_match||''))}</span></div>
+    <p class="muted db-note">Povprečje ene ekipe na tekmo v Ligi prvakinj ${esc(AN_EHF.season||'')} (uradna statistika EHF) ob povprečju ${esc(teamLabel())} in njihovih nasprotnic. Razlika je Celje − Liga prvakinj; zeleno je bolje za Celje.</p>
+    <div class="tablescroll"><table class="table db-table"><thead><tr><th>Kazalnik</th><th>Celje</th><th>Nasprotnice</th><th>Liga prvakinj</th><th>Razlika Celje</th></tr></thead><tbody>${R.map(([l,c,o,lp,u,up])=>`<tr><td>${l}</td><td><b>${fmtV(c,u)}</b></td><td>${fmtV(o,u)}</td><td>${fmtV(lp,u)}</td><td>${diff(c,lp,u,up)}</td></tr>`).join('')}</tbody></table></div>
+    <h2 style="margin-top:18px">Streli po pozicijah</h2>
+    <div class="tablescroll"><table class="table db-table"><thead><tr><th>Pozicija</th><th>Delež strelov Celje</th><th>Nasprotnice</th><th>Liga prvakinj</th><th>Uspešnost Celje</th><th>Nasprotnice</th><th>Liga prvakinj</th><th>Obrambe naših golmank</th><th>Golmanke LP</th></tr></thead><tbody>${grp.map(([k,l,p])=>{const b=B.positions[k]||{},gk=B.gk_positions[k]||{};return `<tr><td>${l}</td><td><b>${anPctS(pct(ps(p),cT))}</b></td><td>${anPctS(pct(os(p),oT))}</td><td>${anPctS(b.shot_share)}</td><td><b>${anPctS(pct(pg_(p),ps(p)))}</b></td><td>${anPctS(pct(og(p),os(p)))}</td><td>${anPctS(b.goal_pct)}</td><td><b>${anPctS(pct(sv(p),sv(p)+og(p)))}</b></td><td>${anPctS(gk.save_pct)}</td></tr>`}).join('')}</tbody></table></div>
+    <p class="muted db-note">EHF v letošnji statistiki ne beleži prodorov in protinapadov posebej (prišteti so k 6 m), zato so pri Celju in nasprotnicah prav tako prišteti k 6 m. Obrambe golmank so od strelov v okvir (obrambe + goli), kot pri EHF.</p>
+    <div class="db-grid2" style="margin-top:12px"><div><h2>Izid strelov v Ligi prvakinj</h2><div class="tablescroll"><table class="table db-table"><thead><tr><th>Izid</th><th>Na tekmo</th><th>Delež</th></tr></thead><tbody>${[['goals','Gol'],['saves','Obramba'],['missed','Mimo'],['posts','Vratnica'],['blocked','Blokiran']].map(([k,l])=>out[k]?`<tr><td>${l}</td><td>${dbF(out[k].per_game)}</td><td>${anPctS(out[k].share)}</td></tr>`:'').join('')}<tr><td>Celje: mimo + vratnica + blok</td><td>${dbF(avg(E('missed')))}</td><td>${anPctS(pct(E('missed'),sf))}</td></tr></tbody></table></div></div>
+    <div><h2>Samo v statistiki EHF</h2><div class="tablescroll"><table class="table db-table"><thead><tr><th>Kazalnik</th><th>Liga prvakinj na tekmo</th></tr></thead><tbody>${ehfOnly.map(([l,v])=>`<tr><td>${l}</td><td>${v==null?'—':dbF(v)}</td></tr>`).join('')}</tbody></table></div><p class="muted db-note">Teh podatkov aplikacija ne beleži. Prekrškov (razen 7 m in izključitev) EHF ne objavlja.</p></div></div>
+  </div>`;
+}
+
 // ---------- Zavihek ----------
 function renderGameDash(){
+  anLoadEhf();
   const root=$('#view-adash'),all=dbGames(),bench=anBench();
   const full=Math.max(280,(root.clientWidth||700)-36),half=innerWidth>900?Math.max(280,(full-52)/2):full;
   const head=t=>`<div class="head"><div><p class="eyebrow">${esc(teamLabel())}${t}</p><h1>Analiza tekem</h1><p>Potek tekem, četrtine, napad in obramba, pričakovani goli in kaj je povezano z izidom.</p></div></div>`;
@@ -200,6 +249,8 @@ function renderGameDash(){
     <div class="tablescroll"><table class="table db-table"><thead><tr><th>Pozicija</th><th>Streli Celja</th><th>Goli</th><th>Delež</th><th>Benchmark</th><th>Goli − xG</th><th>Streli nasp.</th><th>Delež nasp.</th><th>xG − prejeti</th><th>Obrambe golm.</th><th>Benchmark obr.</th></tr></thead><tbody>${pos.map(r=>`<tr><td>${r.label}</td><td>${r.shots}</td><td>${r.goals}</td><td>${anPctS(r.pct)}</td><td>${anPctS(r.bench)}</td><td class="${anTone(r.att)}">${anSigned(r.att)}</td><td>${r.opp_shots}</td><td>${anPctS(r.opp_pct)}</td><td class="${anTone(r.opp)}">${anSigned(r.opp)}</td><td>${anPctS(r.save)}</td><td>${anPctS(r.bsave)}</td></tr>`).join('')}</tbody></table></div>
     <p class="muted db-note">Pri nasprotnicah je nižji delež boljši za Celje. Obrambe golmank so obrambe deljeno z vsemi streli nasprotnic s pozicije, kot v benchmarku.</p></div>
 
+  ${anEhfPanel(rows,pos)}
+
   <div class="db-grid2"><div class="panel"><h2>Kaj je povezano z izidom</h2><p class="muted db-note">Korelacija z razliko v golih (od −1 do 1), ${n} tekem. Pri malo tekmah so vrednosti le nakazane. Klik na stolpec izbere dejavnik.</p>
     ${corr.length?anAt(half,()=>anHBars(corr.map(c=>({key:c.k,label:c.label,bold:c.k===anFactor,value:c.r,ends:[0,c.r],parts:[[0,c.r,c.r>=0?DB_CELJE:DB_OPP]],title:`${c.label}: ${String(c.r).replace('.',',')}`})),{min:-1,max:1,fmt:v=>String(v).replace('.',','),label:'Korelacija dejavnikov z razliko v golih',click:'data-an-factor'})):'<p class="muted">Za korelacije so potrebne vsaj 3 tekme.</p>'}</div>
   <div class="panel"><h2>Dejavnik in razlika v golih</h2>${corr.length?`<div class="db-chips" role="group" aria-label="Dejavnik">${corr.map(c=>`<button class="${c.k===anFactor?'active':''}" data-an-factor="${c.k}">${esc(c.label)}</button>`).join('')}</div>${anAt(half,()=>anScatter(rows,anFactor,'diff',fLabel,'razlika v golih',{trend:true,zeroY:true,fmtY:v=>v>0?`+${v}`:String(v)}))}`:''}</div></div>
@@ -213,6 +264,7 @@ function renderGameDash(){
     <dt>Skupaj ±</dt><dd>(goli − xG) + (xG nasprotnic − prejeti). Pozitivno pomeni boljšo tekmo, kot bi napovedali streli.</dd>
     <dt>Benchmark</dt><dd>All Teams Overview. Članice in ostale ekipe: slika za članice. Mladinke in kadetinje: seštevek dveh slik za mladinke. Protinapad = Fast Break, prodor = Break Through.</dd>
     <dt>Delež strelov</dt><dd>Streli s pozicije / vsi streli s šestih pozicij. Benchmark: enako iz števila strelov na slikah All Teams Overview.</dd>
+    <dt>Liga prvakinj</dt><dd>Povprečje ene ekipe na tekmo iz uradnih statistik EHF vseh odigranih tekem Lige prvakinj. Na GitHubu se samodejno posodobi vsak ponedeljek (tools/ehf_pdf.py in tools/ehf_stat.py).</dd>
     <dt>Korelacija</dt><dd>Pearsonov koeficient med dejavnikom in razliko v golih. Ne pove, kaj je vzrok.</dd>
     <dt>Goli</dt><dd>Izid in razlika sta iz končnega rezultata tekme; goli iz strelov (pri xG) so seštevek zapisanih strelov.</dd>
   </dl></details>`;
