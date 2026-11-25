@@ -162,7 +162,8 @@ function anEhfPanel(rows,pos){
     ['Streli v okvir',pct(gf+E('saved_by_opp'),sf),pct(ga+S('saves'),sa),B.pct.on_target,'%',true],
     ['Obrambe golmank (od strelov v okvir)',pct(S('saves'),S('saves')+ga),pct(E('saved_by_opp'),E('saved_by_opp')+gf),B.pct.gk_save,'%',true],
     ['Izgubljene žoge / tehnične napake na tekmo',avg(S('errors')),avg(S('gains')),pg.turnovers,'',false],
-    ['Ukradene žoge na tekmo (aktivno dobljene DA)',avg(E('steals')),null,pg.steals,'',true],
+    // EHF: dobljene žoge = ukradene žoge + bloki; v aplikaciji vse dobljene žoge (DA + DN).
+    ['Dobljene žoge na tekmo (EHF: ukradene + bloki)',avg(S('gains')),null,anR((pg.steals||0)+(pg.blocks||0),2),'',true],
     ['Asistence za gol na tekmo',avg(E('assists_goal')),null,pg.assists,'',true],
     ['7 m – streli na tekmo',avg(E('g7_shots')),avg(E('opp_g7_shots')),pg.g7_shots,'',true],
     ['7 m – uspešnost',pct(E('g7_goals'),E('g7_shots')),pct(E('opp_g7_goals'),E('opp_g7_shots')),B.pct.g7,'%',true],
@@ -175,7 +176,7 @@ function anEhfPanel(rows,pos){
   const ps=p=>dbSum(p.map(k=>pos.find(x=>x.p===k).shots)),pg_=p=>dbSum(p.map(k=>pos.find(x=>x.p===k).goals)),os=p=>dbSum(p.map(k=>pos.find(x=>x.p===k).opp_shots)),og=p=>dbSum(p.map(k=>pos.find(x=>x.p===k).opp_goals));
   const cT=dbSum(grp.map(x=>ps(x[2]))),oT=dbSum(grp.map(x=>os(x[2])));
   const sv=p=>dbSum(rows.map(r=>dbSum(p.map(k=>r.pos[k].osaves))));
-  const ehfOnly=[['Goli v premoči',pg.powerplay_goals],['Goli v podštevilnosti',pg.shorthanded_goals],['Najdaljša serija golov',pg.best_run],['Blokirani streli (bloki igralk)',pg.blocks],['Rumeni kartoni',pg.yellow],['Rdeči kartoni',pg.red],['Time-outi',pg.timeouts]];
+  const ehfOnly=[['Goli v premoči',pg.powerplay_goals],['Goli v podštevilnosti',pg.shorthanded_goals],['Najdaljša serija golov',pg.best_run],['Rumeni kartoni',pg.yellow],['Rdeči kartoni',pg.red],['Time-outi',pg.timeouts]];
   return `<div class="panel"><div class="panel-head"><h2>Primerjava z Ligo prvakinj (EHF)</h2><span class="tag">${esc(AN_EHF.matches)} tekem · stanje ${esc(dbDate(AN_EHF.last_match||''))}</span></div>
     <p class="muted db-note">Povprečje ene ekipe na tekmo v Ligi prvakinj ${esc(AN_EHF.season||'')} (uradna statistika EHF) ob povprečju ${esc(teamLabel())} in njihovih nasprotnic. Razlika je Celje − Liga prvakinj; zeleno je bolje za Celje.</p>
     <div class="tablescroll"><table class="table db-table"><thead><tr><th>Kazalnik</th><th>Celje</th><th>Nasprotnice</th><th>Liga prvakinj</th><th>Razlika Celje</th></tr></thead><tbody>${R.map(([l,c,o,lp,u,up])=>`<tr><td>${l}</td><td><b>${fmtV(c,u)}</b></td><td>${fmtV(o,u)}</td><td>${fmtV(lp,u)}</td><td>${diff(c,lp,u,up)}</td></tr>`).join('')}</tbody></table></div>
