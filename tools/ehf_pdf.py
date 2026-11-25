@@ -1,4 +1,4 @@
-"""Prenos PDF-jev vseh odigranih tekem EHF Lige prvakinj (ženske) za izbrano sezono.
+"""Prenos PDF-jev vseh odigranih tekem EHF Lige prvakinj (ženske) za aktualno sezono.
 
 Za vsako odigrano tekmo prenese:
   - statistiko (Online Statistics, ~13 strani: streli po pozicijah, igralke, golmanke, potek),
@@ -6,7 +6,7 @@ Za vsako odigrano tekmo prenese:
 Že prenesene datoteke preskoči, zato ga lahko poganjaš večkrat (npr. po vsakem krogu).
 
 Uporaba:
-  python3 tools/ehf_pdf.py                  # sezona 2026-27 v mapo ehf-pdf/
+  python3 tools/ehf_pdf.py                  # aktualna sezona v mapo ehf-pdf/
   python3 tools/ehf_pdf.py --mapa D:/EHF    # druga mapa
   python3 tools/ehf_pdf.py --samo-statistika
 
@@ -22,9 +22,10 @@ import unicodedata
 import urllib.request
 
 API = 'https://ehfcl.eurohandball.com/umbraco/api/competitionmatchesapi/'
-# Liga prvakinj 2026-27 (s strani https://ehfcl.eurohandball.com/women/2026-27/matches/).
+# Rezervni vrednosti za sezono 2026-27; običajno ju skripta sama prebere s strani tekem aktualne sezone.
 CONTENT_ID = '138737'
 COMPETITION_ID = 'UnyDApFpvo3oNBJc9fnoag'
+SEASON_URL = 'https://ehfcl.eurohandball.com/women/'
 STAT_URL = 'https://statistics.eurohandball.com/reports/report-rshsa.ashx?typ=hsa2&m={id}'
 REPORT_URL = 'https://statistics.eurohandball.com/reports/?m={id}'
 HEADERS = {'User-Agent': 'Mozilla/5.0 (rokomet-analitika)'}
@@ -46,9 +47,27 @@ def get(url, binary=False, tries=5):
             time.sleep(wait)
 
 
-def all_matches():
+def current_season():
+    """Poišče aktualno sezono (npr. 2026-27) in ID-ja tekmovanja na strani tekem EHF."""
+    try:
+        req = urllib.request.Request(SEASON_URL, headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=60) as r:
+            season_url = r.geturl()
+        req = urllib.request.Request(season_url.rstrip('/') + '/matches/', headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=60) as r:
+            html = r.read().decode('utf-8', 'replace')
+        cid = re.search(r'data-currentcontentid="(\d+)"', html).group(1)
+        comp = re.search(r'data-competition-id="([^"]+)"', html).group(1)
+        season = re.search(r'/women/(\d{4}-\d{2})/', season_url)
+        return cid, comp, season.group(1) if season else ''
+    except (OSError, AttributeError) as e:
+        print(f'  ! sezone ni bilo mogoče prebrati ({e}), uporabim 2026-27')
+        return CONTENT_ID, COMPETITION_ID, '2026-27'
+
+
+def all_matches(content_id, competition_id):
     """Vse tekme sezone: začetni seznam, nato listanje nazaj po odigranih tekmah."""
-    q = f'contentId={CONTENT_ID}&competitionId={COMPETITION_ID}'
+    q = f'contentId={content_id}&competitionId={competition_id}'
     batch = get(f'{API}GetInitMatches?{q}')['matches']
     seen = {}
     while batch:
@@ -76,8 +95,9 @@ def main():
     a = ap.parse_args()
     os.makedirs(a.mapa, exist_ok=True)
 
-    matches = [m for m in all_matches() if m['isFinished']]
-    print(f'Odigranih tekem: {len(matches)}')
+    content_id, competition_id, season = current_season()
+    matches = [m for m in all_matches(content_id, competition_id) if m['isFinished']]
+    print(f'Sezona {season}, odigranih tekem: {len(matches)}')
     index, new = [], 0
     for m in matches:
         mid = m['matchID']
@@ -87,7 +107,7 @@ def main():
         files = {'statistika': (STAT_URL, f'{base}_statistika.pdf')}
         if not a.samo_statistika:
             files['zapisnik'] = (REPORT_URL, f'{base}_zapisnik.pdf')
-        row = dict(matchID=mid, datum=date, domaci=home, gostje=guest, krog=m['comp']['round']['name'])
+        row = dict(sezona=season, matchID=mid, datum=date, domaci=home, gostje=guest, krog=m['comp']['round']['name'])
         for kind, (url, name) in files.items():
             path = os.path.join(a.mapa, name)
             row[kind] = name

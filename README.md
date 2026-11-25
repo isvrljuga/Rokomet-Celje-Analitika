@@ -30,3 +30,13 @@ Tekme se delijo s povezavo `…/#tekma=<id>` (gumb »Kopiraj povezavo« na tekmi
 ## Obračun
 
 Četrtine se razporedijo po vpisanem polčasu in minuti. Novi indeks uporablja uteži iz zavihka `Legenda` v predlogi. Stari indeks uporablja uteži iz predloge `stari index 2025`. Excelova lista trenutno povzemata podatke v kompatibilnih tabelah; še nista preslikana 1:1 v izvirne celice in oblikovanje klubskih predlog. Pred uradno uporabo jih je treba še uskladiti z obema predlogama.
+
+## Benchmark Lige prvakinj (EHF)
+
+Zavihek »Analiza tekem« primerja Celje in njihove nasprotnice s povprečjem ekipe v EHF Ligi prvakinj (`ehf-benchmark.json`).
+
+- `tools/ehf_pdf.py` poišče aktualno sezono na strani EHF in prenese statistiko (Online Statistics) ter zapisnik vsake odigrane tekme v mapo `ehf-pdf/`. Že prenesene preskoči.
+- `tools/ehf_stat.py ehf-pdf ehf-benchmark.json` iz statistik prebere pregled tekme, izid strelov, strele in obrambe po pozicijah, asistence, ukradene žoge in bloke ter izračuna povprečja.
+- GitHub Action `EHF benchmark` (`.github/workflows/ehf-benchmark.yml`) to naredi vsak ponedeljek in posodobljen `ehf-benchmark.json` shrani v `main`. Ročno: Actions → EHF benchmark → Run workflow. Vsi PDF-ji so pri zagonu na voljo kot artifact za prenos (30 dni).
+
+EHF v sezoni 2026-27 ne beleži prodorov in protinapadov posebej (prišteti so k 6 m) in ne objavlja prekrškov razen 7 m in izključitev.
